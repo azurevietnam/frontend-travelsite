@@ -1,0 +1,32 @@
+.bpv-rate-loading{
+	padding: 20px 0;
+	text-align: center;
+	margin-bottom:20px;
+	color: #3a6ba3;
+}
+/**-- Room Rate --**/
+.sep-line{
+	margin:10px 0;
+	border-bottom:1px dashed #CCC;
+}
+
+
+/* icon market map */
+.icon-hotel1{
+	background: url("/media/icon/hotel-marker.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	display: inline;
+	height: 25px;
+	width: 100px;
+	float:left;
+	padding-left:30px;
+	margin-top:10px;
+}
+.icon-place1{
+	background: url("/media/icon/des_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	display: block;
+	float: left;
+	height: 25px;
+	width: 100px;
+	padding-left:30px;
+	margin-top:10px;
+}

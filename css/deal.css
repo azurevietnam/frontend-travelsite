@@ -1,0 +1,44 @@
+.deal-page-title{
+	font-size:normal;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 5px;
+}
+
+.deal-hotel{
+	border: 1px solid #CCC;
+	border-top:0;
+	padding: 15px;
+}
+
+.hotel-name{
+	font-size:18px;
+}
+
+.hotel-go{
+	font-size:28px;
+	color:#669933;
+}
+
+.deal-value{
+	font-size: 24px;
+}
+
+.deal-offer{
+	position: absolute;
+	right: 0;
+	top: 15px;
+	color: #FFF;
+	background-color: #ff9900;
+	padding: 2px 10px;
+	background: url(/media/icon/deal_tag_bg.png) repeat;
+	height: 36px
+}
+.deal-offer .deal-arrow {
+	background: url(/media/icon/orange_arrow.png) no-repeat;
+	width: 20px;
+	height: 36px;
+	position: absolute;
+	left: -20px;
+	top: 0
+}

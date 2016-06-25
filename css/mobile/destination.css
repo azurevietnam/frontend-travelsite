@@ -1,0 +1,9 @@
+/*
+	BPV activity
+*/
+
+#activity{display:none;}
+#activity.item-name{float:left}
+#destination_travel{display:none;}
+#destination_travel.item-name{float:left}
+#destination_travel img{margin-right:10px}

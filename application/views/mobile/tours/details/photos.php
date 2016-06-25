@@ -1,0 +1,1 @@
+<?=load_slider($photos)?>

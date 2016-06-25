@@ -1,0 +1,179 @@
+body {
+	background: url("/media/icon/bg_payment.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font-family: Arial;
+    font-size: 13px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+	border: 0
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.wraper1 {
+    margin: 0 auto;
+    text-align: left;
+    width: 780px;
+    overflow: hidden;
+}
+.banner1 {
+    float: left;
+    height: 136px;
+    text-align: left;
+    width: 780px;
+}
+.logo_bestpricevn {
+    float: left;
+    height: 100px;
+    margin: 0;
+    width: 184px;
+}
+.logo_bestpricevn p {
+    padding: 20px 0 0;
+    text-align: left;
+}
+.logo_merchant {
+    float: left;
+    height: 100px;
+    width: 570px;
+}
+.logo_merchant p {
+    padding: 45px 120px 0 0;
+    text-align: right;
+}
+.payment_review {
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    padding-left: 15px;
+    width: 780px;
+}
+.content h1 {
+	text-align:center;
+    font-size:18px;
+    margin-bottom: 0
+}
+.row_payment_review {
+    float: left;
+    height: auto;
+    margin-top: 10px;
+    width: 780px;
+}
+.label_payment_review {
+    float: left;
+    height: auto;
+    text-align: left;
+    width: 150px;
+}
+.sub_label_payment_review {
+    float: left;
+    height: auto;
+    text-align: left;
+    width: 60px;
+}
+.text_invoice_review {
+    color: #808080;
+    float: left;
+    height: auto;
+    text-align: left;
+}
+.sub_text_invoice_review {
+    color: #808080;
+    float: left;
+    height: auto;
+    padding-left: 5px;
+    text-align: left;
+    width: 150px;
+}
+.invoice_reference {
+    float: left;
+    height: auto;
+    padding-left: 15px;
+    text-align: left;
+    vertical-align: bottom;
+    width: 770px;
+}
+
+.term-condition {float: left; margin: 0 0 0 10px}
+
+.term-condition h1 {
+    color: #000000;
+    font-family: Arial,sans-serif;
+    font-size: 9.5pt;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+.term-condition .p, .term-condition p {
+    color: #000000;
+    font-family: Arial,sans-serif;
+    font-size: 9.5pt;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+}
+.term-condition .a {
+    color: #0000FF;
+    font-family: Arial,sans-serif;
+    font-size: 9.5pt;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.term-condition li {
+    display: block;
+}
+.term-condition #l1 {
+    counter-reset: c1 3;
+    padding-left: 0;
+}
+.term-condition #l1 > li:before {
+    color: #000000;
+    content: counter(c1, decimal) " ";
+    counter-increment: c1;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+.term-condition #l2 {
+    counter-reset: c2 0;
+    padding-left: 0;
+}
+.term-condition #l2 > li:before {
+    color: #000000;
+    content: counter(c1, decimal) "." counter(c2, decimal) " ";
+    counter-increment: c2;
+    font-family: Arial,sans-serif;
+    font-size: 9.5pt;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+.repay-block {
+	width:100%;vertical-align: middle;margin-top:20px; text-align: center; float: left;
+}
+
+.btn-bpv {
+	background-color: #1B65E1;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 4px solid #144CA9;
+	padding: 8px 24px 6px;
+	text-decoration: none;
+}
+
+.btn-bpv:hover {
+	background-color: #0066cc;
+	color: #fff;
+}
+
+.bpv-payment-methods {
+	float: left;
+	clear: both;
+}
+.bpv-box {
+	border: 0
+}

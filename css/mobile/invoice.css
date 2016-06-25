@@ -1,0 +1,109 @@
+/* == Header == */
+.invoice-title {
+	text-align: center;
+	margin-bottom: 20px
+}
+
+h3 {
+	margin: 20px 0 10px; font-weight: bold;
+}
+
+.row {
+	margin-bottom: 10px
+}
+
+.term-condition {
+	clear: both;
+	margin: 0
+}
+
+.term-condition h1 {
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: 9.5pt;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.term-condition .p, .term-condition p {
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: 9.5pt;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	text-decoration: none;
+}
+
+.term-condition .a {
+	color: #0000FF;
+	font-family: Arial, sans-serif;
+	font-size: 9.5pt;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.term-condition li {
+	display: block;
+}
+
+.term-condition #l1 {
+	counter-reset: c1 3;
+	padding-left: 0;
+}
+
+.term-condition #l1>li:before {
+	color: #000000;
+	content: counter(c1, decimal) " ";
+	counter-increment: c1;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.term-condition #l2 {
+	counter-reset: c2 0;
+	padding-left: 0;
+}
+
+.term-condition #l2>li:before {
+	color: #000000;
+	content: counter(c1, decimal) "." counter(c2, decimal) " ";
+	counter-increment: c2;
+	font-family: Arial, sans-serif;
+	font-size: 9.5pt;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.repay-block {
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 20px;
+	text-align: center;
+	clear: both;
+}
+
+.btn-bpv {
+	background-color: #1B65E1;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 4px solid #144CA9;
+	padding: 8px 24px 6px;
+	text-decoration: none;
+}
+
+.btn-bpv:hover, .btn-bpv:focus {
+	background-color: #0066cc;
+	color: #fff;
+	outline: none;
+}
+
+.bpv-payment-methods {
+	margin-top: 20px;
+	clear: both;
+	display: block;
+}
