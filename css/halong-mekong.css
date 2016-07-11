@@ -1,0 +1,160 @@
+/*
+ * TAB Customize
+ *
+ */
+
+#tabs .ui-tabs-panel {
+	border-color: #DDD;
+	border-width: 0;
+}
+
+#tabs .ui-widget-header {
+	border-color: #DDD;
+	border-bottom-width: 2px;
+}
+
+#tabs .ui-state-active {
+	border-color: #DDD;
+	border-width: 2px !important;
+	border-bottom-width: 0 !important;
+}
+
+#tabs .ui-state-default {
+	border-color: #DDD;
+	border-bottom-width: 0 !important;
+}
+
+#tabs .ui-state-hover {
+	border-color: #DDD
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+	padding-bottom: 2px;
+	top: 2px;
+}
+.ui-tabs .ui-tabs-nav li{
+	top: 3px;
+}
+
+#contentMain{float: right;}
+#contentLeft{float: left;}
+
+/**
+ * TOP CRUISE DEALS LIST
+ */
+#searchForm {height: 300px}
+#searchForm .row_des{margin-top:0}
+
+.cruise_top_deals {
+	float: left;
+	width: 720px;
+	font-size: 11px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.deal_item{
+	width: 25%;
+	float: left;
+	position: relative;
+}
+.deal_item_price{
+	position: absolute;
+	text-align: center;
+	padding: 2px 2px;
+	background-color: #FFFFC9;
+	border: 1px solid #EEE;
+	margin-top: 5px; margin-left: 5px;
+}
+
+.deal_item_content{
+	text-align: center; width: 100%;
+}
+
+.deal_item_image{
+	border: 1px solid #EEE; 
+	padding: 2px; 
+	height: 90px; 
+	width: 135px;
+	margin-bottom: 2px;
+}
+
+.deal_item .row{padding: 2px}
+
+.group_cruise_tour{float:left; width: 720px;}
+.group_cruise_tour .group_info_left{
+	float: left; 
+	width: 320px;
+	z-index: 1;
+	position: relative;
+	height: 255px;
+}
+.group_cruise_tour .group_info_right{
+	float: left;
+	width: 400px;
+	position: relative;
+}
+.group_cruise_tour .group_price{
+	float: right;
+	text-align: center;
+	padding: 3px 6px;
+	background-color:#FFFFC9;
+	border: 1px solid #FEBA02;
+	margin-right: -15px;
+}
+.group_cruise_tour .cruise_image{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.cruise_image img {padding: 2px; border: 1px solid #EEE}
+.group_info_left .row{
+	padding-left: 10px;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.group_info_left .progress_bar_col_1{
+	float: left; 
+	width: 10px;
+	margin-left: 40px;
+}
+.group_info_left .progress_bar_col_2{
+	float: left; 
+	width: 215px;
+}
+.group_info_left .progress_bar_col_3{
+	float:left; 
+	width:15px;
+}
+.tour_vn {border:1px solid #FEBA02; float: left; width: 718px; height: 298px}
+.tour_vn_title {font-size: 14px;width: 100%;font-weight: bold;}
+.tour_vn_title h2{padding: 5px 0; margin: 0 10px; border-bottom: 1px solid #eee}
+
+
+.hour_glass_icon {background-position: -25px -442px; width: 19px; height: 32px}
+.more_tour{margin-right: 10px;}
+
+.lst_all_cruises {width: 988px; float: left; margin-top: 15px; border: 1px solid #DDD}
+.lst_all_cruises ul {width: 99%; padding-left: 20px;}
+.lst_all_cruises ul li {float: left; width: 20%; margin-bottom: 5px;}
+
+.btn_check_rate{position: absolute; bottom: 20px; right: 20px; padding: 8px 15px; font-weight: bold; border: 1px solid #fff !important; font-size: 13px; cursor: pointer;}
+
+.col_content .cruise_type{
+	color: #666666;
+}
+
+.bpt_item{
+	margin-top: 15px;
+	border: 1px solid #DDD;
+}
+
+.bpt_item_name{
+	font-size: 16px;
+}
+
+.btn_see_deal{
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+}

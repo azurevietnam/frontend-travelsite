@@ -1,393 +1,423 @@
-.bpv-rate-loading{
-	padding: 20px 0;
-	text-align: center;
-	margin-bottom:20px;
-	color: #3a6ba3;
+#contentMain{float:right}
+#contentLeft{float:left}
+
+#contentMain #tabs .ui-tabs-panel {
+    padding: 10px;
+    width: 698px;
 }
 
-/**
- * HOTEL BASIC INFO
- *
- */
-.hotel-basic-info,
-.room-types, 
-.room-rates,
-.hotel-photos,
-.hotel-detail-info,
-.hotel-reviews,
-.similar-hotels
-{
-	margin-bottom:20px;
-}
+p{margin-top: 7px; margin-bottom: 7px;}
 
-.hotel-basic-info div[class*="col-"]{
-	float:left;
-}
-
-.hotel-basic-info .image-area{
-	padding-top:10px;
-	border-top: 1px solid #c8c8c8;
-}
-
-.hotel-basic-info h1{
-	font-weight:bold;
-	margin-top: 0;
-	margin-bottom:15px;
-}
-
-.hotel-basic-info .bpv-color-star{
-	font-size:18px;
-}
-
-.hotel-basic-info .hotel-address{
-	font-size: 13px;
-}
-
-.hotel-basic-info .hotel-address a{
-	text-decoration: underline;
-}
+#search_area_list{float:left;width:100%;}
 
 
-.hotel-basic-info .bpv-price-origin, 
-.hotel-basic-info .label-price-from{
-	font-size:16px;
-}
+#hotel_faq_main{float:right;margin-top:10px;width:260px;border:1px solid #DDD;}
+#hotel_faq_list{float:left;margin-top:10px;width:259px;border:1px solid #DDD;}
 
-.room-rates .label-total-price,
-.room-rates .col-total-price .bpv-price-origin{
-	font-size:14px;
-}
+#date_picker img{cursor:pointer;margin:0px;margin-bottom:-3px;width:17px;height:16px;}
 
-.hotel-basic-info .bpv-price-from{
-	font-size:24px;
-	font-weight:bold;
-}
+#search_area_list{background-color:#FEBA02;min-height:260px;}
+#search_area_list .row{clear:both;padding:5px 10px;}
+#search_area_list .row_inline{float:left;padding:5px 0 5px 10px;}
+#search_area_list .column_label{display:block;width:100%;}
+#search_area_list .column_input{display:block;width:100%;}
+#search_area_list .column_arrive{display:block;float:left;width:220px;}
+#search_area_list .nights{display:block;padding:5px 0 5px 10px;float:left;width:60px;}
+#search_area_list .hotel_destination{width:230px;}
+#search_area_list .hotelName{width:200px;}
+#search_area_list .star{width:206px;height:19px;}
+#search_area_list .search_button{float:right;margin-right:4px;}
 
-.room-rates .col-total-price .bpv-price-from{
-	font-size:20px;
-	font-weight:bold;
-}
+#top_destination_list {width:259px;float: left;border: 1px solid #DDD; margin-top: 10px;}
 
-.hotel-basic-info .bpv-price-from{
-	margin-left:15px;
-}
-
-.hotel-basic-info .best-price-guarantee{
-	color: #409224;
-	font-size:16px;
-	font-weight:bold;
-}
+sup{font-size:small;line-height:normal;vertical-align:super;border-bottom:1px dotted #FE8802;color:#FE8802;font-weight:bold;}
+#overview_availability .main_image{float: left; width: 375px; height: 250px; margin-right: 10px; margin-bottom: 10px;}
+.room_image{cursor: pointer; position: relative; float:left;}
+.room_name{float: left;margin-left: 5px;}
+#overview_availability .list_image{height:60px;width:80px;}
+#overview_availability .item_header{border-bottom:1px solid #779BCA;clear:both;margin:0;padding:0.5em 0 0;}
+#overview_availability .item_header_text{background-color:#779BCA;color:#FFFFFF;margin:0;padding:0.25em 0.5em;text-transform:uppercase;width:14em;font-size:120%;font-weight:bold;}
 
 
-.hotel-basic-info .col-name{
-	width: 72.41379310344828%; /*840px;*/
+.hotel_check_rates{float:left; background-color: #FFFFC9; border: 1px solid #FEBA02;padding:10px; width: 698px; margin-top: 15px;}
+.hotel_check_rates .col{float:left;margin-right: 30px;}
+.hotel_check_rates .check_rates_block{float:right;margin-top:10px;}
+#hotel_rates{width:700px;}
+
+.accomm_cabin_facility{
+	float: left; width: 530px; font-size: 11px;
 }
 
-.hotel-basic-info .col-price{
-	width: 27.58620689655172%; /*320px;*/
+.accomm_cabin_facility li{
+	float: left; width: 33%;margin-bottom: 5px;
 }
 
-.hotel-basic-info .col-main-img{
-	width:49.64200477326969%; /*416px;*/
-	height:312px;
-	background-color:#E1E1E1;
-	text-align:center;
-}
-.hotel-basic-info .col-main-img img{
-	max-width:100%;
-	max-height:100%;
-}
+span.warning_message{color:#B30000;font-weight:bold;}
+#hotel_booking, #your_details{min-height:200px;height:auto;}
+.hotel_booking_header{background-color:#779BCA;color:#FFFFFF;margin:0;padding:0.25em 0.5em;font-size:118%;font-weight:bold;margin-bottom:10px;height:20px;}
+.sys_border_1{border:1px solid #779BCA;}
+.sys_border_2{border:1px solid #CCCCCC;}
 
-.hotel-basic-info .col-list-img{
-	width:50.35799522673031%;/*422px*/
-	height:312px;
-	padding-left:7px;
-	overflow-y: scroll;
-}
+.hotel_image_booking{margin:0 10px 10px 10px;position:relative;float:left;height:60px;width:80px;cursor:pointer;}
+.row_booking{margin-top: 3px; margin-left: 140px;}
+.row_booking .col_1{width:70px;float:left;}
+.row_booking .col_2{width:auto;float:left;}
+.lowest_guarantee{margin-left:10px;font-size:118%;font-weight:bold;}
+.margin_10{margin:10px;}
+.items{clear:both;padding:5px 10px;}
+.items .col_1{float:left;width:150px;}
+.items .col_2{float:left;}
+.item_button{padding-top:10px;}
 
-.hotel-basic-info .col-list-img img{
-	width:90px;
-	height:75px;
-	margin-left:5px;
-	margin-bottom:5px;
-}
+.facility{border-bottom:1px dotted #CCC; float: left; width: 100%; margin-bottom: 10px;}
+.facility ul{float:left;width:100%;padding:0px; margin-left: 10px;}
+.facility ul li{float: left; width: 33%; margin-bottom: 5px;}
 
-/**
-* Useful Information
-*/
-.useful-info h4 {
-	margin: 20px 0 5px 0;
-	font-size: 14px;
+.policy{
+	border-bottom:1px dotted #CCC;width:100%;float:left;
+	padding: 10px 0;
 }
-
-.useful-info h4:first-child {
-	margin-top: 0
-}
-.useful-info ul { width: 70% }
-
-.useful-info li {
-	border-bottom: 1px dotted #9E9E9E;
-	padding: 5px 0;
-}
-
-.useful-info span {
-	float: right;
-}
-
-/**
- * ROOM TYPE & ROOM RATE 
- */
-.room-types .col-1,
-.room-rates .col-1{
-	width:53.10262529832936%; /*445px;*/
-}
-.room-types .col-2,
-.room-rates .col-2{
-	width:10.73985680190931%; /*90px*/ 
-}
-.room-types .col-3{
-	width:36.15751789976134%; /*303px*/
-}
-
-.room-types .col-rate{
-	vertical-align:middle !important;
-	font-size:14px;
-}
-.room-types .col-room-img{
+.policy .policy_item{
 	float: left;
-	width:25%;
-}
-.room-types .col-room-img img, 
-.room-rates .col-room-img img{
-	width:100%;
-}
-.room-types .col-room-info{
-	float:left;
-	width:75%;
-	padding-left:15px;
-}
-.room-types .room-name, 
-.room-rates .room-name{
-	font-size: 16px;
+	width: 30%;
+	font-size: 14px;
 	font-weight: bold;
 }
-.room-types .room-square,
-.room-types .room-capacity,
-.room-types .room-breakfast,
-.room-types .room-promotion,
-.room-types .room-added-value,
-.room-rates .room-square,
-.room-rates .room-capacity,
-.room-rates .room-breakfast,
-.room-rates .room-promotion,
-.room-rates .room-added-value{
-	margin-bottom:2px;
+
+.policy .policy_content{
+	float: left;
+	width: 70%;
 }
 
-/**
- * Room Rates
- */
-.room-rates .col-3{
-	width:14.31980906921241%; /*120px;*/
+.policy p{
+	margin: 0;
 }
 
-.room-rates .col-4{
-	width:8.353221957040573%; /*70px;*/
+.header_area{
+	float: left;
+	width: 720px;
 }
 
-.room-rates .col-5{
-
-}
-.room-rates .col-room-img{
-	float:left;
-	width:26.66666666666667%; /*160px*/
-}
-.room-rates .col-room-info{
-	float:left;
-	width:73.33333333333333%; /*440px*/
-	padding-left:10px;
-}
-.room-rates .bpv-price-origin{
-	font-size:14px;
-}
-.room-rates .bpv-price-from{
-	font-size:18px;
+.header_area .col_1{
+	float:left; width: 540px;
 }
 
-.room-rates .no-cancel{
-	text-decoration: underline;
-	font-weight:bold;
-	color: #ba1c1d;
+.header_area .col_2{
+	float:left; width: 180px;text-align:right;
 }
 
-.room-rates .free-cancel{
-	font-weight:bold;
-	text-decoration:underline;
-	white-space: nowrap;
+.hotel_review{
+	padding-left: 10px;
+	float: left;
+	margin-right: 10px;
 }
 
-.room-types .room-breakfast, 
-.room-rates .room-breakfast{
-	color: #409224;
+.fb-like{
+	float: left;
+	margin-top: 3px;
 }
 
-.room-rates .modal-dialog-room{
-	width: 61.6398243045388%; /*842px;*/
-	margin-top: 3%;
-}
-
-.room-rates .modal-dialog-room .col-fa{
-	float:left;
-	width: 50%;
-	padding: 0 5px;
-	margin-bottom: 10px;
-}
-
-
-/**
- * HOTEL Photos
- */
-.hotel-photos .img-caption{
-	text-align: center;
-	margin: 5px 0 10px 0;
-	font-weight:bold;
-}
-.hotel-photos .col-img{
-	width:20%;
-	padding: 0 15px;
-	float:left;
-}
-.hotel-photos .view-more{
-	font-size:14px;
-	text-decoration: underline;
-}
-
-.hotel-photos h2{
-	margin-bottom: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #CECECE;
-}
-
-
-/**
- * HOTEL DETAIL INFO
- */
-.hotel-detail-tab{
-	font-size:14px;
-	padding-bottom:8px;
-	border-bottom:3px solid #b2b2b2;
-	margin-bottom:10px;
-}
-
-.hotel-detail-tab .nav-pills > li.active > a{
-	font-weight:bold;
-}
-
-.hotel-detail-desc .item,
-.hotel-facility .item{
-	padding: 15px 0;
-	border-bottom: 1px solid #feb902;
-}
-
-.hotel-facility .item{
-	border-bottom: 1px solid #e8e8e8;
-}
-
-.hotel-facility .col-fa{
-	float:left;
-	width:30%;
-	margin-bottom: 7px;
-}
-
-.hotel-detail-desc .item .col-item-title,
-.hotel-facility .item .col-item-title{
-	width:25%;
-	padding: 0 30px 0 0;
-	font-size:14px;
-	font-weight:bold;
-	float:left;
-}
-.hotel-detail-desc .item .col-item-content,
-.hotel-facility .item .col-item-content{
-	width:75%;
-	padding: 0;
-	float:left;
-}
-.hotel-detail-desc td{
-	padding: 7px 15px;
-	background-color: #ededed;
-	border: 1px solid #FFF;
-}
-.hotel-detail-desc .td-1{
-	width:28%;
-}
-.hotel-detail-desc .td-2{
-	width:72%;
-}
-
-/**
- * FACILITY
- */
-.hotel-detail-info .fa-title{
-	font-size:14px;
-	font-weight:bold;
-	margin-bottom:10px;
-}
-.hotel-detail-info .fa-content{
-	padding: 15px 10px;
-	border: 1px solid #e1e1e1;
-	border-top:4px solid #e1e1e1;
-	margin-bottom:20px;
-	color:#344a71;
-	background-color:#f3fbfd;
-	      
-}
-.hotel-detail-info .col-fa{
-	width:50%;
-	margin-bottom:7px;
-}
-
-/**
- * SIMILAR HOTELS
- */
-.similar-hotels{
-	border-top:4px solid #e1e1e1;
-	border-bottom:1px solid #e1e1e1;
-	background-color:#f3fbfd;
-	margin-bottom:40px;
-}
-.similar-hotels h2 {
-	font-size: 26px;
-	font-weight: normal;
-	border-bottom:1px solid #FFF;
-	padding: 0 30px;
-}
-.similar-hotels .content{
-	padding: 15px 30px;
-}
-
-.similar-hotels .row-similar{
-	margin: 0 -50px;
-}
-.similar-hotels .col-similar{
-	float:left;
-	padding: 0 50px;
-	width:25%;
-}
-.similar-hotels .item-name{
+.hotel_review .review_text{
 	font-size: 18px;
+	font-weight: bold;
 }
-.similar-hotels .item-review-text{
-	font-size:14px;
-	font-weight:bold;
-	margin-right:10px;
+
+.hotel_address{font-style:italic;color: #666;padding-left: 10px; padding-bottom: 5px}
+
+.hotel_price{margin-bottom: 10px}
+
+/**
+* @file: highslide.css 
+* @version: 4.1.13
+*/
+.highslide-container div {
+	font-family: Verdana, Helvetica;
+	font-size: 10pt;
 }
-.similar-hotels .btn-book-now{
-	font-size:14px;
+.highslide-container table {
+	background: none;
 }
-.similar-hotels .bpv-price-origin{
-	font-size:12px;
+.highslide {
+	outline: none;
+	text-decoration: none;
 }
-.similar-hotels .bpv-price-from{
-	font-size:15px;
+.highslide img {
+	border: 2px solid silver;
+	cursor: url(/js/highslide/graphics/zoomin.cur), pointer !important;
 }
+.highslide:hover img {
+	border-color: gray;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide-gallery .highslide-active-anchor img {
+	border-color: black;
+	visibility: visible;
+	cursor: default;
+}
+.highslide-image {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+.highslide-wrapper, .highslide-outline {
+	background: white;
+}
+.glossy-dark {
+	background: #111;
+}
+
+.highslide-image-blur {
+}
+.highslide-number {
+	font-weight: bold;
+	color: gray;
+	font-size: .9em;
+}
+.highslide-caption {
+	display: none;
+	font-size: 1em;
+	padding: 5px;
+	/*background: white;*/
+}
+.highslide-heading {
+	display: none;
+	font-weight: bold;
+	margin: 0.4em;
+}
+.highslide-dimming {
+	/*position: absolute;*/
+	background: black;
+}
+a.highslide-full-expand {
+   background: url(/js/highslide/graphics/fullexpand.gif) no-repeat;
+   display: block;
+   margin: 0 10px 10px 0;
+   width: 34px;
+   height: 34px;
+}
+.highslide-loading {
+	display: block;
+	color: black;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 3px;
+	border: 1px solid white;
+	background-color: white;
+	padding-left: 22px;
+	background-image: url(/js/highslide/graphics/loader.white.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+}
+a.highslide-credits,
+a.highslide-credits i {
+	padding: 2px;
+	color: silver;
+	text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+	color: white;
+	background-color: gray;
+}
+.highslide-move, .highslide-move * {
+	cursor: move;
+}
+
+.highslide-viewport {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: none;
+	left: 0;
+	top: 0;
+}
+.highslide-overlay {
+	display: none;
+}
+.hidden-container {
+	display: none;
+}
+/* Example of a semitransparent, offset closebutton */
+.closebutton {
+	position: relative;
+	top: -15px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url(/js/highslide/graphics/close.png);
+	/* NOTE! For IE6, you also need to update the highslide-ie6.css file. */
+}
+
+/*****************************************************************************/
+/* Thumbnail boxes for the galleries.                                        */
+/* Remove these if you are not using a gallery.                              */
+/*****************************************************************************/
+.highslide-gallery ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.highslide-gallery ul li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 106px;
+	height: 106px;
+	border: 1px solid silver;
+	background: #ededed;
+	margin: 2px;
+	padding: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+.highslide-gallery ul a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.highslide-gallery ul img {
+ 	position: relative;
+	top: -50%;
+	left: -50%;
+}
+html>/**/body .highslide-gallery ul li {
+	display: table;
+	text-align: center;
+}
+html>/**/body .highslide-gallery ul li {
+	text-align: center;
+}
+html>/**/body .highslide-gallery ul a {
+	position: static;
+	display: table-cell;
+	vertical-align: middle;
+}
+html>/**/body .highslide-gallery ul img {
+	position: static;
+}
+
+/*****************************************************************************/
+/* Controls for the galleries.											     */
+/* Remove these if you are not using a gallery							     */
+/*****************************************************************************/
+.highslide-controls {
+	width: 195px;
+	height: 40px;
+	background: url(/js/highslide/graphics/controlbar-white.gif) 0 -90px no-repeat;
+	margin: 20px 15px 10px 0;
+}
+.highslide-controls ul {
+	position: relative;
+	left: 15px;
+	height: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: url(/js/highslide/graphics/controlbar-white.gif) right -90px no-repeat;
+
+}
+.highslide-controls li {
+	float: left;
+	padding: 5px 0;
+	margin:0;
+	list-style: none;
+}
+.highslide-controls a {
+	background-image: url(/js/highslide/graphics/controlbar-white.gif);
+	display: block;
+	float: left;
+	height: 30px;
+	width: 30px;
+	outline: none;
+}
+.highslide-controls a.disabled {
+	cursor: default;
+}
+.highslide-controls a.disabled span {
+	cursor: default;
+}
+.highslide-controls a span {
+	/* hide the text for these graphic buttons */
+	display: none;
+	cursor: pointer;
+}
+
+
+/* The CSS sprites for the controlbar - see http://www.google.com/search?q=css+sprites */
+.highslide-controls .highslide-previous a {
+	background-position: 0 0;
+}
+.highslide-controls .highslide-previous a:hover {
+	background-position: 0 -30px;
+}
+.highslide-controls .highslide-previous a.disabled {
+	background-position: 0 -60px !important;
+}
+.highslide-controls .highslide-play a {
+	background-position: -30px 0;
+}
+.highslide-controls .highslide-play a:hover {
+	background-position: -30px -30px;
+}
+.highslide-controls .highslide-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.highslide-controls .highslide-pause a {
+	background-position: -60px 0;
+}
+.highslide-controls .highslide-pause a:hover {
+	background-position: -60px -30px;
+}
+.highslide-controls .highslide-next a {
+	background-position: -90px 0;
+}
+.highslide-controls .highslide-next a:hover {
+	background-position: -90px -30px;
+}
+.highslide-controls .highslide-next a.disabled {
+	background-position: -90px -60px !important;
+}
+.highslide-controls .highslide-move a {
+	background-position: -120px 0;
+}
+.highslide-controls .highslide-move a:hover {
+	background-position: -120px -30px;
+}
+.highslide-controls .highslide-full-expand a {
+	background-position: -150px 0;
+}
+.highslide-controls .highslide-full-expand a:hover {
+	background-position: -150px -30px;
+}
+.highslide-controls .highslide-full-expand a.disabled {
+	background-position: -150px -60px !important;
+}
+.highslide-controls .highslide-close a {
+	background-position: -180px 0;
+}
+.highslide-controls .highslide-close a:hover {
+	background-position: -180px -30px;
+}
+.hotel-photo {
+    float: left; width:220px; height: 190px
+}
+
+.bpt-tabs {margin-bottom: 10px}
+
+
+#contentMainFooter{float:left;width:698px;background-color:#eeefef;padding:5px 10px;border:1px solid #DDD;margin-top: 10px;}
+#contentMainFooter .paging_text{float:left;}
+#contentMainFooter .paging_link{float:right;text-align:right;}
+
+.additional_charges {background-color: #FFFFC9;}
+.additional_charges div {float: left; width: 100%}
+.additional_charges .header {margin-bottom: 5px; font-weight: bold;}
+.additional_charges div label {margin-left: 10px}

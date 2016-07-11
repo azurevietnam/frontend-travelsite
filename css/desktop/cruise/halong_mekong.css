@@ -1,0 +1,116 @@
+#more_cruises { background-color: #ebebeb; clear: both; }
+#more_cruises .bpt-item-background { padding-top: 0 }
+.more-items { text-decoration: underline; font-style: italic; }
+.list-all-cruises {
+	margin-top: 20px;
+	clear: both;
+	float: left;
+	width: 100%;
+	padding: 15px 0 50px;
+	background-color: #F5F5F5;
+	font-size: 14px
+}
+
+.list-all-cruises h3 {
+	margin-top: 50px;
+	border-bottom: 2px solid #DADADA;
+	padding: 0 0 2px 0
+}
+
+.list-all-cruises h3:first-child { margin-top: 0 }
+.more-des-ts h4 { border-bottom: 2px solid #ccc; font-weight: bold; padding-bottom: 5px; }
+
+/* Today deal
+----------------------------------*/
+.today-deal .today-offer { background-color: #FDFFBE; margin: 0 -10px; padding: 10px 10px 10px 15px; border-bottom: 1px solid #fff }
+.today-deal .today-offer ul { list-style: disc; color: #FE8802; padding-left: 15px; width: 80%; margin: 0 }
+.today-deal .today-offer-title { font-size: 13px }
+.today-deal .today-offer .fa-tag { font-size: 18px }
+.today-deal .review-text label, .today-deal .review-score { font-size: 16px; font-weight: bold; }
+.today-deal .review-score { font-size: 14px }
+.today-deal .review-box { padding: 5px 0 0; background-color: #F9F9F9; margin-bottom: 20px }
+.today-deal .time-left { border-left: 1px dotted #C6C6C6; white-space: nowrap; }
+.today-deal .price-origin-box {position: absolute; top: -10px; left: 10px}
+.today-deal .btn-green { font-size: 16px; font-weight: 600 }
+.today-deal .pro-offer-rate {
+	background-color: #FE9013;
+	width: 72px;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	padding: 10px 10px 15px;
+	margin: -10px;
+	position: relative;
+}
+.today-deal .pro-offer-rate-arrow, .today-deal .pro-offer-rate-arrow-white {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 18px solid #FE9013;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -18px;
+	top: 50%;
+	margin-top: -20px;
+	visibility: hidden;
+	opacity: 0.9
+}
+.today-deal .pro-offer-rate-arrow-white {
+	border-top: 20px solid transparent;
+	border-left: 20px solid #fff;
+	border-bottom: 20px solid transparent;
+	right: -20px;
+}
+
+
+.today-deal .pro-offer-rate span.offer {
+	font-size: 40px;
+	color: #FDFF00;
+	font-weight: bold;
+	clear: both;
+	width: 100%;
+	display: block;
+	top: 50%;
+	position: absolute;
+	margin-top: -20px;
+	left: 5px;
+}
+.today-deal .pro-offer-rate span.off {
+	margin: -5px 0 0;
+	font-size: 12px;
+	color: #fff;
+	font-weight: normal;
+	width: 100%;
+	display: block;
+	clear: both;
+	white-space: nowrap;
+}
+
+.today-deal .pro-offer-rate sup { font-size: 18px; top: -16px }
+
+.today-deal .item-route {
+	margin: 5px 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Best Tours
+----------------------------------*/
+.best-tours { background-color: #F6F6F6; display: block; clear: both; overflow: hidden; padding: 10px; border-radius: 10px }
+.best-tours h2 { border-bottom: 3px solid #EDEDED; padding-bottom: 5px; margin-bottom: 5px }
+.best-tours ul { margin: 0 }
+.best-tours .item { background-color: #fff }
+
+/* Travel Styles
+----------------------------------*/
+.travel-styles img { border-radius: 5px; width: 180px; height: 120px; display: block; background-color: #eee }
+.travel-styles .item-style { margin-top: 3px }
+.travel-styles .item-style a { font-size: 16px }
+.travel-styles .item-style p { font-size: 11px }
+
+.search-form-type-3 {
+  min-height: 293px;
+}

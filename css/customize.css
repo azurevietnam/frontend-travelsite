@@ -1,0 +1,20 @@
+#contact{
+	float:left;
+	width:710px;
+	margin-left:10px;
+}
+#contact .items{
+	clear:both;
+	padding:8px 0;
+}
+#contact .items .col_1 {
+	float:left;
+	width:150px;
+}
+#contact .items .col_2 {
+	float:left;
+	width:360px;
+}
+
+#searchForm {height: 300px}
+#searchForm .row_des{margin-top:0}

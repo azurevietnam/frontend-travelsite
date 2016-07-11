@@ -1,0 +1,100 @@
+/*--- Booking Step ---*/
+.bpt-steps-bar{
+	background-color: #e8e8e8;
+	height:40px; 
+	padding:5px;
+	margin-bottom:15px;
+}
+
+.bpt-steps-bar .step { 
+	background: #CACACA;
+	padding: 4px 10px 4px 10px; 
+	color:#ffffff; 
+	font-weight: bold; 
+	font-size: 16px;
+	float:left;
+}
+.bpt-steps-bar .arrow {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 10px solid #CACACA;
+    float:left;
+    height: 0;
+    width: 0;
+}
+.bpt-steps-bar .title { padding: 9px; margin-left:40px; color: #9A9A9A; font-weight: bold}
+.bpt-steps-bar .step-ok .step { background: #41841A; }
+.bpt-steps-bar .step-ok .arrow { border-left: 10px solid #41841A; }
+.bpt-steps-bar .step-ok .title { color: #41841A; }
+
+.bpt-steps-bar .step_active .step { background: #FE8804; }
+.bpt-steps-bar .step_active .arrow { border-left: 10px solid #FE8804; }
+.bpt-steps-bar .step_active .title { color: #FE8804; }
+
+.tbl-extra-services {border: 1px solid #DDD; clear:both}
+.tbl-extra-services > tbody > tr > td, .tbl-extra-services > tbody > tr > th {	border: 0;}
+.tbl-extra-services > thead > tr > th {border-bottom:0;}
+.tbl-extra-services > tbody + tbody {border:0;}
+.tbl-extra-services > thead:first-child > tr:first-child > th {	background-color: #f0f0f0;}
+.tbl-extra-services .bgr-header-table {	background-color: #f0f0f0;}
+.tbl-extra-services .checkbox {margin:0}
+.tbl-extra-services .table-border-top {border-top: 1px solid #DDD;}
+.tbl-extra-services .tbl-icon {	cursor:pointer; margin-bottom: 2px; margin-right: 5px;}
+
+.tbl-extra-services .border-dashed{ border-bottom: 1px dashed #DDD;	padding-bottom: 8px;}
+
+.tbl-extra-services .discount-txt {font-size: 11px;}
+.tbl-extra-services .none-style {font-style: italic;}
+.tbl-extra-services .text-price{font-weight:bold}
+
+.tbl-extra-services .extra-service-label{background-color: #F5F5F5}
+
+
+.tbl-extra-services > tbody > tr > td{
+  padding-bottom: 0;
+}
+
+.shopping-cart-empty {background-color: #F5F5F5;padding:10px;padding-bottom:20px}
+.shopping-cart-empty .empty-cart-info {	border: 1px solid #E0DBD5; border-width: 1px 0; padding: 10px; color: #666;}
+
+
+
+/** Hotel Selection Days in Booking Together **/
+.hotel-date {
+    border: 1px solid #ccc;
+    float: left;
+    height: 30px;
+    width: 36px;
+}
+
+.hotel-month-label {
+    float: left;
+    font-size: 9px;
+    font-weight: bold;
+    height: 7px;
+    padding-top: 3px;
+    width: 41px;
+}
+
+.hotel-date-table .selected{
+	background-color: #FEBA02;
+}
+
+.hotel-date-table td input{
+	cursor: pointer;
+}
+
+.tbl-together {border: 0;}
+.tbl-together > thead > tr > td {	border: 1px #DDD solid;}
+.tbl-together > thead > tr > th {	border: 0;}
+.tbl-together > thead:first-child > tr:first-child > td {  border-top: 1px #DDD solid;}
+.tbl-together > tbody > tr > th { 
+	text-align:center; 
+	font-size:11px; 
+	padding-top:4px; 
+	border-top: 1px #DDD solid; 
+	border-bottom: 0; 
+	border-left: 0; 
+	border-right: 0;
+}
+

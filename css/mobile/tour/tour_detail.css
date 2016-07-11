@@ -1,0 +1,13 @@
+.important-note, .cancellation-note, .trip-highlight ul { padding-left: 15px }
+
+.itinerary-photos { padding-left: 0; width: 100%; list-style: none; }
+.itinerary-photos li { text-align: center; }
+.itinerary-photos .caption { margin-top: 5px }
+.itinerary-photos img { margin: 0 auto; }
+
+#full_desc { display: none; }
+.partner-name { font-size: 12px }
+
+.trip-highlights .panel-default > .panel-heading { background-color: #eee }
+.tour-highlight { padding-left: 20px }
+.label-item { font-size: 15px; font-weight: bold; }

@@ -1,330 +1,135 @@
-/*
-* Search
-*/
-.bpv-search-content {
-	height: 280px
-}
-.mod-search .bpv-search-content {
-	height: 270px
-}
-#tab_search_hotel {
-	margin-top: 20px
-}
-#tab_search_hotel .search-btn-group {
-	border: 0;
-	margin: 20px 0 0;
-	padding: 0;
-}
-
-#tab_search_flight .search-btn-group {
-	border: 0;
-	padding: 0;
-	margin: 0
-}
 
 /*
-* Map
-*/
-.hotel-des-info {
-	position: absolute;
-	right: 0;
-	padding: 0 15px;
-	font-size: 18px;
-	font-weight: bold;
-}
-.hotel-des-info .des-name {
-	float: left;
-    font-size: 24px;
-    margin-top: 5px;
-    padding-right: 10px;
-}
-.hotel-des-info .des-numb-hotel {
-	font-size: 36px
-}
-.hotel-des-info .des-hotel {
-	font-size: 14px
-}
-
-/**
- * Top hotel destinations
- */
-.top-destinations .content {
-	padding: 15px 10px 10px;
-}
-.top-destinations .col-xs-4 {
-	padding-bottom: 10px; font-weight: bold; font-size: 13px
-}
-.top-destinations .arrow-sm {
-	background: url(/media/icon/arrow-sm.png) no-repeat;
-	width: 8px;
-	height: 8px;
-	display: inline-block;
-}
-
-.show-more { color: #FE8802; font-size: 11px; margin: 10px 0; float: left; text-decoration: none; }
-a.show-more:link, a.show-more:visited, a.show-more:active { color: #FE8802; text-decoration: none; }
-
-/**
- * Hotel Destinations Links
- */
-.hotel-destinations {
-	padding: 15px;
-	background-color: #fff;
-	border: 1px solid #C2C2C2;
-	margin-bottom: 30px
-}
-.hotel-destinations h2 {
-	border-bottom: 1px dashed #C2C2C2;
-	padding-bottom: 10px;
-	margin: 0 0 10px
-}
-.bottom-text-link {
-	padding-bottom: 10px
-}
-
-/**
- * Hotel By Destination Page CSS
- */
-.bpv-in-and-around, .bpv-filter-by {
-	padding: 15px;
-}
-.bpv-in-and-around .title, .bpv-in-and-around .sub-title, .bpv-filter-by .title {
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0 0 0 5px;
-}
-.bpv-in-and-around .sub-title {
-	margin: 0 0 5px 0; color: #666
-}
-.bpv-in-and-around li {margin-bottom: 7px}
-.bpv-in-and-around a {text-decoration: underline;}
-.des-group {
-	border-top: 1px dotted #ccc;
-	padding-top: 10px;
-	margin: 10px 0
-}
-.bpv-filter-by .title {
-	margin: 0 0 5px;
-	border-bottom: 1px dashed #ccc;
-	padding-bottom: 5px;
-	width: 100%
-}
-
-/**
- * Deals In Destination
- */
-.deal-in-des{
-	border:1px solid #e8e8e8;
-	background-color: #f7f7f7;
-	margin-bottom:30px;
-}
-.deal-in-des > .title{
-	border-bottom: 1px solid #e8e8e8;
-	height:44px;
-	padding: 0 30px;
-	color: #6b6b6b;
-}
-.deal-in-des > .content{
-	padding: 15px 30px;
-}
-
-.deal-in-des .row{
-	margin: 0 -8px;
-}
-
-.deal-in-des div[class*="col-"]{
-	padding: 0 8px;
-}
-
-.all-hotel-in-des {
-	border-top: 2px solid #E0E0E0;
-	padding: 15px 0;
-}
-
-.all-hotel-in-des h2{
-	margin-bottom: 15px;
-}
-
-.all-hotel-in-des .col{
-	width:20%;
-	padding-right:10px;
-	padding-bottom:10px;
-	float: left;
-}
-
-/**
- * BPV Item list - apply for Hotel
- */
-.bpv-list-item{
-	padding: 17px 15px;
-	border: 1px solid #d3d3d3;
-	position:relative;
-	background-color:#FFF;
-}
-
-.bpv-list-item:hover{
-	background-color:#fefefe;
-    box-shadow:3px 3px 4px 0 rgba(102, 175, 233, 0.6);
-}
-
-.bpv-list-item .call-us{
-	right:0;
-	bottom:0;
-	background-color:#fbefbf;
-	position:absolute;
-	padding:0px 10px;
-}
-
-.bpv-list-item .call-us .phone{
-	font-weight:bold;
-	font-size:14px;
-	color:#d86417;
-}
-
-.bpv-list-item div[class*="col-"]{
-	float:left;
-}
-
-.bpv-list-item > .col-1{
-	width: 19.85111662531017%; /*160px;*/
-}
-.bpv-item > .col-1 > img{
-	width:100%;
-}
-
-.bpv-list-item > .col-2{
-	width: 48.38709677419355%; /*390px;*/
-	padding-left:15px;
-}
-
-.bpv-list-item > .col-3{
-	width:13.58024691358025%;/*110px*/
-	padding-right:10px
-}
-
-.bpv-list-item > .col-4{
-	width:18.11414392059553%; /*146px*/
-}
-
-.bpv-list-item .item-name{
-	font-size:18px;
-}
-.bpv-list-item .item-name > span{
-	font-size:16px;
-}
-.bpv-list-item .bpv-important-facility{
-	padding: 2px 6px;
-}
-
-
-/**
- * Search Suggestion Page
+ * TAB Customize
  *
  */
-.hotel-search-suggestion{
-	width:60%;
-	margin: 40px auto;
+
+#tabs .ui-tabs-panel {
+	border-color: #DDD;
+	border-width: 0;
 }
 
-.hotel-search-suggestion h1{
-	margin-bottom:20px;
+#tabs .ui-widget-header {
+	border-color: #DDD;
+	border-bottom-width: 2px;
 }
 
-.hotel-search-suggestion p{
-	font-size:16px;
-	font-style:italic;
-	color:#666;
-	margin-top:20px;
+#tabs .ui-state-active {
+	border-color: #DDD;
+	border-width: 2px !important;
+	border-bottom-width: 0 !important;
 }
 
-.hotel-search-suggestion .search-results{
-	border: 1px solid #ccc;
-	padding:15px;
-	background-color:#FFF;
+#tabs .ui-state-default {
+	border-color: #DDD;
+	border-bottom-width: 0 !important;
 }
 
-.hotel-search-suggestion .suggestion-item{
-	padding: 10px 0;
-	border-bottom: 1px dashed #CCC;
+#tabs .ui-state-hover {
+	border-color: #DDD
 }
 
-.hotel-search-suggestion .suggestion-item a{
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+	padding-bottom: 2px;
+	top: 2px;
+}
+.ui-tabs .ui-tabs-nav li{
+	top: 3px;
+}
+
+.bpt_item{
+	margin-top: 15px;
+	border: 1px solid #DDD;
+}
+
+.bpt_item_name{
 	font-size: 16px;
 }
 
-.hotel-search-suggestion div[class*="col-"]{
-	float:left;
+.bpt_item_image{
+	width: 120px;
 }
 
-.hotel-search-suggestion .suggestion-item .col-1{
-	width:70%;
+.bpt_item .item_content{
+	width: 410px;
 }
 
-.hotel-search-suggestion .suggestion-item .col-2{
-	width:30%;
-}
-
-/*--- Hotel Deal In Destination---*/
-.deal-item-h-des{
-	max-height:264px; overflow:hidden;
-	position:relative;
-	cursor:pointer;
-}
-.deal-item-h-des .deal-img{
-	margin-top:-50px;
-}
-.deal-item-h-des .deal-content{
-	position:absolute;
-	width:100%;
-	min-height:95px;
-	background: url("/media/icon/deal_gray_bg.png") no-repeat right top;
-	color:#FFF;
-	text-align: right;
-	padding:10px 15px;
-}
-.deal-item-h-des .hotel-name{
-	font-size:22px;
-	font-weight:bold;
-}
-.deal-item-h-des .pro-name{
-	font-size:16px;
-}
-
-.deal-item-h-des .deal-value{
-	font-size: 26px;
-	font-weight:bold;
-}
-
-.deal-item-h-des .deal-offer{
-	position: relative;
-	float:right;
-	margin-right:-15px;
-	margin-top:10px;
-	
-	font-size:16px;
-	
-	background-color: #ff9900;
-	padding: 2px 10px;
-	background: url(/media/icon/deal_tag_bg.png) repeat;
-	height: 46px
-}
-
-.deal-item-h-des .deal-offer .deal-arrow {
-	background: url(/media/icon/orange_arrow_46.png) no-repeat;
-	width: 25px;
-	height: 46px;
+.bpt_item_review {
 	position: absolute;
-	left: -25px;
-	top: 0
-}
-.deal-item-h-des .go{
-	background: url("/media/icon/go.png") no-repeat right top;
-	width: 30px;
-	height: 30px;
-	margin-top:5px;
-	display: inline-block;
+	right: 0;
+	top: 5px;
+	width: 120px;
+	z-index: 1000;
 }
 
-.deal-item-h-des .deal-txt{
-	vertical-align:top;
+.bpt_item_review .review_text{
+	font-size: 16px;
 }
+
+#contentMain{float:right}
+#contentLeft{float:left}
+
+#search_area_home{float:left;width:460px;}
+#search_area_list{float:left;width:100%;}
+
+#hotel_faq_main{float:right;margin-top:10px;width:260px;border:1px solid #DDD;}
+#hotel_faq_list{float:left;margin-top:10px;width:259px;border:1px solid #DDD;}
+
+#date_picker img{cursor:pointer;margin:0px;margin-bottom:-3px;width:17px;height:16px;}
+
+#search_area_home{background-color:#FEBA02;}
+#search_area_home .row{clear:both;padding:7px 10px;}
+#search_area_home .row_inline{float:left;padding:7px 0 0 10px;}
+#search_area_home .column_label{display:block;float:left;width:100px;}
+#search_area_home .column_input{display:block;float:left;width:340px;}
+#search_area_home .column_input input {float: left;}
+.column_input .star input {float: left; padding: 0; margin: 0;}
+.column_input .star span {display: inline; float: left; margin-left: 5px}
+
+#search_area_home .column_arrive{display:block;float:left;width:210px;}
+#search_area_home .column_arrive select {float: left; padding: 0; margin: 0; margin-right: 7px; *float: none;}
+#search_area_home .column_arrive img {float: left;padding: 0; margin: 0; *float: none;}
+#search_area_home .nights{display:block;padding:7px 0 7px 10px;float:left;width:110px;}
+#search_area_home .nights .label{float:left;font-size: 12px}
+#search_area_home .nights select {float: left; padding: 0; margin: 0; margin-left: 5px}
+#search_area_home .nights .input{margin-left:3px;float:left;}
+#search_area_home .hotel_destination{width:330px;padding: 2px;}
+#search_area_home .hotelName{width:320px;}
+#search_area_home .star{width:250px;}
+#search_area_list{background-color:#FEBA02;min-height: 260px;}
+#search_area_list .row{clear:both;padding:5px 10px;}
+#search_area_list .row_inline{float:left;padding:5px 0 5px 10px;}
+#search_area_list .column_label{display:block;width:100%;}
+#search_area_list .column_input{display:block;width:100%;}
+#search_area_list .column_arrive{display:block;float:left;width:220px;}
+#search_area_list .nights{display:block;padding:5px 0 5px 10px;float:left;width:60px;}
+#search_area_list .hotel_destination{width:230px;}
+#search_area_list .hotelName{width:200px;}
+#search_area_list .star{width:206px;height:19px;}
+#search_area_list .search_button{float:right;margin-right:4px;}
+
+#top_destination_main {width:260px;float: right;margin-top: 10px; border: 1px solid #DDD}
+#top_destination_list {width:260px;float: left; margin-top: 10px; padding-bottom: 10px; background-color: #f8f8f8}
+
+
+.search_button {margin-bottom: 10px}
+.hotel_address{font-style:italic;color: #666;}
+.hotel_score{float:left;font-size: 12px;}
+.review_text {font-weight: bold;}
+.more_hotel{float:right;font-weight:normal;font-style:italic;text-decoration:underline; margin-top: 3px}
+
+#destination_header{background:#FFEEC0 none repeat scroll 0 0;border:1px solid #FEBA02;float:left;list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:0;width:100%;}
+#sort_by ul{background:#FFEEC0 none repeat scroll 0 0;border:1px solid #FEBA02;float:left;list-style-image:none;list-style-position:outside;list-style-type:none;padding:0;width:718px;}
+#sort_by ul li{border-right:1px dotted #FEBA02;color:#003580;display:block;float:left;font-weight:normal;margin:0;padding:0.6em 0.7em;position:relative;}
+#sort_by ul li.selected{font-weight:bold;-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:#FFF6DF none repeat scroll 0 0;padding-left:10px;}
+#sort_by ul li a:link{text-decoration:underline;}
+#sort_by li a, #sort_by li a:visited, #sort_by li span{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;text-transform:capitalize;white-space:nowrap;}
+
+
+#contentMainFooter{float:left;width:698px;background-color:#eeefef;padding:5px 10px;border:1px solid #DDD;margin-top: 10px;}
+#contentMainFooter .paging_text{float:left;}
+#contentMainFooter .paging_link{float:right;text-align:right;}
+
+.lst_all_hotels {width: 988px; float: left; margin-top: 15px; border: 1px solid #DDD}
+.lst_all_hotels ul {width: 99%; padding-left: 20px;}
+.lst_all_hotels ul li {float: left; width: 20%; margin-bottom: 7px;}

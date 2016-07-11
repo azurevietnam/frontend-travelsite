@@ -1,0 +1,108 @@
+/*! Home CSS of Best Price Project
+* http://www.bestpricevn.com
+* Includes: all minimal and needed css for the website
+* Copyright 2015 Bestpricevn.com */
+
+
+.seperation-line{
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.why-use-listing-text span { font-size:20px; color: #003580;}
+.why-use-listing-text p{ color:#2c2c2c; }
+.why-use-padding { padding-left:80px; }
+
+.home-promotion { border-top: 1px solid #CCCCCC; }
+
+.tripadvisor { 
+	width: 100%; 
+}
+
+.tripadvisor, .contact-support { 
+	height: 235px
+}
+
+.contact-support {
+	background-color: #fcfcfc; 
+	display: block;
+	position:relative;
+}
+
+.contact-support .help-desk { 
+	position: absolute; 
+	bottom: 0; 
+	left: 10px 
+}
+
+.help-earth {
+	position: absolute; 
+	right: 0px; 
+	bottom: 0px;
+}
+
+.support-text { 
+	padding: 30px 10px 0 190px; 
+}
+
+.support-text span {
+	font-weight: bold; 
+	font-size: 20px; 
+	display: block; 
+	margin-bottom: 5px 
+}
+
+.support-text p {
+	position:relative; 
+	font-size: 15px; 
+	display: block; 
+}
+
+.support-number {
+	position:inherit; 
+	display:block; 
+	padding: 15px 0 0 190px; 
+}
+
+
+/* Search form 
+--------------------------------------------------*/
+
+.search-form h2 {
+    font-size: 26px;
+    color: #FFF;
+}
+
+.search-form .btn-lg {
+  padding: 8px 16px;
+  font-size: 18.5px;
+  border-radius: 5px;
+}
+
+.search-form { padding:5px; min-height:322px}
+
+/* Autocomplete destination flight Search form 
+--------------------------------------------------*/
+
+.searh-form-home .custom-combobox-input {
+  	margin-left: -15px;
+  	padding: 2px 3px;
+ 	font-size: 12px;
+}
+.searh-form-home .custom-combobox {
+	width: 110%;
+}
+
+.ui-autocomplete {
+	width: 123px;
+}
+
+/* Best Seller
+   ========================================================================== */
+
+.best-seller {background-color: #fff;}
+.best-seller .text-headder { position:absolute; background-color: #4bb0fe; width:94.9%; height: 45px; color: white; font-size: 22px; text-align:center; padding: 7px 0; }
+.best-seller .best-seller-name { font-size: 18px; margin-bottom: 10px;}
+.best-seller .best-seller-content { float: left; padding: 5px 10px; background-color:#f9f9f9; border-bottom: 1px solid #FB0; border-right: 1px solid #FB0; border-left: 1px solid #FB0 ; width: 100%; padding-right: 10px; position: relative; z-index: 1 }
+
+ 
+

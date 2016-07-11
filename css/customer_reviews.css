@@ -1,0 +1,93 @@
+#general_customer_reviews{
+	float: left;
+	width: 100%;
+	padding-bottom: 15px;
+	/*background-color:#FFFFC9;*/
+	border: 1px solid #FEBA02;
+}
+
+#customer_type{
+	height: 100%;
+	width: 35%;
+	float: left;
+}
+
+#review_rate{
+	height: 100%;
+	width: 65%;
+	float: left;
+}
+
+#general_customer_reviews .list_review_items
+{
+	width: 100%;
+	margin-left: 20px;
+}
+
+#general_customer_reviews .list_review_items .item
+{	
+	cursor: pointer;
+	height: 15px;
+	width: 100%;
+	clear: both;
+	margin-top: 7px;
+}
+
+#general_customer_reviews .list_review_items .item span, input
+{	
+	cursor: pointer;
+}
+
+#general_customer_reviews .list_review_items .type
+{
+	width: 120px;
+	float: left;
+}
+
+#general_customer_reviews .list_review_items .item .line{
+	margin-top: 5px;
+	float: left;
+	height: 10px;
+	background-color: #FFFFFF;
+    border: 1px solid #91B155;
+    width: 200px;
+   
+}
+#general_customer_reviews .list_review_items .item .fill{
+	height: 100%;
+	background-color: #91B155;
+    display: block;
+    width: 50%;
+}
+
+.review_item{
+	float: left;
+	width: 100%;
+	border-color: #CCCCCC;
+	border-style: none none dashed;
+	border-width: 0 0 1px;
+}
+.review_item .customer{
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+.review_item .content{
+	float: left;
+	height: 100%;
+	width: 80%;
+}
+.review_row{
+	float: left;
+	clear: both;
+	padding: 2px 0px;
+}
+
+.review_row .col_1 {
+	float: left;
+	width: 90px;
+}
+.review_row .col_2{
+	float: left;
+	width: 100px;
+}

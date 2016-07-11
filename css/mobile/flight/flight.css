@@ -1,0 +1,355 @@
+.form-control {
+	padding: 5px 5px;
+}
+
+.flight-search-form {
+	font-size: 13px;
+}
+
+
+
+.bpv-search-waiting{
+	text-align:center;
+	margin:15px 0;
+}
+.bpv-search-waiting .ms1{
+	font-size: 20px;
+	margin-bottom:10px;
+	font-weight: bold;
+	
+}
+.bpv-search-waiting .ms2{
+	font-size: 16px;
+}
+
+.bpv-search-waiting img{
+	height:48px;
+}
+
+.bpv-color-warning {
+  color: #ba1c1d;
+}
+
+.text-header-content {
+	color: #003580;
+	padding-bottom: 5px;
+ 	border-bottom: 1px solid #CCC;
+}
+
+/**
+ * Search Loading
+ */
+ 
+.flight-waiting-summary{
+ 	padding:10px; 	
+ 	border:2px solid #ff9406;
+ 	background-color:#fff;
+}
+.flight-waiting-summary .checking-message{
+	text-align:center;
+	font-size: 28px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.flight-waiting-summary .col-1,
+.flight-waiting-summary .col-2{
+	float:left;
+}
+.flight-waiting-summary .col-1{
+	padding-right:15px;
+}
+
+.flight-waiting-summary .des{
+	font-size:18px;
+	margin-right:5px;
+}
+
+.flight-waiting-summary .go{
+	font-size:16px;
+	margin-right:5px;
+}
+
+.flight-depart-selected{
+	margin-bottom:10px;
+	padding:0 !important;
+	display:none;
+	border:0 !important;
+}
+.flight-depart-selected .header{
+	background-color: #64A542;
+	color:#FFF;
+	padding: 5px 15px;
+	margin:0;
+}
+.flight-depart-selected .content{
+	padding:10px;
+	border: 1px solid #64A542;
+}
+
+/**
+ * BPV Item list - apply for Flight
+ */
+ .bpv-search-bg{
+ 	padding:10px;
+ 	background-color:#f4f4f4;
+ 	border-radius:4x;
+ }
+.bpv-list-item{
+	padding: 10px 10px;
+	border: 1px solid #c8c8c8;
+	position:relative;
+	background-color:#FFF;
+}
+
+.bpv-list-item:hover{
+	background-color:#fefefe;
+    box-shadow:3px 3px 4px 0 rgba(102, 175, 233, 0.6);
+}
+
+.bpv-item-selected {
+  border: 1px solid #ff9406;
+}
+
+.flight-code{
+	font-size:14px;
+	font-weight:bold;
+}
+.bpv-list-item .bpv-price-from{
+	font-size:22px;
+	line-height:1;
+}
+.flight-seat{
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+.flight-details{
+	/*border-top: 1px dashed #EEE;
+	margin-top:10px;
+	padding-top:10px;*/
+}
+
+/**
+ * Flight Detail Item list - apply for Flight
+ */
+.flight-details h2{
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.flight-details .flight-price{
+	background-color:#EEE;
+	padding:10px;
+	height:100%;
+}
+.flight-details .price-row{
+	display: block;
+	margin-bottom: 10px;
+}
+.flight-details .price-label{
+	float:left;
+}
+.flight-details .price-value{
+	font-weight:bold;
+}
+
+.flight-details .price-total{
+	font-size: 16px;
+	font-weight: bold;
+}
+.flight-details .flight-route{
+	display: block;
+	width:100%;
+	padding:10px 0;
+	float:left;
+	border-bottom: 1px dashed #EEE;
+}
+
+.flight-details .fare-rules{
+	display: block;
+	width:100%;
+	float:left;
+}
+
+.flight-details .from{
+	float:left;
+	width:239px;
+}
+.flight-details .to{
+	float:left;
+	width: 239px;
+	margin-left:10px;
+}
+.flight-details .detail-row{
+	display: block;
+	margin-bottom:5px;
+}
+
+
+/**
+ * Icon Airline
+ */
+ 
+.flight-BL{
+	width: 49px; height: 29px; background-image: url(/media/flight/BL.gif);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.flight-VJ{
+	width: 49px; height: 29px; background-image: url(/media/flight/VJ.gif);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.flight-VN{
+	width: 49px; height: 29px; background-image: url(/media/flight/VN.gif);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+ * Table Passenger
+ */
+
+.tbl-passenger{
+	width: 100%;
+}
+
+.tbl-passenger tr td{
+	padding: 3px 2px 0px 2px;
+}
+
+.tbl-passenger select, .tbl-passenger input[type="text"] {
+	border: 1px solid #CCCCCC;
+    font-size: 12px;
+}
+.tbl-passenger input[type="text"] {
+    padding: 4px 5px;
+    width: 100%;
+}
+.tbl-passenger select {
+    padding: 3px 5px;
+}
+.tbl-passenger .td-separation{
+	padding-bottom:10px;
+}
+.red-border {border: 1px solid #FF0000 !important;}
+
+
+/*-------------- Flight Summary----------------
+-----------------------------------------------*/
+.flight-summary{
+	border: 1px solid #FEBA02;
+	display: block;
+}
+
+..flight-summary div{
+	display: block;
+}
+
+.flight-summary .header{
+	background-color:#FEBA02;
+	color:white;
+}
+
+.flight-summary .content{
+	padding: 0 15px;
+}
+
+.flight-summary h2{
+	padding: 5px 10px;
+	margin: 0 0 10px 0;
+}
+.flight-summary .row{
+	padding: 7px 5px;
+}
+
+.flight-summary .row-label{
+	width:40%;
+}
+.flight-summary .row-content{
+	float: right;
+	font-weight: bold;
+	width: 60%;
+	text-align:right;
+}
+.flight-summary .line{
+	border-bottom:1px solid #EEE;
+}
+.flight-summary .price-total{
+	font-size: 16px;
+	font-weight: bold;
+	text-align:right;
+}
+
+
+
+/*
+ *	Flight Calendar
+ *
+ */
+.cal-row{
+	margin-right:-10px;
+	margin-left:-10px;
+}
+.cal-col{
+	padding-left: 10px;
+	padding-right: 10px;
+	width:33.3333333%;
+	float:left
+}
+.cal-item{
+	border:1px solid #CCC;
+	color:#666;
+}
+.cal-item .week-day{
+	background-color:#EEE;padding:5px 0;font-weight:bold;
+}
+
+.cal-item .cal-date{
+	padding: 9px 0
+}
+.cal-selected{
+	border:2px solid #ffcc33;
+}
+.cal-selected .week-day{
+	background-color:#ffcc33;
+}
+.cal-selected .cal-date{
+	padding: 9px 0
+}
+
+.cal-active{
+	cursor: pointer;
+	color:#3385d6;
+}
+
+.cal-active:hover{
+	color:#FE8802;
+}
+
+.cal-arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #ffcc33;
+}
+
+/*
+ *	Flight Checkbox filter
+ *
+ */
+
+.bpv-filter-ariline .checkbox input[type="checkbox"], 
+.bpv-filter-ariline .checkbox-inline input[type="checkbox"] {
+	  margin-top: 8px !important;
+}
+
+.bpv-filter-time .checkbox input[type="checkbox"], 
+.bpv-filter-time .checkbox-inline input[type="checkbox"] {
+	  margin-top: 4px;
+}
+

@@ -19,7 +19,7 @@
 			
 			$wd = lang($wd);
 			
-			$str_date = date(DATE_FORMAT, $cal_date);
+			$str_date = date(DATE_FORMAT_DISPLAY, $cal_date);
 			
 			$cal_item_css = $i == 0 ? 'cal-selected' : '';
 			

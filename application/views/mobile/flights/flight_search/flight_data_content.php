@@ -1,51 +1,59 @@
 <?php if(isset($error_code)):?>
 	<?php 
-		echo load_flight_booking_exception($search_criteria, $error_code, $is_mobile);
+		echo load_flight_booking_exception($search_criteria, $error_code);
 	?>	
 <?php else:?>
-	<h3 class="bpv-color-title margin-bottom-20">
-		<?php if($flight_type == FLIGHT_TYPE_DEPART):?>
-			<?=lang_arg('select_your_departure', $search_criteria['From'], $search_criteria['To'], format_bpv_date($search_criteria['Depart'], DATE_FORMAT, true))?>
-		<?php else:?>
-			<?=lang_arg('select_your_return', $search_criteria['To'], $search_criteria['From'], format_bpv_date($search_criteria['Return'], DATE_FORMAT, true))?>
-		<?php endif;?>
-	</h3>
-	
-	<?=load_flight_search_calendar($flight_type, $search_criteria, $sid)?>		
+
+	<div class="margin-bottom-15">
+		<h2 class="bpv-color-title margin-bottom-15">
+			<?php if($flight_type == FLIGHT_TYPE_DEPART):?>
+				<?php echo '<span class="text-highlight">'. lang('select_your_departure') . ' '. $search_criteria['From']. ' - ' . $search_criteria['To'] .': ' . format_bpv_date($search_criteria['Depart'], DATE_FORMAT_DISPLAY, true) . '</span>'?>
+			<?php else:?>
+				<?php echo '<span class="text-highlight">'. lang('select_your_return') . ' '. $search_criteria['To']. ' - ' . $search_criteria['From'] .': ' . format_bpv_date($search_criteria['Return'], DATE_FORMAT_DISPLAY, true) . '</span>'?>
+			<?php endif;?>
+		</h2>
+		
+		<?=load_flight_search_calendar($flight_type, $search_criteria, $sid)?>
+		
+	</div>
 	
 	<div id="flight_search_result_area">
-	
-		<div class="row margin-bottom-10">
-				<?php 
-					$call_us = load_bpv_call_us_number(FLIGHT);
-				?>
-				<?php if(!empty($call_us)):?>
-			    <div class="search-call-us pull-left">
-		           <span class="glyphicon glyphicon-earphone"></span> <a href="tel:<?=format_phone_number($call_us)?>"> <?=$call_us?></a>
-		        </div>
-		        <?php endif;?>
-	      
-		        <div class="pull-right text-right no-padding">
-			        <button type="button" class="btn btn-default btn-filter" data-target="#bpv-filter">
-					    <?=lang('filter_result')?> <span class="caret"></span>
-					</button>
-					<button type="button" class="btn btn-default btn-filter" data-target="#bpv-sort">
-					    <?=lang('sort_by')?> <span class="caret"></span>
-					</button>
-				</div>
+		<div class="row margin-bottom-10 text-right clearfix">
+	       	<div class="col-xs-3"></div>
+	        <div class="col-xs-4">
+	            <button type="button" class="btn btn-default btn-block btn-filter" data-target="#bpv-sort">
+	        	    <?=lang('sort_by')?> <span class="caret"></span>
+	        	</button>
+	        </div>
+	        <div class="col-xs-5 padding-left-0">
+	            <button type="button" class="btn btn-default btn-block btn-filter" data-target="#bpv-filter">
+	        	    <?=lang('filter_results')?> <span class="caret"></span>
+	        	</button>
+	    	</div>
+	    </div>
+	    <div id="bpv-sort" class="bpv-s-content">
+	        <?=$sort_by_view?>
+	    </div>
+	    
+	    <div id="bpv-filter" class="bpv-s-content">
+	        <?=$flight_search_filters?>
 		</div>
-
-		<div id="bpv-sort" class="bpv-s-content">
-			<?=$sort_by_view?>
-		</div>
-		
-		<div id="bpv-filter" class="bpv-s-content">
-			<?=$flight_search_filters?>
-		</div>
-	
-		
-		<div class="margin-top-10 text-right">(<?=lang('price_include_desc')?>)</div>
-		
+		<script type="text/javascript">
+	        $('.btn-filter').bpvToggle(function(data) {
+	            if( $('#bpv-sort').is(":visible") && data['id'] != '#bpv-sort') {
+	                $('#bpv-sort').hide();
+	            }
+	            if( $('#bpv-filter').is(":visible") && data['id'] != '#bpv-filter') {
+	                $('#bpv-filter').hide();
+	            }
+	        });
+   		</script>
+   			
+		<div>
+			<p class="margin-top-10" style="margin-bottom: 0px; font-size: 13px;">
+				<?=lang('price_include_desc')?>
+			</p>
+   		</div>
 		<div id="rows_content">
 			
 		<?php foreach ($flight_data as $flight):?>	
@@ -63,50 +71,41 @@
 			<div class="row" id="flight_content_<?=$flight['Seg']?>">			
 				<div class="col-xs-3">
 					<span class="flight-<?=$flight['Airlines']?>"></span>
+					<span class="flight-name"><?=$domistic_airlines[$flight['Airlines']]?></span>			
 				</div>
 				
-				<div class="col-xs-3">
-					<?=$flight['FlightCode']?>
+				<div class="col-xs-5">
+					<div class=""><?=$flight['FlightCode']?></div>
+					<div class="flight-code"><?=format_flight_time($flight['TimeFrom'])?> - <?=format_flight_time($flight['TimeTo'])?></div>
+					
 				</div>
-			
-				<div class="col-xs-6 text-right">
-					<div class="bpv-price-from">
-						<?=bpv_format_currency($flight['PriceInfo'][0]['ADT_Fare'])?><small><?=lang('per_ticket')?></small>
+				
+				
+				<div class="col-xs-4 padding--0 text-right">
+					<div> 
+						<span class="price-from"><?=CURRENCY_SYMBOL?><?=convert_vnd_to_usd($flight['PriceInfo'][0]['ADT_Fare'])?></span><small class="text-unhighlight"> <?=lang('per_pax')?></small>
 					</div>
-				</div>
-			
-			</div>
-			
-			<div class="row">
-				<div class="col-xs-3">
-					<?=$domistic_airlines[$flight['Airlines']]?>
-				</div>
-				
-				<div class="col-xs-4" style="padding-right:0">
-					<b><?=format_flight_time($flight['TimeFrom'])?> - <?=format_flight_time($flight['TimeTo'])?></b>
-				</div>
-				
-				<div class="col-xs-5 text-right">
 					<?php if($flight['Seat'] > 0 && $flight['Seat'] < 7):?>
-						<div class="flight-seat">
+						<div class="flight-seat margin-top-5">
 							<?=lang_arg('flight_seat_available', $flight['Seat'])?>
 						</div>
 					<?php endif;?>
+					
 				</div>
-			</div>
-		
 			
-			<div class="row" style="margin-top:15px">
-				<div class="col-xs-8">
-					<span class="show-detail"><a id="show_<?=$flight['Seg']?>" href="javascript:show_flight_detail('<?=$sid?>',<?=$flight['Seg']?>,'<?=$flight_class?>','<?=$flight_stop?>','<?=$flight_type?>')"><?=lang('show_flight_detail')?></a></span>
+			</div>
+			
+			<div class="row margin-top-10">
+				<div class="col-xs-7">
+					<span class="show-detail "><a id="show_<?=$flight['Seg']?>" href="javascript:show_flight_detail('<?=$sid?>',<?=$flight['Seg']?>,'<?=$flight_class?>','<?=$flight_stop?>','<?=$flight_type?>')"><?=lang('flight_show_details')?></a></span>
 				</div>
 				
-				<div class="col-xs-4">
+				<div class="col-xs-5" style="padding-left: 0px;">
 					<button id="select_<?=$flight['Seg']?>" onclick="select_flight('<?=$flight['Seg']?>','<?=$flight_type?>')" 
-					type="button" class="btn btn-bpv btn-book-now pull-right" data-loading-text="<?=lang('flight_processing')?>"><?=lang('select_flight')?></button>			
+					type="button" class="btn btn-yellow pull-right" data-loading-text="<?=lang('flight_proceed_checkout')?>"><?=lang('select_flight')?></button>			
 				</div>
 			</div>
-			<div class="flight-details" id="flight_detail_<?=$flight['Seg']?>" loaded="0" style="display:none" show="hide">
+			<div class="flight-details margin-top-15" id="flight_detail_<?=$flight['Seg']?>" loaded="0" style="display:none;" show="hide">
 			</div>
 		</div>
 		
@@ -114,26 +113,17 @@
 		
 		</div>
 		
+		
 		<script type="text/javascript">
 			var airlines = <?=json_encode($airlines)?>;
 			var selected_airline = '<?=isset($search_criteria['Airline'])? $search_criteria['Airline'] : ''?>';
 			create_airline_filters(airlines, selected_airline);
 	
-			$('.btn-filter').bpvToggle(function(data) {
-		        
-		        if( $('#bpv-sort').is(":visible") && data['id'] != '#bpv-sort') {
-		            $('#bpv-sort').hide();
-		        }
-		        if( $('#bpv-filter').is(":visible") && data['id'] != '#bpv-filter') {
-		            $('#bpv-filter').hide();
-		        }
-		    });
-
 			<?php if(!empty($selected_departure)):?>
 				update_selected_depature_flight('<?=$selected_departure?>', '<?=$sid?>');
 			<?php endif;?>
-		
 		</script>
-		
+	
 	</div>
+	
 <?php endif;?>

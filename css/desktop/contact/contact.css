@@ -1,0 +1,46 @@
+.bpt-contact h3{
+}
+
+.bpt-contact ol label{
+    /*padding-top: 7px;*/
+
+}
+
+.bpt-contact h1  {
+    color: #FF8613;
+}
+
+.bpt-contact ol  {
+    margin-top: 0px;
+}
+
+.bpt-contact .people-group label {
+    padding-top: 7px;
+}
+
+.bpt-contact .clearfix {
+    margin-bottom: 15px;
+}
+
+.bpt-contact ol h4{
+    font-weight: bold;
+    border-bottom: #D2D2D2 solid 2px;
+    padding-bottom: 15px;
+}
+
+.ui-datepicker-trigger{
+    float: left;
+}
+
+.bpt-contact .ui-datepicker-trigger {
+    position: absolute;
+    top: 3%;
+    left: 100%;
+    z-index: 1;
+    width: 16px;
+    height: 15px; // height of the button + a little margin
+    opacity: 0;
+}
+
+.bpt-contact .text-danger {
+}

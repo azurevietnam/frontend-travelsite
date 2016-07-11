@@ -1,0 +1,30 @@
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+
+.coin-slider { overflow: hidden; zoom: 1; position: relative; margin: 10px;}
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 8px; width: 8px; float: left; border: 1px solid #EB7515; color: #B8C4CF; text-indent: -1000px; }
+.cs-active { background-color: #EB7515; color: #FFFFFF; }
+
+.cs-title { width: 438px; padding: 10px; background-color: #000000; color: #FFFFFF; padding-left: 20px;}
+
+.cs-prev, 
+.cs-next { background-color: #000000; color: #FFFFFF; padding: 0px 10px; }
+
+.coin-slider-header {height: 35px;overflow:hidden;background-color: #F0F0F0;color:#323232}
+
+.coin-slider-header div.title {float: left;}
+.coin-slider-header h2 {font-size: 1.6em;font-weight: bold;line-height: 1.1em;letter-spacing: -0.2px;}
+
+.coin-slider-header #carousel {float: right;margin-top: 5px;}
+
+.coin-slider-body {border: 1px solid #e8e8e8;}
+
+.coin-slider-body .description {float: right; width: 240px; padding-top: 10px; margin-right: 10px;}
+
+#slideTitle {font-size: 1.538em;font-weight: bold;letter-spacing: -0.1px;}

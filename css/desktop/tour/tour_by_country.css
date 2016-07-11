@@ -1,0 +1,68 @@
+.show-more { float: left; width: 100%; text-align: right; }
+.show-more a { text-decoration: underline; font-style: italic;  }
+
+/* Travel Styles
+----------------------------------*/
+.travel-styles img { border-radius: 5px; width: 195px; height: 130px; display: block; background-color: #eee }
+.travel-styles .item-style { margin-top: 3px }
+.travel-styles .item-style a { font-size: 16px }
+.travel-styles .item-style p { font-size: 11px }
+.travel-styles h4 { border-bottom: 2px solid #ccc; font-weight: bold; padding-bottom: 5px }
+.more-des-ts a { font-size: 13px }
+
+/* Cities
+----------------------------------*/
+.cities {
+	background-color: #F8F8F6;
+	padding: 5px 10px 5px;
+	overflow: hidden;
+}
+
+.cities .city-grid {
+	border: 1px solid #F8F8F6;
+	border-top: 1px solid #E2E6EF;
+	padding: 10px;
+	display: block;
+	width: 46%;
+	float: left;
+	margin-right: 4%;
+	position: relative;
+}
+.cities .city-grid:first-child, .cities div.city-grid:first-child + div { border-top: 1px solid #F8F8F6;  }
+
+.cities .city-grid a {
+	font-size: 14px;
+	display: block;
+	margin: -5px 0 5px 0
+}
+
+.cities .city-desc {
+	width: 200px
+}
+
+.cities .city-grid .glyphicon-chevron-right {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -4px;
+	font-size: 8px;
+	color: #EB8F00
+}
+
+.city-grid:hover {
+	border: 1px solid #EB8F00 !important; cursor: pointer;
+}
+.city-grid:hover a { color: #EB8F00 }
+.city-grid a:hover, .city-grid a:focus { text-decoration: none; }
+
+.indochina-countries { background-color: #F8F8F6; display: block; padding: 15px 15px 0; overflow: hidden; border-radius: 10px }
+.indochina-countries img { float: left; margin-right: 10px }
+.indochina-countries .country { float: left; width: 600px }
+.indochina-countries .country-name { font-size: 16px; margin: -5px 0 10px; display: block; }
+.indochina-countries li { float: left; width: 100%; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dotted #999; }
+.indochina-countries li:last-child { border: 0; padding-bottom: 0 }
+.country-style { float: left; width: 33.33% }
+
+/* Best tours of destination
+----------------------------------*/
+.best-of-des .bpt-item:first-child { border-color: #FD8902 }

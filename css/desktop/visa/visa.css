@@ -1,0 +1,502 @@
+/* Box style
+----------------------------------*/
+.box-gray {
+	display: block;
+	border-right: 1px solid #E0E0E0;
+	border-width: 2px 1px 1px;
+	border-style: solid;
+	border-color: #D9D9D9 #E0E0E0 #E0E0E0;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.box-left {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	border-color: #E0E0E0 #E0E0E0 #D9D9D9;
+	padding: 10px
+}
+
+.visa_note {
+    color: #666;
+}
+
+/* Visa Apply Form
+----------------------------------*/
+.searh-form-position { top: -352px }
+.searh-form-position, .search-form-type-2 { height: auto; }
+.search-form .item-label { font-weight: bold; margin-top: 3px; white-space: nowrap; }
+.search-form-type-2 { line-height: normal; }
+.search-form { padding: 5px; }
+.search-form h2 { padding: 5px 0px 0px 1px }
+
+/* Visa Home
+----------------------------------*/
+.sub-header { font-size: 14px }
+
+.visa-home .tripadvisor, .visa-home .visa-requirement-box { margin-top: 5px !important; }
+.visa-home .visa-service-box { position: absolute; top: -117px; left: 0; width: 100% }
+.visa-requirement-box .btn-green { font-size: 16px; border-width: 0 0 3px 0; padding: 6px 20px 4px  }
+
+.icon-voa-step-1 { background-position: -443px -270px; width: 27px; height: 27px }
+.icon-voa-step-2 { background-position: -371px -389px; width: 27px; height: 27px }
+.icon-voa-step-3 { background-position: -400px -389px; width: 27px; height: 27px }
+.icon-voa-step-2, .icon-voa-step-3 { margin: -2px 2px 3px 0 }
+.icon-voa-step-1 { margin: -3px 5px 4px 0 }
+
+.visa-requirement-box {
+	display: block;
+	position: relative;
+	background-color: #FFFFC9;
+	padding: 10px;
+}
+
+.visa-requirement-box select {
+	border: 2px solid #FE8802;
+	float: left;
+	padding: 7px 10px;
+	width: 100%;
+	font-size: 13px;
+}
+
+.servicetit {
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 2px solid #75A362;
+	padding-bottom: 0px;
+	display: block;
+}
+
+.service-content {
+	color: #444;
+	padding: 5px 0 0;
+	line-height: 18px;
+	display: block;
+}
+
+.servicebox .box-content {
+	padding: 5px 10px;
+	overflow: hidden;
+	border-radius: 0;
+	border: 1px solid #fff;
+	background-color: #fff;
+	display: block;
+}
+
+.servicebox .box-content:hover {
+	border-color: #FCA903;
+	cursor: pointer;
+}
+
+.servicebox .line-2 { border-color: #32829D }
+.servicebox .line-3 { border-color: #FEAA61 }
+
+.box-content label {
+	font-size: 12px;
+	float: right;
+	font-weight: normal;
+	margin: -10px 0 0
+}
+
+.box-content label:hover {
+	cursor: pointer;
+}
+
+.servicebox a {
+	text-decoration: none;
+}
+
+.voa-information {
+	background-color: #fff;
+	display: block;
+	overflow: hidden;
+	padding: 10px 0;
+	border: 1px solid #E1E1E1;
+}
+
+.voa-information h2 {
+	border-bottom: 2px solid #ddd;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	font-weight: normal;
+	font-size: 16px
+}
+
+.voa-information .voa-benefit {
+	padding-left: 15px;
+	margin-bottom: 0
+}
+
+.voa-information .voa-benefit li {
+	margin-bottom: 10px
+}
+
+.voa-information .voa-benefit li:last-child {
+	margin-bottom: 0
+}
+
+.voa-information .visa_note {
+	font-size: 11px;
+	color: #666
+}
+
+.voa-information .why_apply_us {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 0
+}
+
+.voa-information .voa-why-us {
+	margin: -2px 0 0 0;
+}
+
+.voa-information .voa-why-us li {
+	background: url('/media/icon_checklist.png') no-repeat left center;
+	padding: 5px 5px 5px 25px;
+	margin: 0;
+}
+
+.voa-information .voa-why-us .summary {
+	background: 0;
+	padding: 0 0 0 25px;
+	font-size: 11px;
+}
+
+.voa-benefit {
+    color: #333;
+}
+
+.voa-benefit  li {
+    line-height: 21px;
+    margin-bottom: 10px;
+    font-size: 11px
+}
+
+.voa-benefit a {
+    font-size: 13px;
+}
+.how-apply-visa tr{
+    border-bottom: 15px solid #FFFFFF;
+}
+
+.how-apply-visa tr td{
+    padding-right: 10px;
+}
+
+.how-apply-visa tr .step{
+    padding: 0 10px;
+}
+
+.how-apply-visa .step {
+    background-color: #F7F7F7;
+    border-left: 3px solid #E9E9E9;
+    padding: 20px;
+}
+
+.how-apply-visa .step ul li{
+    margin-left: -25px;
+}
+
+.boxBlue {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    border: 1px dashed #97D1F4;
+    padding: 20px 0;
+    background-color: #EFF7FD;
+    position: relative;
+}
+/* Icons
+----------------------------------*/
+.icons-visa {
+	background-image: url("/media/visa/icons-visa.png");
+	background-repeat: no-repeat !important;
+	display: inline-block;
+	*vertical-align: middle;
+}
+
+.icon-opt1, .icon-opt2 {
+	width: 73px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.icon-opt1 label, .icon-opt2 label {
+	color: #fff;
+	padding-left: 9px;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 3px
+}
+
+.icon-opt2 {
+	background-position: 0 -25px
+}
+
+/* How it works
+----------------------------------*/
+.how-it-works { border: 1px solid #E0B068; padding: 10px; background-color: #F7F7F7; margin-bottom: 15px }
+.how-it-works h2 { font-weight: bold; margin-bottom: 0 }
+.how-it-works .sub-title { font-size: 16px; margin-top: 3px }
+.hiw_step {
+	background-color: #ECECEC;
+	border: 2px solid #fff;
+	border-width: 2px 0 2px 2px;
+	border-radius: 30px 0 0 30px;
+	font-size: 16px;
+	margin: 0 -10px 5px 0;
+	padding: 10px 10px 10px 35px;
+	color: #486E9F;
+	font-style: italic;
+	position: relative;
+}
+.hiw_step span { color: #7C9FBD; font-size: 30px; font-weight: bold; position: absolute; left: 10px; top: 0; font-style: normal; }
+
+/* Visa for citizens
+----------------------------------*/
+#visa-citizens .title {
+	font-weight: bold;
+}
+
+.voa-why-us {
+	list-style: none;
+	padding-left: 0
+}
+
+.voa-why-us li {
+	background: url("/media/icon_checklist.png") no-repeat scroll left center
+		transparent;
+	padding: 5px 5px 5px 25px;
+	margin: 0px;
+}
+
+.voa-why-us .summary {
+	background: none repeat scroll 0px center transparent;
+	padding: 0px 0px 0px 25px;
+	font-size: 11px;
+}
+
+.table-rates thead td { vertical-align: middle !important; background-color: #F0F0F0 }
+
+/* Tracker
+----------------------------------*/
+#breadCrumb0 {
+	float: left;
+    margin-left: 10px;
+    width: 240px;
+}
+
+#breadCrumb0 .breadCrumb_text {
+	color: #666666
+}
+
+.breadCrumb_stepNo {
+	background-position: -381px -1px;
+	width: 22px;
+	height: 19px;
+    color: #FFFFFF;
+    margin-right: 3px;
+    padding-left: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3,#breadCrumb4,.breadCrumb_stepNo,.breadCrumb_text
+	{
+	float: left;
+	line-height: 19px;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3,#breadCrumb4 {
+	margin-left: 20px;
+}
+
+.breadCrumb_text {
+	color: #999999;
+	margin-top: 1px
+}
+
+.currentStep .breadCrumb_stepNo {
+	background-position: -406px -1px;
+}
+
+.currentStep .breadCrumb_text {
+	color: #FF6600;
+}
+
+#tracker {
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	background-color: #F8F8F8;
+	padding: 5px 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #F8F8F8;
+	border-right: 1px solid #F8F8F8;
+}
+
+/* Visa Apply Page
+----------------------------------*/
+.visa-rates {
+	border: 1px solid #FCA903;
+	border-width: 3px 1px 1px;
+	border-radius: 2px;
+	background-color: #FFFFC9;
+	overflow: hidden;
+}
+
+.visa-rates h2 {
+	border-bottom: 1px dashed #FCA903;
+	padding: 10px
+}
+
+.rate-calc {
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	float: left;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	background-color: #fff
+}
+
+.rate-calc ul li {
+	width: 100%;
+	float: left;
+}
+
+.rate-arrow {
+	position: absolute;
+	left: -10px;
+	top: 25px;
+}
+
+.rate-arrow .arrow-before {
+	height: 0;
+	width: 0;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-right: 9px solid #DDDDDD;
+	left: 1px;
+	position: absolute;
+}
+
+.rate-arrow .arrow-after {
+	height: 0;
+	width: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 9px solid #FFFFFF;
+	left: 2px;
+	top: 1px;
+	position: absolute;
+}
+
+#your_selections {
+	font-style: italic;
+	text-align: right;
+}
+
+#your_selections li {
+	line-height: 18px
+}
+
+.hr {
+	border-bottom: 1px solid #F3F3F3;
+	margin-bottom: 5px;
+	padding-bottom: 5px
+}
+
+#div_discount, #div_total_fee {
+	display: none;
+	height: 18px
+}
+
+#div_total_fee {
+	display: block;
+	border-top: 1px solid #F3F3F3;
+	padding-top: 5px;
+	position: relative;
+}
+
+#visa_price_note {
+	font-size: 11px;
+	color: #666;
+}
+
+.process_note {
+	font-size: 11px;
+	font-style: italic;
+	color: #b20000;
+	margin-top: 5px;
+}
+
+.apply-visa .tripadvisor {
+	margin-top: 0
+}
+
+.processing-time .radio {
+	padding-top: 0
+}
+
+/* Visa Payment
+----------------------------------*/
+.border-title, .payment-contact-form .bpt-contact h2 {
+	padding: 10px 0px 0;
+	margin-top: 30px;
+	border-top: 2px solid #CCC;
+}
+
+.payment-contact-form .bpt-contact { background: none; padding: 0; overflow: hidden; }
+.payment-contact-form .bpt-contact h2 { font-size: 21px }
+
+#dv_err { display: none; font-size: 13px; }
+
+/* Visa Guides */
+
+.list-app-step li{
+    margin: 0 10px 20px -20px;
+}
+
+.nations {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 20px
+}
+
+.nations .embassies {
+    border-top: 1px solid #E9E9E9;
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+}
+.nations .number {
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 20px;
+    float: left;
+}
+.nations .list {
+    float: left;
+    width: 640px;
+    margin-left: 20px;
+    margin-top: -5px
+}
+
+.nations .list li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 150px;
+}

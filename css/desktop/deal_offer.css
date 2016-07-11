@@ -1,0 +1,172 @@
+.f-clear {float: left; clear: both;}
+.small {font-size: 11px;}
+.travel-date {margin-top: 5px}
+
+.departue_month {
+    float: left;
+    width: 100%;
+}
+
+.departue_month li {
+    float: left;
+    padding: 5px 0 5px 5px;
+    margin-right: 10px;
+    width: 10%;
+}
+
+.date_selected {
+    font-weight: bold;
+    color: #003580
+}
+
+#searchForm {height: 300px}
+#searchForm .row_des{margin-top:0}
+
+/*Hotel Search Form*/
+#frmHotelSearchForm .row {
+    clear: both;
+    padding: 5px 0px;
+}
+
+#frmHotelSearchForm .row_inline {
+    float: left;
+    padding: 5px 0 5px 10px;
+}
+
+#frmHotelSearchForm .column_arrive {
+    display: block;
+    float: left;
+    width: 200px;
+}
+
+#frmHotelSearchForm .nights {
+    display: block;
+    padding: 5px 0 5px 10px;
+    float: left;
+    width: 60px;
+}
+
+#frmHotelSearchForm .hotel_destination {
+    width: 230px;
+}
+
+.left_list_item_block {border: 1px solid #F8F8F8}
+
+h2 .icon {margin-top: -3px}
+
+.most_recommend_junks {
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.most_recommend_junks li {
+    float: left;
+    padding: 0 14px 14px 0;
+}
+
+.boxFeature {
+    float: left;
+    padding: 7px;
+    width: 32%;
+    min-height: 330px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px 0 #ccc;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin: 0 14px 14px 0;
+}
+
+.boxFeature:hover{
+    border: solid 1px #EB8F00;
+}
+
+.descFea {
+    display: block;
+    font-size: 12px
+}
+
+.titFeatured a {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 0;
+    float: left;
+}
+
+.price_block{text-align: right; position: absolute; bottom: 5px; right: 7px}
+.boxFeature .btn-yellow{text-align: left; position: absolute; bottom: 5px; left: 7px}
+.price_block span {padding-left: 3px}
+.price_from{font-size:24px}
+.b_discount {font-size: 14px; color: #666}
+
+.descFea li {padding: 0}
+
+.imgFeature {
+    display: block;
+    overflow: hidden;
+}
+.imgFeature img {
+    background-color: #EEEEEE;
+    float: left;
+}
+.hot-deal-off {
+    background-image: url("/media/hot_deal_off.png");
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 7px;
+    right: 7px
+}
+.hot-deal-off span {color: #FFFFFF;float: left;font-size: 11px;padding: 7px 0 0 6px; font-weight: bold;}
+
+.btnBestDeal {
+    background-color: #FEDA02;
+    border: 1px solid #FEBA02;
+    bottom: 5px;
+    position: absolute;
+    left: 7px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    color: #003580;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.special {
+    color: #FE8802;
+    margin-left: -40px;
+}
+
+.search-form {
+  padding: 5px;
+}
+
+.search-form input[type="radio"], .search-form input[type="checkbox"] {
+    margin-top: 4px;
+}
+
+.search-form .tab-content {
+     height: auto; 
+}
+
+.bpt-ui-widget-content {
+ 	max-height: 400px !important;
+ 	overflow-y: auto !important;
+  	overflow-x: hidden !important;
+  	z-index: 1000 !important;
+	width: 170px !important;
+}
+
+  .searh-form-home .custom-combobox-toggle {
+	margin-left: -31px;
+  }
+  
+.searh-form-home .custom-combobox-input {
+  margin-left: -1px;
+  padding: 0px 3px;
+  width: 80%;
+  font-size: 12px;
+}
+

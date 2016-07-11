@@ -1,0 +1,154 @@
+/* ----- Table Style Sheet -----*/
+.border {
+	font-size: 12px;
+	border-top: 1px solid #7BA0CD;
+	border-left: 1px solid #7BA0CD;
+	empty-cells: show;
+}
+.border thead {
+	font-weight:bold; background-color: #D3DFEE;
+	color: #333;
+}
+
+.border thead th {
+	border-bottom: 1px solid #7BA0CD;
+	border-right: 1px solid #7BA0CD;
+	padding: 4px 4px 4px 4px;
+}
+
+.border td {
+	border-bottom: 1px solid #7BA0CD;
+	border-right: 1px solid #7BA0CD;
+	padding: 4px 4px 4px 4px;
+}
+
+/**
+ * Customer Booking Management
+ * 
+ */
+.current{
+	color: rgb(156,101,0);/*red*/
+}
+
+.near{
+	color: #FE8802;/*;rgb(156,101,0)*/
+}
+
+.past{
+	color: rgb(0,97,0);/*green;#00CD00;*/
+}
+
+.current_booking{
+	background-color: rgb(255, 199, 206);
+	color: rgb(156,101,0);
+}
+
+.near_booking{
+	background-color: rgb(255, 235, 156);
+	color: rgb(156,101,0);
+}
+
+.past_booking{
+	background-color: rgb(198,239,206);
+	color: rgb(0,97,0);
+}
+
+/**
+ * customer booking color
+ */
+.new{
+	/*color: maroon;*/
+}
+.pending{
+	background-color: rgb(255, 199, 206);
+	color: rgb(156,101,0);
+}
+.deposited{
+	background-color: rgb(255, 235, 156);
+	color: rgb(156,101,0);
+}
+.fully_paid{
+	background-color: rgb(198,239,206);
+	color: rgb(0,97,0);
+}
+.cancelled{
+	background-color: rgb(255, 199, 206);
+	color: rgb(156,101,0);
+}
+.close_win{
+	background-color: rgb(198,239,206);
+	color: rgb(0,97,0);
+}
+.close_lost{
+	background-color: rgb(255, 199, 206);
+	color: rgb(156,101,0);
+}
+
+/**
+ * reservation color
+ */
+
+.r_new{
+	color: black;
+}
+
+.blocked{
+	
+	/*color: rgb(156,101,0);*/
+
+	color: #FE8802;
+}
+.reserved{
+	
+	color: rgb(0,97,0);
+}
+.r_cancelled{
+	color: rgb(156,101,0);
+}
+
+.actual_selling, .actual_profit{
+	color: rgb(0,97,0);
+}
+.customer_wrapper {
+	padding: 0 20px 0 20px;
+}
+
+.customer_panel_title {
+	height: 29px;
+}
+
+.customer_title {
+	float: right; padding-top: 6px; padding-right: 8px;
+}
+
+.customer_title a {
+	padding-left: 30px; color: #08C; font-weight: bold;
+}
+
+.form_label{
+	color: #666; text-align: left; font-weight: bold; white-space: nowrap;
+}
+.panel_title {
+	border-bottom: 1px solid #3588DC; margin-bottom: 10px;
+}
+
+.panel_title span {
+	background-color: #3588DC; padding: 5px 20px 5px 20px; color: #fff;
+}
+
+#myBooking {
+	margin-top: 15px; margin-left: 15px;
+}
+
+.login_form {
+	margin:auto; border: 0px solid #E5E5E5;
+	width: 330px; padding: 15px; background-color: #FEBA02; color: #222;
+	font-weight: bold;
+}
+.login_form table {
+	border-spacing: 6px;
+}
+
+.login_form a {
+	 color: #333; font-weight: normal;
+}

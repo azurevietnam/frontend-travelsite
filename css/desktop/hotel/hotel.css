@@ -1,0 +1,15 @@
+.bpt-tab .nav-tabs  li  a {
+    padding: 8px 18px;
+}
+
+.lst_all_hotels ul li {
+    float: left;
+    width: 20%;
+    margin-bottom: 7px;
+}
+
+.lst_all_hotels .special {
+    font-size: 10px;
+    padding-bottom: 5px;
+    color: #FE8802;
+}

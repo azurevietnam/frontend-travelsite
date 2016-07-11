@@ -1,0 +1,404 @@
+/* Tour Header
+   ========================================================================== */
+.bp-header { display: block; }
+
+.bp-header-img { float: left; width: 40% }
+
+.bp-header-tour { float: left; width: 60%; background-color: #F7F7F7; padding: 10px 0 10px 10px; height: 364px }
+
+.bp-header-tour .price-tag { margin-top: -10px }
+
+.col-label { width: 100px; display: inline-block; vertical-align: middle; }
+
+.col-content { width: 540px; display: inline-block; vertical-align: text-top; }
+
+.col-license { float: left; width: 68.4138%; }
+
+.bp-header .col-label { font-weight: normal; color: #111; font-size: 13px }
+
+.bp-header .col-special-offer {
+	float: left;
+	background-color: #FA7904;
+	color: #fff;
+	padding: 1px 5px 1px 5px;
+	margin-right: 11px;
+	font-weight: bold;
+	position: relative;
+	height: 20px
+}
+
+.col-special-offer .sp-arrow {
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 0px 10px 6px;
+	border-color: transparent transparent transparent #FA7904;
+	position: absolute;
+	top: 0px;
+	right: -6px;
+}
+
+.col-price { float: right; width: 31.5862%; }
+
+.col-info { clear: both; }
+
+.col-info .col-content { width: 560px }
+
+.col-desc a.btn-more { text-decoration: underline; }
+
+.col-desc #full_desc { display: none; }
+
+.col-departure { background-color: #EAF4FE; border: 1px solid #fff; border-width: 1px 0; padding: 5px 0 5px 10px; margin: 0 0 0 -10px }
+
+.table-departure { width: 660px }
+.table-departure td { padding: 5px }
+.tour_departure { font-weight: bold; text-decoration: underline; }
+
+.price-tag { background-color: #FFDC57; float: right; padding: 2px 7px 2px 2px; position: relative; height: 44px; }
+.price-tag .price-tag-arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 22px 18px 22px 0;
+	border-color: transparent #FFDC57 transparent transparent;
+	position: absolute;
+	top: 0;
+	left: -18px
+}
+.price-tag-arrow:before {
+	content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 2px solid #FFF;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 7px;
+}
+
+.bp-header-img .photo-container { width: 450px }
+
+.bp-header .fa-map-marker,.bp-header .fa-clock-o,.bp-header .fa-ship,.bp-header .fa-calendar,.bp-header .fa-users {
+	color: #759BC8;
+	vertical-align: bottom;
+	width: 22px;
+	font-size: 18px;
+}
+.bp-header .fa-long-arrow-right { font-size:14px; color: #EB8F00; margin: 0 2px }
+
+.cruise-header-promotion { display: block; clear: both; margin: 10px 5px 0 0 }
+.cruise-header-promotion ul { margin: 0 }
+
+.bpt-tab-tours .nav-tabs>li>a { font-size: 17px; padding: 6px 16px }
+
+.full-width { float: left; width: 100%; clear: both; }
+
+/* Map
+   ========================================================================== */
+#tour_route_map { border: 5px solid #EEEEEE; width: 100%; height: 600px; clear: both; margin: 5px 0 0; }
+.map-footer { background-color: #EEEEEE; padding: 0 0 5px; margin-bottom: 20px }
+.map-footer .btn { border-bottom: 0; font-weight: normal; padding: 2px 12px 3px; border-radius: 10px }
+
+.info-box { color: #363838; font-size: 12px; max-width:360px; background-color: white; padding: 10px; color: #333; border: 1px solid #666; border: 1px solid rgba(0, 0, 0, .45); border-bottom: 1px solid #666; -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .3); -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .3); box-shadow: 0 3px 8px rgba(0, 0, 0, .3); overflow: hidden; height: auto; margin-top: 98px; }
+.info-box .details { clear: both; float: left; }
+.info-box .details td { vertical-align: top; padding-right: 10px; }
+.info-box .title { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
+
+.photo-map { border: 1px solid #CBCBCB }
+.photo-map h2 { margin: 0; padding: 5px 10px; border-bottom: 1px solid #CBCBCB; }
+.photo-map h2, .photo-map-bottom { background-color: #EFF8FF; }
+.photo-map-bottom { text-align: center; padding: 10px; border-top: 1px solid #CBCBCB; }
+.photo-map-bottom .btn { border-radius: 10px; border: 0 }
+
+/* Review Overview
+   ========================================================================== */
+.col-review { display: block; margin-top: 10px }
+
+.col-review .icon { float: left; margin-right: 7px }
+
+.col-review ul { margin: 0; padding: 0 0 0 7px; list-style: none; border-left: 1px dotted #C6C6C6; float: left;  }
+
+.col-review ul li { line-height: 18px }
+
+.col-review .review-lang { font-weight: bold; font-size: 16px }
+
+.col-review .review-score { font-weight: bold; font-size: 16px }
+
+/* Tour Itinerary
+   ========================================================================== */
+.trip-highlight { border: 1px solid #FFB40D; display: block; clear: both; }
+.trip-highlight h3 { background-color: #FB7802; color: #fff; padding: 5px 10px; float: left; position: relative; }
+.trip-highlight ul { display: block; clear: both; }
+.trip-highlight .arrow-right {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 17px 0 17px 10px;
+	border-color: transparent transparent transparent #FB7802;
+	position: absolute;
+	top: 0;
+	right: -10px
+}
+.trip-highlight-content { display: block; clear: both; padding: 0 10px }
+.trip-highlight-content ul { list-style: square; margin-top: 5px; padding-left: 75px }
+.trip-highlight-content li { color: #FB7802; }
+.trip-highlight-content li span { color: #333 }
+.ih-row { border-top: 1px solid #eee; padding-top: 10px }
+.ih-row:first-child { border: 0; padding: 0 }
+.ih-day { background-color: #EEEEEE; float: left; margin-right: 5px }
+.ih-title div { padding: 2px 10px; border-radius: 10px }
+.ih-title { font-size: 16px; }
+
+.tour-highlight { list-style: none; padding-left: 20px }
+.tour-itinerary { padding: 0; margin: 10px 0 0; position: relative; }
+.tour-itinerary ul { padding-left: 20px }
+
+.itinerary-box { background-color: #fff; padding: 0; overflow: hidden; }
+
+.itinerary-title {
+	background-color: #EEEEEE;
+	float: left;
+	width: 100%;
+	height: 34px;
+	cursor: pointer;
+	position: relative;
+}
+
+.itinerary-title .iti-day {
+	background-color: #759BCA;
+	color: #fff;
+	float: left;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 8px 15px;
+	height: 34px;
+	width: 10%;
+}
+
+.itinerary-title .iti-day-title {
+	float: left;
+	padding: 7px 10px;
+	font-size: 13px;
+	height: 34px;
+	width: 90%;
+	border: 1px solid #D9DEE2;
+	border-width: 1px 1px 1px 0;
+}
+.itinerary-title .glyphicon {
+	color: #759ECC;
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	font-size: 22px
+}
+.itinerary-title .glyphicon-minus-sign {
+	color: #ECB751
+}
+
+.itinerary-content { line-height: 22px; padding: 10px; float: left; width: 100%; border: 1px solid #D9DEE2; border-width: 0 1px 1px; }
+
+.itinerary-summary { border: 1px solid #DDE1E0 }
+.itinerary-summary h3 { padding-left: 10px; }
+.itinerary-summary ul { list-style: none; padding: 0; margin: 0 }
+.itinerary-summary li { border-top: 1px solid #DDE1E0; }
+.itinerary-summary a { padding: 10px; line-height: 14px; display: block; cursor: pointer; color: #333; font-size: 12px }
+.itinerary-summary li.active a { color: #fff }
+.itinerary-summary a:hover { text-decoration: none; }
+.itinerary-summary li.active { background-color: #67AB3C; color: #fff }
+.itinerary-summary .itinerary-box li { position: relative; max-height: 35px }
+
+
+.important-note, .cancellation-note { padding-left: 30px; clear: both; }
+.important-note li, .cancellation-note li { margin-bottom: 5px }
+.cancellation-title { font-weight: bold; text-decoration: underline; }
+
+.itinerary-photos {
+	list-style: none;
+	text-align: center;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.full-width {
+	clear: both;
+	width: 100%
+}
+
+.itinerary-photos img {
+	margin: 0px auto;
+	border: 0px none;
+}
+
+.cruise-itinerary-photos {
+	max-width: 390px;
+	float: right;
+	list-style: none;
+	text-align: center;
+}
+
+.cruise-itinerary-photos img, .itinerary-photos img {
+	border: 0 !important;
+}
+
+.cruise-itinerary-photos .caption, .itinerary-photos .caption {
+	margin: 0;
+	color: #555;
+}
+.label-select-itinerary { float: left; font-size: 16px; padding-top: 5px }
+
+.itinerary-route {
+	width: 100%;
+	padding: 0;
+}
+
+.itinerary-route .route-name {
+	padding-right: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.itinerary-view-more {
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+
+/* Tour Tabs
+   ========================================================================== */
+.active .icon-tab-itinerary, #tab_tours a:hover .icon-tab-itinerary {
+	background-position: -271px -271px;
+}
+.active .icon-tab-rate, #tab_tours a:hover .icon-tab-rate {
+	background-position: -299px -271px;
+}
+.active .icon-tab-review, #tab_tours a:hover .icon-tab-review {
+	background-position: -328px -271px;
+}
+
+/* Itinerary Overview
+   ========================================================================== */
+.itinerary-overview { border: 1px solid #6CAB39 }
+.itinerary-overview .icon { margin-right: 5px }
+.itinerary-overview .title { padding: 5px 10px;	margin-bottom: 0;}
+
+.itinerary-overview ul {
+    list-style: outside none none;
+    padding: 0px;
+    margin: 0px;
+}
+.itinerary-overview li {
+    position: relative;
+    max-height: 35px;
+    border-top: 1px solid #DDE1E0;
+}
+.itinerary-overview li.active, .itinerary-overview a:hover {
+    background-color: #67AB3C;
+    color: #FFF;
+    border: 0
+}
+.itinerary-overview li.active + li { border: 0 }
+.itinerary-overview a {
+    padding: 10px;
+    line-height: 14px;
+    display: block;
+    cursor: pointer;
+    color: #333;
+    font-size: 12px;
+    height: 35px;
+    overflow: hidden;
+}
+.itinerary-overview a:hover { text-decoration: none; }
+.itinerary-overview li.active a {
+    color: #FFF;
+}
+.itinerary-overview .active .arrow-it {
+    display: block;
+}
+.itinerary-overview .arrow-it {
+    position: absolute;
+    right: -8px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    display: none;
+    border-style: solid;
+	border-width: 17px 0 17px 8px;
+	border-color: transparent transparent transparent #67AB3C;
+}
+
+/* Free Visa
+   ========================================================================== */
+.photo-box {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.cruise-slider-photo .fotorama { height: 528px !important; }
+.cruise-visa { position: relative; }
+.cruise-visa .pop-free-visa { top: 0 ;left: 0 }
+.cruise-visa .pop-free-visa:before { content: none; }
+
+/* Policy
+   ========================================================================== */
+.policy .item { padding: 10px 0px; border-bottom: 1px solid #FEB902; float: left; width: 100% }
+.policy .col-item-title {
+	width: 25%;
+	padding: 0px 30px 0px 0px;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+}
+.policy .col-item-content {
+	width: 75%;
+	padding: 0px;
+	float: left;
+}
+
+/* Cruise Details
+   ========================================================================== */
+
+.cruise-summary {
+	background-color: #FCA903;
+	padding: 15px;
+	margin-bottom: 15px
+}
+.cruise-summary .summary-title { font-size: 18px; font-weight: bold; }
+
+.cruise-summary ul { list-style: none; padding-left: 10px; margin: 10px 0 0; }
+
+/* Download resource */
+.bpt-download a {
+    font-size: 14px;
+}
+.bpt-download a:hover {
+    font-weight: bold;
+}
+
+
+.facility {
+	float: left;
+	width: 100%;
+}
+.facility ul {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin-left: 10px;
+    list-style: none;
+}
+.facility ul li {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 10px;
+}
+.cruise-properties .table-bordered { width: 100% }
+.cruise-properties .table-bordered th { background-color: #F0F0F0 }
+.cruise-properties .table-bordered th, .cruise-properties .table-bordered td { padding: 7px }
+
+.bpt-tab-tours .nav-tabs>li>a {font-weight: normal;}

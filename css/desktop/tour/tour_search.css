@@ -1,0 +1,73 @@
+/*
+ * Most Recommend Item
+ */
+
+.most-recommended-service{
+	font-style: italic;
+	border: 1px solid #DDD;
+	border-right: 0;
+	border-bottom: 0;
+
+	border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+
+	width:143%;
+
+	padding: 10px 15px;
+	margin-top: 15px;
+}
+
+.most-recommended-service .header{
+	font-weight: bold;
+	font-size: 14px;
+	color:#669933;
+	margin-bottom:10px;
+}
+.search-filter-bgr{
+	border: 1px solid #feba02;
+	background-color: #ffeec0;
+}
+
+.search-filter-bgr h2 {
+  font-size: 25px;
+}
+
+.most-recommended-service .col-service-cnt, .most-recommended-service .col-service-price{
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+
+.most-recommended-service .col-service-cnt{
+	width: 72%;
+}
+
+.most-recommended-service .col-service-price{
+	width: 28%;
+	padding-left:5px;
+	font-size: 11px;
+}
+.col-service-cnt img{margin:0 10px 10px 0;float:left;position: relative;}
+
+.col-service-cnt .service-name{
+	font-size: 14px;
+}
+.col-service-cnt .location, .col-service-cnt .reviews, .col-service-cnt .service-desc{
+	font-size: 11px;
+}
+
+
+.col-service-price .bt-price{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.col-service-price .dc-unit{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.col-service-price .seperate-line{
+	border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,127 @@
+/* BestPrice Review
+   ========================================================================== */ 
+#review_content h2 { font-weight: bold; font-size: 17px;}
+#review_content h2 span { font-size: 12px; font-weight: bold; }
+   
+.item-review .bpv-color-excellent, 
+.item-review .bpv-color-very-good, 
+.item-review .bpv-color-good, 
+.item-review .bpv-color-average, 
+.item-review .bpv-color-poor { 
+	padding: 0 7px; margin-right: 7px; border-right: 1px solid #7A9D01; font-weight: bold; 
+}
+.item-review .icon-review span,
+.item-review .icon-review-very-good span,
+.item-review .icon-review-good span,
+.item-review .icon-review-average span,
+.item-review .icon-review-poor span { color: #fff; font-weight: bold; width: 100%; text-align: center; float: left; margin-top: 1px }
+
+.item-review-text { font-weight:bold; font-size:13px; margin-bottom:5px; text-align: center }
+.item-review-bar { width:80px; height:8px; margin-bottom:5px; }
+.item-review-bar > .col-1 { background-color:#ffdb45; float:left; width: 80%; height:100%; border: 1px solid #e5b455; border-right:0; }
+.item-review-bar > .col-2 { background-color:#efeeec; float:left; width: 20%; height:100%; border:1px solid #bbbcbe; }
+.item-review-text .bpv-color-excellent, 
+.item-review-text .bpv-color-very-good, 
+.item-review-text .bpv-color-good, 
+.item-review-text .bpv-color-average, 
+.item-review-text .bpv-color-poor {
+	border: 0; margin-right: 0; padding-right: 5px
+}
+
+.reviews-panel { float: left; padding: 0; width: 100%; background-color: #F1F4F9; border: 1px solid #E2E2E2; border-right: 0; border-left: 0 }
+#rev_total { padding: 10px; width: 23%; text-align: center; float: left; height: 210px }
+#rev_total_score_number { clear: both; margin: 20px 0 10px; width: 100%; }
+#rev_total_score_number .review_text { border: 0; font-size: 20px; font-weight: bold; }
+
+.reviews-panel #rev_total_score_number div {
+    border: 0 none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 35px;
+    width: 75px;
+    height: 75px;
+    line-height: 45px;
+    padding: 15px;
+    text-align: center;
+    margin: 5px auto 10px;
+    font-weight: bold;
+    background: #0996FF;
+}
+
+.panel-selections { background-color: #fff; padding: 10px; border-bottom: 1px solid #DADADA; clear: both; }
+.panel-selections .head-list { font-size: 12px; font-weight: bold; padding: 2px 10px 2px 2px }
+.panel-selections .btn-filter { background-color: #ffe; border: 1px solid #fb0; padding: 3px 10px; color: #333; margin-right: 10px; font-weight: bold;}
+.panel-selections .btn-filter .icon-review-remove { margin-left: 5px; *margin: 0 }
+.panel-selections .btn-filter:hover { text-decoration: none; }
+.panel-selections .selection-note { color: #999; font-size: 11px;font-style: italic; }
+
+#rev_out_of { font-size: 12px }
+.breakdown-score-wrapper { float: left; width: 77%; padding: 0; height: 211px }
+.breakdown-score-wrapper ul { list-style: none; padding: 0;  }
+.breakdown-score-wrapper ul li { margin-bottom: 5px; padding: 2px 0 0 }
+.breakdown-score-wrapper .score-type { padding: 5px 0; position: relative; }
+
+.trip-type, .trip-rating { float: left; padding: 15px 8px; width: 30%; }
+.trip-type li { border-bottom: 1px dotted #ccc }
+
+.trip-rating { width: 40%; border-left: 1px solid #E2E2E2; border-right: 1px solid #E2E2E2 }
+.trip-rating li { border: 0 }
+
+.trip-type .title { font-size: 14px; margin: 0 0 8px; font-weight: bold; }
+.trip-type .line { border: 0 none; background-color: #fff; height: 12px; margin-top: 3px; width: 100%; padding-left: 85px; padding-right: 25px }
+.trip-type .compositeCount { position: absolute; right: 0; top: 6px; background-color: #F1F4F9; width: 25px; text-align: right;}
+.trip-type .rdoSet { width: 85px; position: absolute; left: 0; top: 7px; background-color: #F1F4F9 }
+.trip-type .line .fill {
+	height: 12px;
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FADD37 0%, #FACF2A 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FADD37 0%, #FACF2A 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FADD37 0%, #FACF2A 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FADD37), color-stop(1, #FACF2A));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FADD37 0%, #FACF2A 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FADD37 0%, #FACF2A 100%);
+}
+
+#comments_list { border-spacing: 0; margin-top: 10px; clear: both; float: left; width: 100% }
+#comments_list tr { border-bottom: 1px solid #DDDDDD; }
+#comments_list td { padding: 15px 10px; vertical-align: top; }
+#comments_list .cell-user {  width: 150px; }
+#comments_list li { margin: 0; padding: 0 }
+.review-date { font-size: 11px }
+
+.review-content { display: block; clear: both; }
+.review-paging { display: block; margin: 10px 0 20px; float: left; clear: both; width: 100% }
+
+.icon-review-score {
+	background-position: -340px -132px;
+    width: 60px;
+    height: 48px;
+	margin-bottom: 5px
+}
+.icon-review-score span { font-size: 18px; color: #fff; font-weight: bold; display: block; margin-top: 8px; text-align: center; }
+
+.icon-positive-review { 
+	background-position: -266px -111px;
+    width: 12px;
+    height: 12px;
+    margin: -3px 5px 0 0;
+}
+.icon-negative-review { 
+	background-position: -282px -111px;
+    width: 12px;
+    height: 12px;
+	margin-right: 5px
+}
+.pagination { margin: 0 }
+

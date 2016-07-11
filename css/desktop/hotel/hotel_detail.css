@@ -1,0 +1,47 @@
+.price-tag { background-color: #FFDC57; float: right; padding: 2px 7px 2px 2px; position: relative; height: 44px; }
+.price-tag .price-tag-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 18px 22px 0;
+    border-color: transparent #FFDC57 transparent transparent;
+    position: absolute;
+    top: 0;
+    left: -18px
+}
+.price-tag-arrow:before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 2px solid #FFF;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 7px;
+}
+
+.col-license { float: left; width: 68.4138%; }
+
+.col-price { float: right; width: 31.5862%; }
+
+.hotel-slider-photo .fotorama { height: 528px !important; position: relative; }
+
+/* Review Overview
+   ========================================================================== */
+.col-review { display: block; margin-top: 10px }
+
+.col-review .icon { float: left; margin-right: 7px }
+
+.col-review ul { margin: 0; padding: 0 0 0 7px; list-style: none; border-left: 1px dotted #C6C6C6; float: left;  }
+
+.col-review ul li { line-height: 18px }
+
+.col-review .review-lang { font-weight: bold; font-size: 16px }
+
+.col-review .review-score { font-weight: bold; font-size: 16px }
+
+.col-desc #full_desc { display: none; }
+
+.bpt-tab-tours .nav-tabs>li>a { font-size: 16px; padding: 6px 16px; font-weight: normal;}

@@ -1,75 +1,361 @@
-#flightModal .modal-dialog {
-	width: 400px
-}
-#flightModal .modal-body {padding: 15px}
-
-.flight-content {
-	float: left;
-	width: 70%;
-	padding-right: 20px
-}
-.flight-content-right {
-	float: left;
-	width: 30%;
-}
-.related-news h5 {
-	border-bottom: 1px dotted #ccc;
-	padding-bottom: 5px
-}
-
-/* Flight News */
-.flight-news h4 { font-weight: normal; font-size: 16px; }
-.flight-news li { border-bottom: 1px dashed #ccc;}
-
-/**
- *	Why Us
+/*
+ * jQuery UI CSS Framework 1.8.18
  *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
  */
-.why-us{
-	padding: 0 5px;
-}
-.why-us h3:first-child {
-	border-bottom: 1px dashed #c2c2c2;
-	background-color: #fff;
-	margin: 0 10px;
-	padding: 10px 0
-}
 
-.why-us ul {
-	font-size: 14px;
-	padding-left: 0;
-	color: #666;
-	margin-top: 10px
-}
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
 
-.why-us li {
-	margin-bottom: 15px
-}
 
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/*
+ * jQuery UI Button 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: hidden; *overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+/* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+
+/*button text element */
+.ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .3em; text-indent: -9999999px;}
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+
+/*button sets*/
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
 
 
 /*
-* Flights box
-*/
-.bpv-box-payment {
-	margin-top: 20px
+ * jQuery UI Autocomplete 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+.ui-autocomplete { position: absolute; cursor: default; }	
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/*
+ * jQuery UI Menu 1.8.18
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Menu#theming
+ */
+.ui-menu {
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	display:block;
+	float: left;
 }
-.bpv-box-payment h3 {
-	font-size: 16px;
+.ui-menu .ui-menu {
+	margin-top: -3px;
 }
-.bpv-box-payment h3:first-child {
-	padding: 10px;
-}
-.bpv-box-payment li {
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
 	width: 100%;
-	border-bottom: 1px solid #ccc;
-	padding-left: 10px;
-	font-size: 11px;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.4em 1em;
+	line-height:1.5;
+	zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: 0;
 }
 
-/*
-* Airlines Icons
-*/
+/* ==========================================================================
+   Search Box
+   ========================================================================== */
+
+.search-flight {height: auto !important; overflow: hidden;}
+.search-flight .search_button {margin: 0 0 4px;}
+.xp-row {
+	clear: both;
+	*height: auto;
+	margin: 6px 10px;
+	float: left;
+	width: 240px
+}
+.xp-row .adults{width: 50px}
+.xp-row .children{width: 86px}
+.xp-row .infants{padding-right: 0; width: 70px}
+
+.xp-cell-large select {width: 235px}
+
+.xp-cell-small {float: left; padding-right: 12px}
+.ui-button { margin-left: -1px; }
+.ui-autocomplete-input, button.ui-button-icon-only{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 1.8em;
+	border-radius: 0 !important;
+	-moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: block;
+    line-height: 1.4em;
+    font-size: 11px
+}
+.ui-autocomplete-input {
+	background: #fff;
+	width: 200px;
+}
+
+button.ui-button-icon-only {
+	width: 2em;
+	background: none;
+	background-color: #F8F8F8;
+	border: 1px solid #ccc;
+	margin-left: -1px
+}
+
+.ui-autocomplete {
+    width: 221px;
+}  
+
+.search-dialog {
+	background-color: #FEF4D6;
+	border: 2px solid #FFBD42;
+	border-radius: 3px;
+	position: absolute;
+	top: 20%; left: 70%;
+	display: none;
+	-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+	padding: 5px 0;
+}
+.btn-close {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 300;
+}
+.rate-arrow {
+	position: absolute;
+    left: 210px;
+    top: -11px;
+    height: 11px;
+    overflow: hidden;
+}
+.rate-arrow .arrow-before, .rate-arrow .arrow-after {
+	width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    border: 9px solid transparent; /* arrow size */
+}
+.rate-arrow .arrow-before {
+	border-bottom-color: #FFBD42;  /* arrow color */
+    top: -9px;
+    left: 0px;
+    position: absolute;
+}
+.rate-arrow .arrow-after {
+	border-bottom-color: #FEF4D6;  /* arrow color */
+    top: -6px;
+    left: 0px;
+    position: absolute;
+}
+.ui-autocomplete {border-radius: 0 !important;}
+.lbl-area {display: block; font-weight: bold; padding: .6em .2em; clear: both; background-color: #eee}
+
+/* ==========================================================================
+   Flight Destinations
+   ========================================================================== */
+.popular-flights{
+float: left; clear: both; width: 100%
+}
+.popular-flights thead th {
+	font-size: 13px
+}
+.popular-flights thead th, .popular-flights tbody td {
+	padding: 4px 10px
+}
+
+.flight-destinations {
+	float: left;
+	clear: both;
+	margin-top: 20px;
+	background-color: #FCFCFC;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 968px
+}
+.flight-destinations h3 {padding: 0 0 8px}
+.fligh-item label {margin: 8px 0 0 5px}
+
+/* ==========================================================================
+	Tracker
+   ========================================================================== */
+.boxGray {
+	display: block;
+	border: 1px solid #E0E0E0;
+	border-top: 2px solid #D9D9D9;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+#breadCrumb0 {
+	float: left;
+    margin-left: 10px;
+    width: 240px;
+}
+
+#breadCrumb0 .breadCrumb_text {
+	color: #666666
+}
+
+.breadCrumb_stepNo {
+	background-position: -125px -195px;
+	width: 19px;
+	height: 19px;
+    color: #FFFFFF;
+    margin-right: 3px;
+    padding-left: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3,.breadCrumb_stepNo,.breadCrumb_text
+	{
+	float: left;
+	line-height: 19px;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3 {
+	margin-left: 20px;
+}
+
+.breadCrumb_text {
+	color: #999999;
+	margin-top: 1px
+}
+
+.currentStep .breadCrumb_stepNo {
+	background-position: -150px -195px;
+}
+
+.currentStep .breadCrumb_text {
+	color: #FF6600;
+}
+
+#tracker {
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	background-color: #F8F8F8;
+	padding: 5px 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #F8F8F8;
+	border-right: 1px solid #F8F8F8;
+}
+
+
+/* ==========================================================================
+   Flight Search
+   ========================================================================== */
+
+.bpt_item{
+	margin-top: 15px;
+	border: 1px solid #DDD;
+	padding: 15px 10px;
+	width:698px;
+}
+
+.bpt_item .row-content{
+	display:block;
+	float:left;
+	width:100%;
+}
+
+.bpt_item .flight-info{
+	display:block;
+	width:488px;
+	float:left;
+}
+
+.bpt_item .flight-price{
+	display:block;
+	float:left;
+	text-align:right;
+	width:210px;
+}
 
 .flight-BL{
 	width: 49px; height: 29px; background-image: url(/media/flight/BL.gif);
@@ -89,184 +375,347 @@
 	vertical-align: middle;
 }
 
-/**
- * Search Loading
- */
- 
-.flight-waiting-summary{
- 	padding:15px;
- 	border:2px solid #ff9406;
- 	background-color:#fff;	
+.icon-flight-search-loading{
+	width:16px; height:16px; background-image: url(/media/loading.gif);
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.flight-waiting-summary .col-1,
-.flight-waiting-summary .col-2{
-	float:left;
-}
-.flight-waiting-summary .col-1{
-	padding-right:15px;
+.flight-info .airline-name{
+	width:120px;
+	display:inline-block;
 }
 
-.flight-waiting-summary .des{
-	font-size:18px;
-	margin-right:5px;
-}
-
-.flight-waiting-summary .go{
-	font-size:16px;
-	margin-right:5px;
-}
-
-.flight-depart-selected{
-	margin-bottom:20px;
-	padding:0 !important;
-	display:none;
-	border:0 !important;
-}
-.flight-depart-selected .header{
-	background-color: #ff9406;
-	color:#FFF;
-	padding: 5px 15px;
-	margin:0;
-}
-.flight-depart-selected .content{
-	padding:15px;
-	border: 1px solid #ff9406;
-}
-
-/**
- * BPV Item list - apply for Flight
- */
- .bpv-search-bg{
- 	padding:10px;
- 	background-color:#f4f4f4;
- 	border-radius:4x;
- }
-.bpv-list-item{
-	padding: 20px 15px;
-	border: 1px solid #c8c8c8;
-	position:relative;
-	background-color:#FFF;
-}
-
-.bpv-list-item:hover{
-	background-color:#fefefe;
-    box-shadow:3px 3px 4px 0 rgba(102, 175, 233, 0.6);
-}
-
-.flight-code{
-	font-size:16px;
+.flight-info .flight-code{
+	font-size: 16px;
 	font-weight:bold;
+	width:100px;
+	display:inline-block;
 }
-.bpv-list-item .bpv-price-from{
-	font-size:24px;
-	line-height:1;
-}
-.flight-seat{
-	font-size:14px;
+
+.flight-info .departure-time{
+	font-size: 16px;
 	font-weight:bold;
+	width:120px;
+	display:inline-block;
 }
 
-.bpv-item-selected{
-	border: 2px solid #FF9406;
+.flight-info .flight-stop{
+	font-size: 16px;
+	width:100px;
+	display:inline-block;
+}
+.flight-info span{
+	vertical-align:middle;
 }
 
+.select_this_cruise{
+	margin-top:0;
+	padding-left:20px;
+	padding-right:20px;
+}
 
-/**
- * Flight Detail
- *
- */
- 
+.show-detail{
+	margin-left:5px;
+}
 .flight-details{
-	border-top:1px dashed #c8c8c8;
+	border-top: 1px dashed #EEE;
 	margin-top:10px;
 	padding-top:10px;
 }
-.flight-details h3{
-	font-size:13px;
-	font-weight:bold;	
-}
-.flight-route{
-	border-bottom: 1px dashed #EEE;
-}
-.flight-price{
-	background-color:#EEE;
-	padding:15px;
-	font-size:13px;
-}
 
-.flight-price .price-value{
+.flight-details .flight-price{
+	background-color:#EEE;
+	padding:10px;
+	height:100%;
+	width:180px;
+	margin-left:10px;
+}
+.flight-details .price-row{
+	display: block;
+	margin-bottom: 10px;
+}
+.flight-details .price-label{
+	float:left;
+}
+.flight-details .price-value{
 	font-weight:bold;
 }
 
-.flight-price .price-total{
-	font-size: 18px;
+.flight-details .price-total{
+	font-size: 16px;
 	font-weight: bold;
 }
-.flight-price .label-total{
+.flight-details .flight-route{
+	display: block;
+	width:100%;
+	padding:10px 0;
+	float:left;
+	border-bottom: 1px dashed #EEE;
+}
+
+.flight-details .fare-rules{
+	display: block;
+	width:100%;
+	float:left;
+}
+
+.flight-details .from{
+	float:left;
+	width:239px;
+}
+.flight-details .to{
+	float:left;
+	width: 239px;
+	margin-left:10px;
+}
+.flight-details .detail-row{
+	display: block;
+	margin-bottom:5px;
+}
+
+.bpt-item-selected{
+	border: 1px solid #FEBA02;
+}
+
+.flight-loading{
+	width: 110px; height:95px; background-image: url(/media/loading-indicator.gif);
+	display: inline-block;
+}
+
+.flight-search-loading{
+	height:20px;	
+	padding:10px 30px; 
+	border:1px #FFBB00 solid;
+	color:#06C;
+	background:RGB(255,255,204) url(../media/loading.gif) no-repeat;	
+	background-position:5px 10px;
+	margin-left: 210px;
+	max-width:240px;
+}
+
+
+#sort_by ul{
+	background:#FFEEC0 none repeat scroll 0 0;border:1px solid #FEBA02;float:left;list-style-image:none;list-style-position:outside;list-style-type:none;padding:0;width:718px;
+}
+#sort_by ul li{border-right:1px dotted #FEBA02;color:#003580;display:block;float:left;font-weight:normal;margin:0;padding:0.6em 0.7em;position:relative;}
+#sort_by ul li.selected{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:#FFF6DF none repeat scroll 0 0;padding-left:10px;font-weight: bold;}
+#sort_by ul li a:link{text-decoration:underline;}
+#sort_by ul li.recommend{width: 88px;}
+
+.price_include_note{
+	margin: 10px 0;
+}
+
+.filter_results{
+	border: 1px solid #FEBA02; 
+	float: left;width:238px; 
+	padding: 0 10px 15px 10px;
+	background-color:#FFEEC0;
+	margin-top: 10px;
+}
+
+.filter_results h3{
+	padding: 15px 0 10px 0;
+}
+
+#searchOverview .row{
+	margin: 5px 10px;
+	height: 20px;
+}
+
+#searchOverview .row .item-label{
+	float:left;
+	width:40%;
+}
+
+#searchOverview .row .item-info{
+	float:left;
+	width:60%;
+}
+
+.select_flight{
 	font-size: 16px;
 	font-weight: bold;
 }
 
-.flight-details .bpv-search-waiting{
-	margin:15px 0;
-}
-.flight-details .bpv-search-waiting .ms1{
-	font-size: 20px;
-	margin-bottom:15px;
-	
-}
-.flight-details .bpv-search-waiting .ms2{
-	font-size: 16px;
+.your_selected_departure{
+	margin-top:0;
+	background-color:#FFF6DF;
+	margin-bottom: 20px;
+	display: none;
+	float: left;
 }
 
-.flight-details .bpv-search-waiting img{
-	height:48px;
+.your_selected_departure .price_from{
+	font-size:22px;
+	font-weight:bold;
 }
 
-
-.booking-page .bpv-col-left{
-	padding-left:20px;
-	padding-right:0 !important;
-}
-.booking-page .bpv-col-right{
-	margin-bottom:40px;
+.select_date{
+	font-weight: normal;
 }
 
-
-.data-area{
-	background-color:#fff;
-	border: 1px solid #d4d4d4;
-	padding: 15px;
-}
-.required-message{
-	padding: 5px 10px;
-	background-color:#fef4eb;
-	border: 1px solid #d89b9a;
-	color: #ba1c1d;
+.flight_loading_content{
+	text-align: center;
+	clear: both;
 }
 
-.right-fixed{
-	position:fixed;
+.flight_loading_content div{
+	display: block;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.flight_loading_content .checking_message{
+	font-size: 28px;
+	font-weight:bold;
+}
+
+.flight_loading_content .des{
+	font-size:18px;
+}
+
+/* ==========================================================================
+	Tracker
+   ========================================================================== */
+#breadCrumb0 {
+	float: left;
+    margin-left: 10px;
+    width: 240px;
+}
+
+#breadCrumb0 .breadCrumb_text {
+	color: #666666
+}
+
+.breadCrumb_stepNo {
+	background-position: -125px -195px;
+	width: 19px;
+	height: 19px;
+    color: #FFFFFF;
+    margin-right: 3px;
+    padding-left: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3,#breadCrumb4,.breadCrumb_stepNo,.breadCrumb_text
+	{
+	float: left;
+	line-height: 19px;
+}
+
+#breadCrumb1,#breadCrumb2,#breadCrumb3,#breadCrumb4 {
+	margin-left: 20px;
+}
+
+.breadCrumb_text {
+	color: #999999;
+	margin-top: 1px
+}
+
+.currentStep .breadCrumb_stepNo {
+	background-position: -150px -195px;
+}
+
+.currentStep .breadCrumb_text {
+	color: #FF6600;
+}
+
+#tracker {
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	background-color: #F8F8F8;
+	padding: 5px 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #F8F8F8;
+	border-right: 1px solid #F8F8F8;
 }
 
 /**
- * Table Flight Itinerary
+ * Flight Detail & Booking
  */
- 
- .tbl-header{
+.flight-summary{
+	border: 1px solid #FEBA02;
+	display: block;
+}
+
+..flight-summary div{
+	display: block;
+}
+
+.flight-summary .header{
+	background-color:#FEBA02;
+	color:white;
+}
+
+.flight-summary .content{
+	padding: 0 10px;
+}
+
+.flight-summary h2{
+	padding: 5px 10px;
+}
+.flight-summary .row{
+	padding: 7px 0;
+}
+
+.flight-summary .row-label{
+	width:40%;
+}
+.flight-summary .row-content{
+	float: right;
+	font-weight: bold;
+	width: 60%;
+	text-align:right;
+}
+.flight-summary .line{
+	border-bottom:1px solid #EEE;
+}
+.flight-summary .price-total{
+	font-size: 16px;
+	font-weight: bold;
+	text-align:right;
+}
+
+.flight-itineray-txt{
+	font-size:16px;
+	font-weight:bold;
+	margin-left:10px;
+}
+#contentMain div{
+	display: block;
+}
+#contentMain .row{
+	margin-bottom: 15px;
+}
+.btn_pay{
+	font-size:14px; width:160px;
+}
+.btn_change_flight{
+	border: 1px solid #DDD;
+	background-color: #F8F8F8;
+	color:#3385D6;
+	float: right;
+	font-weight:normal;
+	padding: 5px 5px;
+}
+
+.tbl-header{
 	background-color:#F8F8F8;
 	padding: 5px 10px;
 	border: 1px solid #DDD;
 	font-weight:bold;
 	color: #666;
-	background-color:#fff;
 }
 .tbl-row{
 	padding: 10px;
 	border: 1px solid #DDD;
 	border-top:0;
-	background-color:#fff;
 }
 
 .tbl-header span, .tbl-row span{
@@ -283,13 +732,13 @@
 	width: 20%;
 }
 .tbl-departure-date{
-	width:20%;
+	width:17%;
 }
 .tbl-departure-time{
 	width:14%;
 }
 .tbl-arrival-time{
-	width:12%;
+	width:14%;
 }
 .tbl-fare-rules{
 	margin-top:15px;
@@ -298,219 +747,97 @@
 .tbl-passenger{
 }
 .tbl-passenger tr td{
-	padding: 5px;
+	padding: 3px 2px;
 }
 
 .tbl-passenger select, .tbl-passenger input[type="text"] {
+	border: 1px solid #CCCCCC;
     font-size: 12px;
 }
 .tbl-passenger input[type="text"] {
-    min-width: 260px;
+    padding: 4px 5px;
+    width: 100px;
+}
+.tbl-passenger select {
+    padding: 3px 5px;
 }
 .tbl-passenger .td-separation{
-	padding-bottom:18px;
+	padding-bottom:15px;
 }
-.tbl-passenger select{
-	max-width:80px;
-	float:left;
-	margin-right:10px;
+.red-border {border: 1px solid #FF0000 !important;}
+
+
+.tbl-payment{
+	border-left: 1px solid #ccc;
+	border-spacing: 0;
+	border-top: 1px solid #ccc;
+	empty-cells: show;
+	width: 100%;
 }
 
-/**
- * Flight Booking Page
- */
+.tbl-payment th {
+	font-weight: bold;
+	background-color: #eee
+}
+
+.tbl-payment td,.tbl-payment th {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 7px;
+}
+
+.contact-details{float:left}
+.contact-details .items {float: left; clear: both; padding: 5px 0; white-space: nowrap;}
+.contact-details .items .col_1 {padding-left: 0; width: 150px; float: left;}
+.contact-details .items .col_2 {
+    float: left;
+    width: 360px;
+}
+
+.popup_content .row{
+	margin-bottom:15px;
+}
 
 .review-booking-line{
-	margin-bottom:10px;
+	padding: 5px 0
 }
 .review-booking-traveler{
-	margin-bottom:10px;
-	padding-left:25px;
+	padding: 5px 0 5px 25px;
 }
 
 .review-booking_step{
 	padding:0 4px;background-color:#FCA903;font-weight:bold;
-	margin-right:5px;
 }
 
-
-/**
- * Popular Flight Routes
- */
-
-
-.tb-flights {
-    border-spacing: 0;
-    empty-cells: show;
-    width: 100%;
-    border: 0;
-}
-.tb-flights thead {
-    background-color: #F4F4F4;
-    color: #555555;
-}
-.tb-flights thead th {
-    padding: 5px 7px;
-    font-size: 13px;
-    border-width: 1px 1px 1px 0;
-    border-style: solid;
-    border-color: #c0d3dc;
-}
-.tb-flights td {
-    padding: 7px;
-    border-width: 0 1px 1px 0;
-    border-style: solid;
-    border-color: #c0d3dc;
-}
-.tb-flights .bold-border {
-	border-bottom: 3px solid #c0d3dc;
+/* ==========================================================================
+	Text On Banner
+   ========================================================================== */
+.flight-banner {position: relative;}
+.txt-banner-1,.txt-banner-2,.txt-banner-3 {
+	position: absolute;
+	font-size: 24px;
+	right: 8px;
+	padding: 10px 10px;
+	line-height: 20px;
+	width: 340px;
+	text-align: center;
 }
 
-.btn-select {
-	background-color: #3385D6;
-	padding: 3px 10px 2px;
-	color: #FFFFFF;
-	font-weight: normal;
-	font-size: 12px;
-	margin-left: 10px;
-	border-bottom: 3px solid #0071CD;
-}
-.btn-select:hover {
-	color: #FFFFFF;
-}
-#tab_search_flight .ui-button-icon-only {
-	right: 13px
-}
-.icon-arrow-right {
-	background-position: -120px -363px;
-	width: 9px;
-	height: 5px;
+.txt-banner-1 {
+	bottom: 90px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666666;
 }
 
-/*
- * Flight Search Result
- */
-.box-results {
-	border: 2px solid #ECECEC; border-radius: 3px;
-}
-.box-results .box-content {
-	border: 2px solid #C3C3C3; padding: 15px 0; overflow: hidden;
-}
-.box-price {
-	float: left;
-	border-left: 1px dashed #ccc;
-}
-.box-price li {
-	width: 100%;
-	float: left;
-	text-align: right;
+.txt-banner-2 {
+	bottom: 70px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666666;
 }
 
-/*
- * Flight destination links 
- */
-.flight-destinations {
-	margin: 0 auto;
+.txt-banner-3 {
+	bottom: 30px;
+	color: #FFF687;
+	background-color: #2D699B;
 }
-.flight-destinations li {
-	margin-bottom: 5px
-}
-
-.deal-messages {
-	border: 1px solid #FFFFFF;
-	border-bottom: 0
-}
-.deal-messages h3 {
-	background-color: #D3DCE1;
-	padding: 10px;
-	margin: 0
-}
-.deal-messages ul {
-	margin-bottom: 0;
-}
-
-.deal-messages ul li {
-	padding: 0 10px;
-	border-bottom: 1px solid #FFFFFF;
-	margin-bottom: 20px
-}
-
-.deal-messages li h4 {
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 400;
-	margin-bottom: 5px
-}
-
-.bg-gray {background-color: #F8F8F8}
-
-.bpt-list-sm {padding: 20px 10px;}
-
-/*
-* Fix bug zIndex in Chrome
-*/
-.datepicker {
-	z-index: 1160 !important;
-}
-
-.flight-support {
-	background-color: #E8E8E0;
-	padding: 10px;
-	border-radius: 4px;
-	padding-left: 20px;
-	width: auto;
-	margin-top: 10px
-}
-
-/*
- *	Flight Calendar
- *
- */
-.cal-row{
-	margin-right:-10px;
-	margin-left:-10px;
-}
-.cal-col{
-	padding-left: 10px;
-	padding-right: 10px;
-	width:14.28571428571429%;
-	float:left
-}
-.cal-item{
-	border:1px solid #CCC;
-	color:#666;
-}
-.cal-item .week-day{
-	background-color:#EEE;padding:5px 0;font-weight:bold;
-}
-
-.cal-item .cal-date{
-	padding: 15px 0
-}
-.cal-selected{
-	border:2px solid #ffcc33;
-}
-.cal-selected .week-day{
-	background-color:#ffcc33;
-}
-.cal-selected .cal-date{
-	padding: 14px 0
-}
-
-.cal-active{
-	cursor: pointer;
-	color:#3385d6;
-}
-
-.cal-active:hover{
-	color:#FE8802;
-}
-
-.cal-arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid #ffcc33;
-}
-

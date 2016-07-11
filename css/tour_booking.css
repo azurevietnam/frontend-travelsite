@@ -1,0 +1,295 @@
+/*Hotel Search Form*/
+#frmHotelSearchForm .row {clear: both;padding: 5px 0px;}
+#frmHotelSearchForm .row_inline {float: left;padding: 5px 0 5px 10px;}
+#frmHotelSearchForm .column_arrive {display: block;float: left;width: 200px;}
+#frmHotelSearchForm .nights {display: block;padding: 5px 0 5px 10px;float: left;width: 60px;}
+#frmHotelSearchForm .hotel_destination {width: 230px;}
+
+#contentLeft{float:left;width:260px}
+#contentMain{float:left;width:720px;margin-left:10px}
+#tour_faq{float:left;width:258px;margin-top:10px;border:1px solid #ccc;* width:258px}
+
+#your_booking{float:left;width:718px;border:1px solid #ccc}
+
+#your_details{float:left;width:100%;margin-bottom:10px;border:1px solid #ccc}
+
+#your_details .content{float:left;padding:5px 0}
+.items{clear:both;padding:5px 10px}
+.items .col_1{float:left;width:150px; padding-left: 12px;}
+.items .col_2{float:left;width:360px}
+.item_button{padding-top:10px}
+
+.block_header{float:left;width:100%;margin-top:15px;padding:0;margin-left:10px;color: #555;}
+.tour_accom{width:710px;float:left}
+
+.book_service_table {width: 100%; margin-left: 0;border-spacing: 0; line-height: 23px; color: #333; *border-collapse: collapse;}
+.service_border_double {width: 80%; border-bottom: 1px dotted #D2D2D2}
+.service_border_light {width: 50%; border-bottom: 1px dotted #D2D2D2}
+.block_service_title {font-size: 110%; color: #868686; font-weight: bold; text-align: left; padding-left: 10px;}
+
+.book_service_table thead {font-size: 110%; color: #868686;}
+.book_service_table thead th {background-color: #F0F0F0;padding: 5px 5px;}
+.book_service_table thead td {background-color: #E7E7E7;text-align: center;}
+.book_service_table tbody th {color: #868686; font-weight: bold; text-align: left; padding-left: 10px;}
+.book_service_table tbody td div {width: 90%; border-bottom: 1px dotted #D2D2D2}
+
+.unhighlight {
+	color: #666 !important;
+}
+.blur {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /*for Internet Explorer 6/7*/
+	filter: 'alpha(opacity=50)'; /*for Internet Explorer 8*/
+	font-weight: normal;
+}
+
+.margin_left_20 {margin-left: 20px;}
+.padding_left_20 {padding-left: 30px;}
+
+.blockGuests {z-index: 99999;position: relative; background: #fff; overflow: visible; height:auto !important; display: none;}
+
+.price_span {
+	padding-right: 20px;
+}
+
+.bg_whiteSmoke {
+	background-color: whiteSmoke;
+}
+
+.tour_summary {
+	padding: 10px 10px; background-color: #FFF;
+}
+
+.note_style {font-style: italic; font-size: 90%;}
+
+.total_block {
+	font-size: 16px; background-color: #E7E7E7; padding-bottom: 5px; padding-top: 5px; text-align: right;
+}
+
+.total_block_text {
+	font-size: 15px; background-color: #F0F0F0; padding-right: 20px; text-align: right;color: #333;font-weight: bold;
+}
+.table_service_title {
+	font-size: 90%; color: #666; font-weight: bold; text-align: left; padding-left: 10px;
+}
+.s_font {font-size: 12px}
+.b_font {font-size: 110%; font-weight: bold;}
+
+.block_header h2 {padding: 0}
+
+.bpt_item_search_list {width: 710px !important; padding-left: 0 !important; padding-right: 0 !important;}
+.area_right_search_list {width: 170px !important;}
+.review_text {font-weight: bold;}
+
+.tour_detail_image{
+	position: relative;float: left; width: 230px;
+}
+
+.tour_detail_content{
+	float: left;
+	position: relative;
+}
+
+.tour_detail_content .bpt_item_review{
+	top: 0; right: 0; position:absolute;
+}
+
+.brief_itinerary{
+	margin-bottom: 10px;
+}
+
+.tour_detail_content .row{float:left;padding:3px 0; width: 100%}
+.tour_detail_content .row .col_label{float:left;font-weight: bold;color: #666;}
+.tour_detail_content .row .col_content{float:left; width: auto;}
+.offer_lst {list-style:none;margin:0;padding:0;float:left}
+.tour_accommodation_text{
+	float: left; 
+	width: 210px;
+}
+.tour_detail_promotion{
+	width: 488px;
+	float: right;
+}
+#searchForm {height: 300px}
+#searchForm .row_des{margin-top:0}
+
+/**
+ * Hotel extra booking
+ */
+.hotel_check_rates{float:left; background-color: #FFFFC9; border: 1px solid #FEBA02;padding:10px; width: 688px; margin-top: 7px;}
+
+.hotel_check_rates .col{float:left;margin-right: 30px;}
+
+.hotel_check_rates .check_rates_block{float:right;margin-top:10px;}
+
+
+span.warning_message{color:#B30000;font-weight:bold;}
+.tour_accom .odd_row{background-color:#FFFFC9;}
+.tour_accom .room_detail{border:1px solid #FEBA02;background-color:white;margin-bottom:4px;padding:10px;float: left;}
+.hotel_address{font-style:italic; font-size: 11px; color: #777;}
+
+/**
+ * Tour extra booking
+ */
+.tour_check_rate{	
+	background-color: #FFFFC9;
+	border: 1px solid #FEBA02;
+	
+    /*height: 95px;*/    
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 5px 0;
+}
+
+.tour_check_rate .row{
+	float: left; 
+	width: 530px; 
+	padding: 5px 0 5px 10px;
+}
+
+.tour_check_rate .row .col50{
+	float: left; 
+	width: 50px;
+}
+
+.tour_check_rate .row .col60{
+	float: left; 
+	width: 60px;
+}
+
+.tour_check_rate .row .col80{
+	float: left; 
+	width: 80px;
+}
+
+.tour_check_rate .row .col100{
+	float: left; 
+	width: 100px;
+}
+
+.tour_check_rate .row .col120{
+	float: left; 
+	width: 120px;
+}
+.tour_check_rate .row .col200{
+	float: left; 
+	width: 200px;
+}
+
+.tour_check_rate .row .col300{
+	float: left; 
+	width: 300px;
+}
+
+.tour_check_rate_content{
+	float: left;
+	width: 540px;
+}
+
+.tour_check_rate_submit {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.accomm_cabin_img{
+	float: left; position: relative; padding: 0 10px 10px 0;
+}
+.accomm_cabin_facility{
+	float: left; width: 100%;font-size:11px;
+}
+
+.accomm_cabin_facility li{
+	float: left; width: 33%; margin-bottom: 5px;
+}
+.accomm_cabin_description{
+	width: 100%;
+}
+.breadCrumb_stepNo {
+	background-position: -125px -195px;
+	width: 19px;
+	height: 19px;
+    color: #FFFFFF;
+    margin-right: 3px;
+    padding-left: 6px;
+}
+#breadCrumb0 {margin-left: 10px;}
+#breadCrumb0 .breadCrumb_text {color: #666}
+#breadCrumb1, #breadCrumb2, #breadCrumb3, #breadCrumb4, #breadCrumb5, .breadCrumb_stepNo, .breadCrumb_text {
+    float: left; line-height: 19px;
+}
+#breadCrumb1, #breadCrumb2, #breadCrumb3, #breadCrumb4, #breadCrumb5 {
+	margin-left: 20px;
+}
+.breadCrumb_text {
+    color: #999999; margin-top:1px
+}
+
+.currentStep .breadCrumb_stepNo {
+    background-position: -150px -195px;
+}
+.currentStep .breadCrumb_text {
+    color: #FF6600;
+}
+#tracker {
+	margin-bottom: 10px;
+    overflow: hidden;
+    padding: 0;
+    width: 718px;
+    background-color: #F8F8F8;
+    padding: 3px 0;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #F8F8F8; 
+    border-right: 1px solid #F8F8F8;
+}
+
+.additional_charges {background-color: #FFFFC9;}
+.additional_charges div {float: left; width: 100%}
+.additional_charges .header {margin-bottom: 5px; font-weight: bold;}
+.additional_charges div label {margin-left: 10px}
+
+/**
+ * hotel dates
+ */
+.month_label_square{
+	height:31px;width:41px;float: left; border-bottom: 1px solid #CCC;
+}
+.day_square{
+	height:30px;width:36px;float: left; border: 1px solid #CCC;
+}
+.tour_square{
+	height:30px;width:147px;float: left; border: 1px solid #CCC;text-align: center;
+}
+.check_box_position{
+	margin-left: 12px !important;margin-top:8px;padding:0
+}
+.tour_position{
+	margin-top: 6px; margin-left: 2px;
+}
+.month_label{
+	height:7px;width:41px;float: left; font-size: 9px;font-weight: bold;padding-top: 3px;
+}
+.day_label{
+	height:10px;width:37px;float: left; text-align: center;font-size: 9px;font-weight: bold;padding-top: 3px
+}
+.tour_label{
+	height:10px;width:148px;float: left; text-align: center;font-size: 9px;font-weight: bold;padding-top: 3px
+}
+
+.b_discount{font-size:11px}
+
+.bpt_item_name{font-size:13px}
+
+.help_next{float: left; width: 100%; text-align: right; margin-bottom: 10px;}
+
+/*--- Empty Cart --- */
+.empty-cart-info {
+	border: 1px solid #E0DBD5; border-width: 1px 0; padding: 10px; color: #666
+}
+.continue-txt {font-size: 15px}
+.geo_trust {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

@@ -1,287 +1,609 @@
 /**
- * BPV Tour Info
+ * CSS for Image Gallery
  */
-.tour-info { font-size: 14px }
-.tour-info h1 { margin-top: 0 }
-.tour-info label { margin-right: 3px; }
-.tour-info .label-price-from { font-size: 16px; margin-right: 5px }
 
-.tour-info div[class*="col-"] { float: left; }
-.tour-info .col-name { width: 72.4138%; }
-.tour-info .col-price { width: 27.5862%; }
-
-.photos { clear: both; display: block; margin-top: 5px; float: left; width: 100% }
-
-.photos .header { background-color: #E1EEF4; padding: 5px 10px 4px; border-bottom: 1px solid #A9C6D0; margin-bottom: 0 }
-.photos .header label { font-size: 13px; margin: 0 }
-.photos .header a { margin-left: 10px }
-
-.bpv-call-us { clear: both; display: block; overflow: hidden; }
-.tour-support { border: 1px solid #FFB20A; }
-.tour-support .support-content { padding: 0 15px }
-.tour-support .support-item { border-top: 1px dotted #ccc; padding: 10px 0; overflow: hidden; }
-.tour-support .support-item img { float: left; margin-right: 10px }
-.tour-support ul { float: left; list-style: none; margin: 0; padding: 0 }
-.tour-support .header { font-size: 18px; text-align: center; color: #fff; background-color: #FFB20A; font-weight: bold; padding: 5px 0 }
-
-.box-support { background-color: #DFECF5; padding: 24px 100px; border-radius: 4px; clear: both; float: left; width: 100%; }
-.support-content { background-color: #fff; padding: 20px 60px; border-radius: 8px; font-size: 13px; position: relative; }
-.support-content .live-support { position: absolute; left: -30px; top: -10px }
-
-#tab_reviews .icon-review-details { display: inline-block !important; }
-#tab_reviews h3 { margin-top: 0 }
-
-.last-review { height: auto; font-size: 14px }
-
-
-.bpv-tab-tours { border-bottom: 5px solid #2B91E9 }
-.bpv-tab-tours .nav-tabs > li { margin-bottom: 0 }
-.bpv-tab-tours .nav-tabs > li > a { padding: 5px 15px; margin-right: 5px; font-size: 16px }
-.bpv-tab-tours .nav-tabs > li.active > a,
-.bpv-tab-tours .nav-tabs > li.active > a:hover, 
-.bpv-tab-tours .nav-tabs > li.active > a:focus, 
-.bpv-tab-tours .nav-tabs > li > a:hover {
-	background-color: #2B91E9; border-radius: 3px 3px 0 0
+/**
+* @file: highslide.css 
+* @version: 4.1.13
+*/
+.highslide-container div {
+	font-family: Verdana, Helvetica;
+	font-size: 10pt;
 }
-.bpv-tab-tours .nav-tabs > li > a, .bpv-tab .nav-pills > li > a {
-	background-color: #EEEEEE
+.highslide-container table {
+	background: none;
 }
-.bpv-tab-tours-content { clear: both; width: 100%; margin-top: 20px; float: left; min-height: 300px }
-.box-download {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
+.highslide {
+	outline: none;
+	text-decoration: none;
+}
+.highslide img {
+	border: 2px solid silver;
+	cursor: url(/js/highslide/graphics/zoomin.cur), pointer !important;
+}
+.highslide:hover img {
+	border-color: gray;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide-gallery .highslide-active-anchor img {
+	border-color: black;
+	visibility: visible;
+	cursor: default;
+}
+.highslide-image {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+.highslide-wrapper, .highslide-outline {
+	background: white;
+}
+.glossy-dark {
+	background: #111;
+}
+
+.highslide-image-blur {
+}
+.highslide-number {
+	font-weight: bold;
+	color: gray;
+	font-size: .9em;
+}
+.highslide-caption {
+	display: none;
+	font-size: 1em;
+	padding: 5px;
+	/*background: white;*/
+}
+.highslide-heading {
+	display: none;
+	font-weight: bold;
+	margin: 0.4em;
+}
+.highslide-dimming {
+	/*position: absolute;*/
+	background: black;
+}
+a.highslide-full-expand {
+   background: url(/js/highslide/graphics/fullexpand.gif) no-repeat;
+   display: block;
+   margin: 0 10px 10px 0;
+   width: 34px;
+   height: 34px;
+}
+.highslide-loading {
+	display: block;
+	color: black;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 3px;
+	border: 1px solid white;
+	background-color: white;
+	padding-left: 22px;
+	background-image: url(/js/highslide/graphics/loader.white.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+}
+a.highslide-credits,
+a.highslide-credits i {
+	padding: 2px;
+	color: silver;
+	text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+	color: white;
+	background-color: gray;
+}
+.highslide-move, .highslide-move * {
+	cursor: move;
+}
+
+.highslide-viewport {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: none;
 	left: 0;
-	right: 0;
-	bottom: -27px;
+	top: 0;
+}
+.highslide-overlay {
+	display: none;
+}
+.hidden-container {
+	display: none;
+}
+/* Example of a semitransparent, offset closebutton */
+.closebutton {
+	position: relative;
+	top: -15px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url(/js/highslide/graphics/close.png);
+	/* NOTE! For IE6, you also need to update the highslide-ie6.css file. */
+}
+
+/*****************************************************************************/
+/* Thumbnail boxes for the galleries.                                        */
+/* Remove these if you are not using a gallery.                              */
+/*****************************************************************************/
+.highslide-gallery ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.highslide-gallery ul li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 106px;
+	height: 106px;
+	border: 1px solid silver;
+	background: #ededed;
+	margin: 2px;
+	padding: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+.highslide-gallery ul a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.highslide-gallery ul img {
+ 	position: relative;
+	top: -50%;
+	left: -50%;
+}
+html>/**/body .highslide-gallery ul li {
+	display: table;
+	text-align: center;
+}
+html>/**/body .highslide-gallery ul li {
+	text-align: center;
+}
+html>/**/body .highslide-gallery ul a {
+	position: static;
+	display: table-cell;
+	vertical-align: middle;
+}
+html>/**/body .highslide-gallery ul img {
+	position: static;
+}
+
+/*****************************************************************************/
+/* Controls for the galleries.											     */
+/* Remove these if you are not using a gallery							     */
+/*****************************************************************************/
+.highslide-controls {
+	width: 195px;
+	height: 40px;
+	background: url(/js/highslide/graphics/controlbar-white.gif) 0 -90px no-repeat;
+	margin: 20px 15px 10px 0;
+}
+.highslide-controls ul {
+	position: relative;
+	left: 15px;
+	height: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: url(/js/highslide/graphics/controlbar-white.gif) right -90px no-repeat;
+
+}
+.highslide-controls li {
+	float: left;
+	padding: 5px 0;
+	margin:0;
+	list-style: none;
+}
+.highslide-controls a {
+	background-image: url(/js/highslide/graphics/controlbar-white.gif);
+	display: block;
+	float: left;
+	height: 30px;
+	width: 30px;
+	outline: none;
+}
+.highslide-controls a.disabled {
+	cursor: default;
+}
+.highslide-controls a.disabled span {
+	cursor: default;
+}
+.highslide-controls a span {
+	/* hide the text for these graphic buttons */
+	display: none;
+	cursor: pointer;
+}
+
+
+/* The CSS sprites for the controlbar - see http://www.google.com/search?q=css+sprites */
+.highslide-controls .highslide-previous a {
+	background-position: 0 0;
+}
+.highslide-controls .highslide-previous a:hover {
+	background-position: 0 -30px;
+}
+.highslide-controls .highslide-previous a.disabled {
+	background-position: 0 -60px !important;
+}
+.highslide-controls .highslide-play a {
+	background-position: -30px 0;
+}
+.highslide-controls .highslide-play a:hover {
+	background-position: -30px -30px;
+}
+.highslide-controls .highslide-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.highslide-controls .highslide-pause a {
+	background-position: -60px 0;
+}
+.highslide-controls .highslide-pause a:hover {
+	background-position: -60px -30px;
+}
+.highslide-controls .highslide-next a {
+	background-position: -90px 0;
+}
+.highslide-controls .highslide-next a:hover {
+	background-position: -90px -30px;
+}
+.highslide-controls .highslide-next a.disabled {
+	background-position: -90px -60px !important;
+}
+.highslide-controls .highslide-move a {
+	background-position: -120px 0;
+}
+.highslide-controls .highslide-move a:hover {
+	background-position: -120px -30px;
+}
+.highslide-controls .highslide-full-expand a {
+	background-position: -150px 0;
+}
+.highslide-controls .highslide-full-expand a:hover {
+	background-position: -150px -30px;
+}
+.highslide-controls .highslide-full-expand a.disabled {
+	background-position: -150px -60px !important;
+}
+.highslide-controls .highslide-close a {
+	background-position: -180px 0;
+}
+.highslide-controls .highslide-close a:hover {
+	background-position: -180px -30px;
+}
+
+
+
+.tour_check_rate{	
+	background-color: #FFFFC9;
+	border: 1px solid #FEBA02;
+	
+    /*height: 95px;*/    
+    width: 718px;
+    overflow: auto;
+    position: relative;
+    padding: 5px 0;
+}
+
+.tour_check_rate .row{
+	float: left; 
+	width: 530px; 
+	padding: 5px 0 5px 10px;
+}
+
+.tour_check_rate .row .col50{
+	float: left; 
+	width: 50px;
+}
+
+.tour_check_rate .row .col60{
+	float: left; 
+	width: 60px;
+}
+
+.tour_check_rate .row .col80{
+	float: left; 
+	width: 80px;
+}
+
+.tour_check_rate .row .col100{
+	float: left; 
+	width: 100px;
+}
+
+.tour_check_rate .row .col120{
+	float: left; 
+	width: 120px;
+}
+.tour_check_rate .row .col200{
+	float: left; 
+	width: 200px;
+}
+
+.tour_check_rate .row .col300{
+	float: left; 
+	width: 300px;
+}
+
+.tour_check_rate .row .col170{
+	float: left; 
+	width: 170px;
+}
+
+.tour_check_rate_content{
+	float: left;
+	width: 540px;
+}
+
+.tour_check_rate_submit {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.tour_accommodations{
+	width: 100%;
+}
+
+/* ----- Price Include/Exclude -----*/
+
+.policy_header{
+	float: left;
+	width: 100%; border-bottom: 1px solid #CCC; margin: 5px 0;
+}
+
+.policy_header h3{
+	background-color:#EEE; width: 180px; border: 1px solid #CCC; border-bottom: 0; padding: 3px 10px !important;
+}
+
+.price_inclusions{
+	width: 330px; float: left;
+}
+
+.price_exclusions{
+	width: 330px; float: right;
+}
+
+.booking_policy{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.price_inclusions ul, .price_exclusions ul, .booking_policy ul{list-style: disc; margin: 0; padding-left: 10px;}
+
+.price_inclusions ul li, .price_exclusions ul li, .booking_policy ul li{margin-left: 13px; margin-bottom: 5px;}
+
+
+.booking_policy .col_1 {
+	float:left;
+	font-weight:bold;
+	width:160px;
+	padding:3px 5px;
+	margin-left:10px;
+	* margin-left:5px;
+}
+.booking_policy .col_2 {
+	float:left;
+	width:510px;
+	padding:3px 5px;
+	padding-right: 0;
+}
+
+/**
+ * Tour detail
+ *
+ */
+.tour_detail_image{
+	float: left; width:300px;margin-right:10px;
+	margin-top:5px;
+}
+
+.tour_detail_content{
+	float: left; width:390px;
+	margin-top:5px
+}
+
+.tour_detail_content .bpt_item_review{
+	top: 0; right: 0; position:absolute;
+}
+
+.brief_itinerary{
+	margin-bottom: 10px;
+}
+
+.tour_detail_content .row, .tour_header_area .row{float:left;padding:4px 0; width: 100%}
+.tour_detail_content .row .col_label, .tour_header_area .row .col_label{float:left;width:90px;font-weight: bold;color: #666;}
+.tour_detail_content .row .col_content{float:left; width:300px}
+
+
+.offer_lst {list-style:none;margin:0;padding:0;float:left}
+.tour_accommodation_text{
+	float: left; 
+	width: 240px;
+}
+.tour_detail_promotion{
+	width: 458px;
+	float: right;
+}
+.table_progress {border-spacing: 0px; border: 0px; margin: auto; margin-top: 5px;}
+.table_progress .line {*line-height: 5px}
+.tour_detail_promotion .group_info{
+	float: left;
+	text-align: left;
+}
+
+.tour_detail_promotion .hot_deals_info{
+	float: right;
+	text-align: right;
+}
+
+#searchForm {height: 300px}
+#searchForm .row_des{margin-top:0}
+
+#medium_img {
+float: left;
+width: 490px;
+height: 340px;
+}
+#medium_img img {
+max-width: 468px;
+padding: 5px;
+border: 1px solid #EEE;
+height: 320px;
+}
+
+#list_thumb {
+margin: 5px 10px 10px 0px;
+padding: 0px;
+float: left;
+}
+
+#list_thumb span {
+float: left;
+display: block;
+margin: 2px;
+}
+
+#list_thumb .selected {
+border: 1px solid red;
+}
+
+#list_thumb img {
+float: left;
+max-height: 80px;
+padding: 2px;
+border: 1px solid #EEE;
+}
+
+#tour_itinerary h3 {padding-left: 0}
+.additional_charges {background-color: #FFFFC9;}
+.additional_charges div {float: left; width: 100%}
+.additional_charges .header {margin-bottom: 5px; font-weight: bold;}
+.additional_charges div label {margin-left: 10px}
+.tour_itinerary_highlight {list-style:url("/media/check.gif");margin-left:25px}
+.tour_itinerary_highlight li {margin-bottom: 5px;}
+
+.accomm_cabin_img{
+	float: left; position: relative; padding: 0 10px 0 0;
+}
+.accomm_cabin_facility{
+	float: left; width: 100%; font-size: 11px;
+}
+
+.accomm_cabin_facility li{
+	float: left; width: 33%;margin-bottom: 5px;
+}
+.accomm_cabin_description{
+	width: 100%;
+}
+
+/**
+ * Similar tour
+ *
+ */
+.price_note {float: right; font-size: 11px; font-style: italic; margin-right: 5px}
+.similar_tour {float: left; width: 100%; margin-top: 5px;border-bottom: 1px dashed #DDD}
+.similar_tour .tour {width: 205px; padding: 0; margin-left: 10px; padding-bottom: 5px}
+.similar_tour .partner_name {float: left; width: 100%; margin-left: 10px}
+.similar_tour .tour_price {float: right; margin-right: 5px;font-size: 11px; margin-top: 1px;text-align: right;}
+.similar_tour .price_total {font-weight: normal;display: block;}
+.more_tour {float: right; margin: 0px 5px 5px; display: block;padding-top:5px;font-size:11px; *margin-left: -5px;}
+.more_tour .more_cruise {text-decoration: underline;font-style: italic;}
+.tbl_departs{border: 1px solid #FEBA02; border-spacing: 0px; width: 660px;empty-cells: show;} .tbl_departs td {border-bottom: 1px solid #DDD; border-right: 1px solid #DDD; padding: 5px}
+
+#contentMain #tabs .ui-tabs-panel{padding: 10px;width:698px}
+
+.b_discount{font-size:11px}
+
+.bpt_item_name{font-size:13px}
+
+/**
+ * Itinerary Detail
+ */
+
+.tour_header_area{
+	float: left; width:700px; position: relative;padding:10px
+}
+
+.tour_detail_price{
+	position:absolute;right:10px;top:5px
+}
+
+.tour_detail_price .b_discount{
+	font-size:12px;
+}
+
+.bnt_customize{
+	position: absolute; right:10px; bottom: 5px;z-index:100;
+}
+
+.itinerary_route{
+	width:100%;float:left;padding:10px 0
+}
+.itineray_route_name{
+	padding-right: 15px;font-size:14px;font-weight:bold;
+}
+.itinerary_sub_route{
+	font-size:14px;font-weight:bold;float:left;width:100%;margin-top:10px
+}
+.itinerary_day{
+	width: 100%;height:28px;margin-top:10px;float:left;cursor:pointer;
+}
+.itinerary_day .label{
+	height:18px;width:80px;background-color:#779BCA;font-size:14px;color:#fff;font-weight:bold;padding:5px 10px;float:left;
+}
+.itinerary_day .title{
+	height:16px;width:558px;background-color:#eee;font-size:14px;padding:5px 15px;float:left;border:1px solid #ddd;border-left:0;border-right:0
+}
+.itinerary_day .status{
+	height:28px;width:32px;background-color:#779BCA;float:left;text-align:center;
+}
+.itinerary_content{
+	width:698px;border:1px solid #ddd;border-top:0;padding:10px;float:left;display:none;
+	line-height: 1.5em;
+}
+.itinerary_view_more{
+	font-size:14px;font-weight:bold;float:left;width:100%;margin-top:15px
+}
+.itinerary_content em {line-height: 22px; color: #333; font-weight: bold;}
+
+.bpt-tabs {margin-bottom: 10px}
+
+.itinerary-photos {
+	display: block;
+	margin: 10px 0 0;
+	clear: both;
+	width: 100%;
 	text-align: center;
 }
 
-.btn-download {
-	border-bottom: 0;
-	border: 1px solid #D4D4D4;
-	border-radius: 3px;
-	background-color: #EFEFEF;
-	color: #2B91E9;
-	font-weight: normal;
-	padding: 6px 12px;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #EAEAEA));
-	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #EAEAEA 100%);
-	background-image: linear-gradient(to bottom, #FFFFFF 0%, #EAEAEA 100%);
-	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #EAEAEA 100%);
-}
-.btn-download:hover { color: #2B91E9; }
+.itinerary-photos img { margin: 0 auto; border: 0 }
 
-.btn-book-tour {
-	background-color: #FAA821;
-	border: 3px solid #ED8B06;
-	padding: 6px 30px;
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: bold;
-	font-size: 16px;
-	border-radius: 6px;
-	box-shadow: 0 0 0 4px #fff;
-}
-
-.btn-tour-support {
-	background-color: #296EBC;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 12px;
-	cursor: pointer;
-	margin-top: 10px
-}
-.btn-book-tour:hover,.btn-tour-support:hover { color: #fff }
-
-.book-bottom-box { background-color: #E7E7E7; height: 40px; position: relative; margin-bottom: 30px; clear: both; }
-.book-bottom-box .btn-book-tour { margin: 15px auto 0 }
-
-.cancellation-box h4 { border-bottom: 1px solid #FCB925; padding-bottom: 10px; }
-
-/**
- * Tour Itinerary
- */
- 
-.tour-highlight { list-style: disc outside url("/media/icon/hotel_detail/fa_check.png"); font-size: 14px }
-.tour-itinerary { background-color: #EFEFEF; padding: 10px; margin: 10px 0 40px; position: relative; }
-.tour-itinerary h4 { margin-top: -2px; font-weight: bold; }
-.tour-itinerary ul { padding-left: 20px } 
-.tour-box { background-color: #fff; padding: 10px; border: 1px solid #D5D5D5; border-radius: 4px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) }
-.itinerary-content { line-height: 22px;}
-
-.itinerary-photos { list-style: none; text-align: center; margin-top: 10px }
-.itinerary-photos img { margin: 0 auto; }
-.itinerary-photos .caption { margin-top: 5px }
-
-.itinerary-summary { border: 1px solid #DDE1E0 }
-.itinerary-summary h3 { padding-left: 10px; }
-.itinerary-summary ul { list-style: none; padding: 0; margin: 0 }
-.itinerary-summary li { border-top: 1px solid #DDE1E0; }
-.itinerary-summary a { padding: 10px; line-height: 14px; display: block; cursor: pointer; color: #333; font-size: 12px }
-.itinerary-summary li.active a { color: #fff }
-.itinerary-summary a:hover { text-decoration: none; }
-.itinerary-summary li.active { background-color: #67AB3C; color: #fff }
-.itinerary-summary .itinerary-box li { position: relative; max-height: 35px }
-.itinerary-box .transport { margin-left: 20px }
-.itinerary-box .panel-title { position: relative; }
-.itinerary-box .iti-day { background-color: #4C9FD1; color: #fff; padding: 8px 10px; }
-.itinerary-box .iti-day-title { margin-left: 5px }
-.itinerary-box { font-size: 14px }
-.arrow-it { 
-	background-image: url("/media/icon/arrow-green.png");
-    position: absolute;
-    right: -11px;
-    top: 0px;
-    width: 11px;
-    height: 34px;
-    display: none;
-}
-.itinerary-summary .active .arrow-it { display: block; }
-
-.bpv-box-gray { border: 1px solid #DADADA; display: block; clear: both; overflow: hidden; }
-.bpv-box-gray .header { background-color: #F5F5F5; margin: 0; padding: 10px; }
-.col-half { float: left; width: 50%; padding: 0 15px }
-
-.important-info { clear: both; display: block; margin-bottom: 40px }
-.important-info ul { list-style: none; padding-left: 0 }
-
-.bpv-rate-table td { vertical-align: middle !important; }
-
-.itinerary-box .active .icon-airplane { background-position: -154px -654px; }
-.itinerary-box .active .icon-car { background-position: -152px -559px; }
-.itinerary-box .active .icon-boat { background-position: -152px -575px; }
-.itinerary-box .active .icon-train { background-position: -156px -593px; }
-.itinerary-box .active .icon-motorbike { background-position: -153px -615px; }
-.itinerary-box .active .icon-bicycle { background-position: -153px -634px; }
-.itinerary-box .active .icon-trekking { background-position: -150px -669px; }
-
-.tab-pane { font-size: 14px }
-
-/**
- * Slider
- */
-.carousel-control { width: 5% }
-.carousel-control.left, .carousel-control.right { background: none; }
-
-
-.carousel-indicators { bottom: -5px; margin-left: 0; width: auto; right: 10px; left: auto; }
-.carousel-caption {
-	left: 0;
-	bottom: 0;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-	line-height: 20px;
-	text-align: left;
-	padding: 6px 2.5%;
+.photo-caption {
+	text-align: center;
 	width: 100%;
-	font-size: 14px;
+	color: #666;
+	clear: left;
+	float: left
 }
 
+.margin-bottom-10 { margin-bottom: 10px }
 
-/**
- * ROOM TYPE & ROOM RATE 
- */
-.room-types .col-1, .room-rates .col-1 {
-	width: 53.10262529832936%; /*445px;*/
-}
-
-.room-types .col-2, .room-rates .col-2 {
-	width: 10.73985680190931%; /*90px*/
-}
-
-.room-types .col-3 {
-	width: 36.15751789976134%; /*303px*/
-}
-
-.room-types .col-rate {
-	vertical-align: middle !important;
-	font-size: 14px;
-}
-
-.room-types .col-room-img {
-	float: left;
-	width: 25%;
-}
-
-.room-types .col-room-img img, .room-rates .col-room-img img {
-	width: 100%;
-}
-
-.room-types .col-room-info {
-	float: left;
-	width: 75%;
-	padding-left: 15px;
-}
-
-.room-types .room-name, .room-rates .room-name {
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.room-types .room-square, .room-types .room-capacity, .room-types .room-breakfast,
-	.room-types .room-promotion, .room-types .room-added-value, .room-rates .room-square,
-	.room-rates .room-capacity, .room-rates .room-breakfast, .room-rates .room-promotion,
-	.room-rates .room-added-value {
-	margin-bottom: 2px;
-}
-
-/**
- * Room Rates
- */
-.room-rates .col-3 {
-	width: 14.31980906921241%; /*120px;*/
-}
-
-.room-rates .col-4 {
-	width: 8.353221957040573%; /*70px;*/
-}
-
-.room-rates .col-5 {
-	
-}
-
-.room-rates .col-room-img {
-	float: left;
-	width: 26.66666666666667%; /*160px*/
-}
-
-.room-rates .col-room-info {
-	float: left;
-	width: 73.33333333333333%; /*440px*/
-	padding-left: 10px;
-}
-
-.room-rates .bpv-price-origin {
-	font-size: 13px;
-}
-
-.room-rates .bpv-price-from {
-	font-size: 16px;
-}
-
-.room-rates .no-cancel {
-	text-decoration: underline;
-	font-weight: bold;
-	color: #ba1c1d;
-}
-
-.room-rates .free-cancel {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.room-types .room-breakfast, .room-rates .room-breakfast {
-	color: #409224;
-}
-
-.bpv-rate-table td { padding: 10px 15px }
-
- /*--- Fix Navigations ---*/
-.f-nav, .f-nav-side { z-index: 99; position: fixed; top: 0; }
-.f-nav { background-color: #fff; padding-top: 5px }
-.f-nav-side { margin-top: 7px !important; }
-
-
-.table-price { font-size: 14px }
-.table-price td { vertical-align: middle !important; }
-
+.box-support { background-color: #eee; padding: 30px 0 30px; border-radius: 0; clear: both; float: left; width: 100%; margin-top: 20px }
+.support-content { background-color: #fff; padding: 20px 60px; border-radius: 2px; position: relative; margin: auto 50px }
+.support-content .live-support { position: absolute; left: -30px; top: -10px }
+.box-support .btn_book_it { display: inline-block; width: auto; }
+.tour-book-now { margin: 0 0 20px; padding: 7px 20px 5px; float: none; display: inline-block; }
+.text-center {float: left; width: 100%; text-align: center;}

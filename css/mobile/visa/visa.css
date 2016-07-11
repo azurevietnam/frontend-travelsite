@@ -1,0 +1,84 @@
+.visa-requirement-box, .visa-rates {
+	border-top: 1px solid #ccc; background-color : #FFF0BD;
+	padding: 15px 0;
+	background-color: #FFF0BD;
+}
+
+.visa-panel .panel, .visa-panel .panel-heading {
+	border-radius: 0
+}
+
+.visa-panel .panel:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+.visa-panel .panel:last-child {
+	border-radius: 0 0 4px 4px
+}
+
+.visa-panel .panel-heading {
+	padding: 5px 10px;
+	font-weight: bold;
+	background-color: #46B7CF
+}
+
+.visa-panel .panel-primary {
+	margin-bottom: 0;
+	border-color: #46B7CF
+}
+
+.visa-panel .panel-primary>.panel-heading {
+	border-color: #46B7CF
+}
+
+.visa-panel .panel-body {
+	position: relative;
+}
+
+.visa-panel .icon-chevron-right, .visa-list-group .icon-chevron-right {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -9px
+}
+
+.visa-list-group .list-group-item { border-color: #46B7CF; position: relative; }
+
+.voa-why-us {
+	list-style: none;
+	padding-left: 10px;
+	margin-top: 0;
+}
+
+.voa-why-us li {
+	background: url("/media/icon_checklist.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	margin: 0;
+ 	padding: 0 5px 5px 25px;
+}
+
+.visa-rates label { font-weight: normal; }
+.visa-rates .list-group { margin: 0 }
+.visa-rates .list-group-item { margin-top: 0; padding: 0 }
+.visa-rates .list-group-item label { padding: 5px 30px; width: 100% }
+.visa-rates .hr { border-top: 1px solid #ccc; clear: both; padding: 5px 0; }
+
+.note { color: #666 }
+.process_note, .note { font-size: 12px }
+
+.visa-booking-summary {
+  background-color: #f8f8f8;
+  border: 1px dashed #ccc;
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+#change_search { position: absolute; bottom: 5px; right: 10px; text-decoration: underline; }
+#update_visa_form { display: none; }
+#dv_err { display: none; }
+.error { color: #b30000 }
+
+
+

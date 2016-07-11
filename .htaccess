@@ -1,0 +1,63 @@
+RewriteEngine on
+
+# REDIRECT /folder to /folder/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\..+$
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ http://yeahgo.xyz/$1/ [R=301,L]
+
+# REDIRECT .html/ to .html/
+RewriteCond %{REQUEST_URI} \.html(\/)+$
+RewriteRule ^(.*html)(\/)+$ http://yeahgo.xyz/$1 [r=301,nc,L]
+
+# REMOVE index.php in URL
+RewriteCond $1 !^(index\.php|images|robots\.txt|css)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php?$1 [L]
+
+
+# REDIRECT /folder/index.php to /folder/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php\ HTTP/
+RewriteRule ^(([^/]+/)*)index\.php$ http://yeahgo.xyz/$1 [R=301,L]
+
+# REDIRECT non new to new
+RewriteCond %{http_host} ^bestpricevn.com [nc]
+RewriteRule ^(.*)$ http://yeahgo.xyz/$1 [r=301,nc]
+
+# Block access from 'Wordprcess'
+RewriteCond %{HTTP_USER_AGENT} wordpress [NC]
+RewriteRule ^.* - [F,L]
+
+
+#Compress html file
+
+#AddOutputFilterByType DEFLATE text/plain
+#AddOutputFilterByType DEFLATE text/html
+#AddOutputFilterByType DEFLATE text/xml
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/xml
+#AddOutputFilterByType DEFLATE application/xhtml+xml
+#AddOutputFilterByType DEFLATE application/rss+xml
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+
+# This enables caching
+
+<ifModule mod_headers.c>
+
+<filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|JPG|PNG|GIF|css|js)$">
+
+Header set Cache-Control "max-age=2592000, public"
+
+</filesMatch>
+
+<filesMatch "\\.(xml|txt)$">
+
+Header set Cache-Control "max-age=2592000, public, must-revalidate"
+
+</filesMatch>
+
+</ifModule>
+
+# End Compression Script

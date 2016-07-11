@@ -1,0 +1,20 @@
+.bpt-list {
+
+}
+
+.bpt-list ol li{
+    margin-bottom: 20px;
+}
+
+.glyphicon {
+    margin-right: 20px;
+}
+
+.faq-quest {
+    font-size: 14px;
+}
+
+.faq-quest:hover, .faq-quest:focus{
+    text-decoration: none;
+    font-weight: bold;
+}
