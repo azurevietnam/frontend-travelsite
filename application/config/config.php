@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= "http://yeahgo.xyz/";
+$config['base_url']	= "http://www.yeahgo.xyz/";
 
 /*
 |--------------------------------------------------------------------------

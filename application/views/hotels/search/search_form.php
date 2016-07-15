@@ -89,7 +89,7 @@ $hotel_id = !empty($search_criteria['hotel_id']) ? $search_criteria['hotel_id'] 
 			</div>
 
 	        <div class="row">
-	            <div class="col-xs-4 pull-right col-xs-offset-6">
+	            <div class="col-xs-2 pull-right col-xs-offset-10">
 	                <button class="btn btn-blue btn-x-lg btn-block" type="submit"><?=lang('search_now')?></button>
 	            </div>
 	        </div>

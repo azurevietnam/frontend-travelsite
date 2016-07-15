@@ -1,4 +1,4 @@
-<?=$common_ad?>
+<?//=$common_ad?>
 <div class="bpt-col-left pull-left">
 	<?=empty($common_ad)?  $tour_search_form : '<div class="searh-form-position">'. $tour_search_form .'</div>'?>
 

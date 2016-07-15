@@ -2,7 +2,6 @@
 <?php if(!empty($destination)):?>
     <div class="bpt-left-block">
         <h2 class="text-highlight title"><span class="icon icon-destination-info"></span><?=lang('label_explore').' '.$destination['name']?></h2>
-
         <ul class="list-unstyled">
             <li><a href="<?=get_page_url(DESTINATION_DETAIL_PAGE, $destination)?>"><span class="icon icon-arrow-right-orange"></span><?=lang('mnu_title_about_us', $destination['name'])?></a></li>
 

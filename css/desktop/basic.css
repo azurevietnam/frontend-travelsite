@@ -47,11 +47,13 @@ h3 { font-size: 21px}
 /* Link Color
 ----------------------------------*/
 a {
-    color:#3385D6;
+    color:#838383;
 }
 a:hover,
 a:focus {
-    color:#EB8F00; outline: 0
+    color:#01b7f2;
+	outline: 0;	
+    text-decoration: none;
 }
 .text-underline { text-decoration: underline; }
 
@@ -64,13 +66,13 @@ a:focus {
     color: #003580;
 }
 .text-special{
-    color: #FE8802;
+    color: #01b7f2;
 }
 .text-price{
-    color: #B30000;
+    color: #72bf66;
 }
 .text-unhighlight {
-    color: #666
+    color: #fff;
 }
 /* Input Error Border
 ----------------------------------*/
@@ -82,7 +84,7 @@ a:focus {
 }
 /* Price
 ----------------------------------*/
-.price-from { font-size: 30px; color: #B20000; }
+.price-from { font-size: 30px; color: #72bf66; }
 .price-origin { text-decoration: line-through; }
 
 /* System Margin, Padding
@@ -125,23 +127,26 @@ a:focus {
 
 .bpt-content{
     padding-bottom:15px;
+    padding-top: 1px;
+	background: url("/media/background/background.png") #f2f2f2 no-repeat top center;
 }
 .bpt-col-left{
-	position:relative;
+    position: relative;
     width: 26.89655172413793%;
-    padding-right: 15px;
+    padding-right: 0;
+    background: #f2f2f2;
 }
 .bpt-col-right{
     width: 73.10344827586207%;
+	padding: 15px;
+    background: #fff;
 }
 
 /* Header
 ----------------------------------*/
-
-.bpt-header{
-    height: 100px;
+.bpt-headers{
+	min-height:65px;
 }
-
 .sub-menu > a {
     text-decoration: none;
     padding: 0 5px;
@@ -150,10 +155,6 @@ a:focus {
 
 .bpt-header-border-right {
     border-right: 1px solid #CCC;
-}
-.bpt-header-border-top {
-    border-top: 30px solid #01b7f2;
-    padding-top: 10px;
 }
 
 .btp-hotline label{
@@ -167,7 +168,7 @@ a:focus {
     color:#838383;
     border-right:1px white solid;
     padding: 15px 15px;
-    font-size: 16px;
+    font-size: 15px;
 }
 .bpt-header-menu > li > a:hover,
 .bpt-header-menu > li > a:focus {
@@ -178,7 +179,10 @@ a:focus {
 }
 
 .bpt-header-menu > li {
-    float:left;
+    float:left;text-transform: uppercase;
+}
+ul#bpt-menu {
+    margin-top: 7px;
 }
 
 h1 small { font-size: 14px; color: #333 }
@@ -194,16 +198,17 @@ h1 small { font-size: 14px; color: #333 }
 
 /* Page Title
 ----------------------------------*/
-.page-header-title { font-weight: bold; font-size: 26px; margin: 0 0 10px 0}
+.page-header-title {font-size: 14px;    padding: 10px 0;}
 
 /* Footer
 ----------------------------------*/
 .bpt-footer {
     padding: 15px 0;
-    color:#555;
+    color:#fff;
     margin-top: 0px;
     clear: both;
     font-size: 12px;
+    background: #000;
 }
 
 .bpt-jsc-font-size {
@@ -1065,10 +1070,12 @@ h1 small { font-size: 14px; color: #333 }
 
 /* Search Form
 ----------------------------------*/
-.search-form, .search-overview{
-	padding:10px;
-    background-color:#01b7f2;
-    margin-bottom:15px;
+.search-form, .search-overview {
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    top: -257px;	
+    opacity: 0.9;
 }
 
 .search-form .checkbox {
@@ -1108,9 +1115,8 @@ h1 small { font-size: 14px; color: #333 }
 }
 .search-form-type-2{
 	line-height:15px;
-	background-color: #fff3d0;
-	padding:7px;
-	height: 304px;
+	background-color: #fff;
+	padding:15px;
 }
 .search-form-type-2 label {
   margin-bottom: 4px !important;
@@ -1140,16 +1146,16 @@ h1 small { font-size: 14px; color: #333 }
 }
 .search-form-type-4{
 	line-height: 23px;
-	/*height: 300px;*/
-	background-color: #fff3d0;
 }
 
-.search-height-form{
-	/*height: 364px;*/
-}
 
 .searh-form-home-position {width:640px; position: absolute; position: absolute; top: 142px; left: 6.4%;}
-.searh-form-position {width: 290px;	height: 339px;	position: absolute;	left: 10px;top: -362px;}
+.searh-form-position {
+	position: relative;
+    left: 10px;
+    top: -362px;
+	height:1px;
+	}
 
 .searh-form-home{
 	padding: 8px 10px;
@@ -1231,15 +1237,15 @@ h1 small { font-size: 14px; color: #333 }
 }
 
 .search-form .tab-content {
-	height: 240px;
 	margin-top: 0px;
-	background-color: #FFF3D0;
 	margin-bottom: 0px;
+    color: #333333;
+    font-weight: bold;
 }
 
 /* Tab seach form*/
 .bpt-tab-search .nav-tabs {
-    border-bottom: 2px solid #fe8c07;
+    border-bottom: 2px solid #4fc3f7;
     border: 0;
 }
 
@@ -1247,24 +1253,31 @@ h1 small { font-size: 14px; color: #333 }
     border: 0;
     font-weight: bold;
     margin-right: 2px;
-    color: #fe8c07;
+    color: #4fc3f7;
 }
 
 .bpt-tab-search .nav-tabs>li>a {
     padding: 5px 13px;
-    background-color: rgba(253, 140, 12, 0.5);
+    background-color:#4fc3f7;
     border-bottom: 0;
     border-radius: 0;
     color:white;
-    border: 1px solid white;
+    border-top: solid 1px #4fc3f7;
+    border-left: solid 1px #4fc3f7;
+    border-right: solid 1px #4fc3f7;
+}
+.box-search{
+	height:0;
 }
 
 .bpt-tab-search .nav-tabs>li.active>a {
-    background-color: #FFF;
+        background-color: #FFF;
     border-radius: 0;
-    color: #fe8c07;
+    color: #4fc3f7;
     outline-width: 0;
-    /* disable the highlight border on an html input text element */
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 1px;
 }
 
 /* Show partner name on tour
@@ -1346,7 +1359,6 @@ h1 small { font-size: 14px; color: #333 }
 
 /** General Left Block **/
 .bpt-left-block{
-    border: 1px solid #CBCBCB;
     padding: 10px;
 }
 
@@ -1520,7 +1532,6 @@ h1 small { font-size: 14px; color: #333 }
     padding: 5px 12px;
     font-size: 14px;
     font-weight: bold;
-    border-bottom-width:3px;
 }
 
 .btn-lg {
@@ -1529,10 +1540,6 @@ h1 small { font-size: 14px; color: #333 }
     border-radius: 4px;
 }
 
-.btn-x-lg {
-    padding: 7px 16px;
-    font-size: 18.5px;
-}
 
 .btn-sm {
     padding: 5px 10px;
@@ -1544,17 +1551,16 @@ h1 small { font-size: 14px; color: #333 }
 }
 
 .btn-blue {
-    background-color: #1B65E1;
-    border-color: #144CA9;
+    background-color: #4fc3f7;
     color: #ffffff;
 }
 
 .btn-blue:hover,
 .btn-blue:focus
 {
-    background-color: #0066cc;
-    border-color: #204d74;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
+    border: solid #204d74 2px;
 }
 
 .btn-green {
@@ -1572,17 +1578,15 @@ h1 small { font-size: 14px; color: #333 }
 }
 
 .btn-yellow {
-    background-color: #FFC300;
-    color: #003580;
-    border-color: #DEA800;
+    background-color: #fff;
+    color: #999;
 }
 
 .btn-yellow:hover,
 .btn-yellow:focus
 {
-    background-color: #ffb300;
-    border-color: #d7a200;
-    color: #ffffff;
+    color: #fff;
+    background: #006699;
 }
 
 
@@ -1715,18 +1719,17 @@ h1 small { font-size: 14px; color: #333 }
 .bpt-tab { clear: both; }
 .bpt-tab .nav-tabs {
     border: 0;
-    border-bottom: 2px solid #65A626;
+    border-bottom: 2px solid #006699;
 }
 
 .bpt-tab .nav-tabs>li>a, .bpv-tab .nav-pills>li>a {
     border: 0;
-    font-weight: bold;
     margin-right: 3px;
-    color: #555
+    color: #555;
+    font-size: 13px;
 }
 
 .bpt-tab .nav-tabs>li>a {
-    padding: 8px 20px;
     border: 1px solid #CBCBCB;
     background-color: #fff;
     border-bottom: 0;
@@ -1736,9 +1739,9 @@ h1 small { font-size: 14px; color: #333 }
 .bpt-tab .nav-tabs>li.active>a, .bpt-tab .nav-tabs>li.active>a:hover, .bpt-tab .nav-tabs>li.active>a:focus,
 .bpt-tab .nav-tabs>li>a:hover, .bpt-tab .nav-pills>li.active>a, .bpt-tab .nav-pills>li.active>a:hover,
 .bpt-tab .nav-pills>li.active>a:focus, .bpt-tab .nav-pills>li>a:hover {
-    background-color: #65A626;
+    background-color: #0099CC;
     border-radius: 0;
-    border: 1px solid #65A626;
+    border: 1px solid #006699;
     color: #FFFFFF;
     outline-width: 0;
     /* disable the highlight border on an html input text element */
@@ -1929,11 +1932,8 @@ h1 small { font-size: 14px; color: #333 }
 /* Best Tour
 ----------------------------------*/
 .best-tours .item {
-	background-color: #F5F5F5;
-	border: 1px solid #D6D6D6;
 	position: relative;
 	overflow: hidden;
-	padding: 3px
 }
 
 .best-tours .item-img { position: relative; overflow: hidden; background-color: #eee; min-height: 174px }
@@ -1955,14 +1955,15 @@ h1 small { font-size: 14px; color: #333 }
 .best-tours .item-name {
 	font-size: 16px;
 	display: block;
-	margin: 5px 0;
 	max-height: 40px;
 	overflow: hidden;
 }
 
 .best-tours .item-row { margin-bottom: 5px; max-height: 35px; overflow: hidden; }
 .best-tours .item-route { font-size: 12px; margin-top: 10px; text-overflow: ellipsis; width: 100%; }
-.best-tours .item-content { padding: 0 5px; }
+.best-tours .item-content { padding:5px;
+    background: #ccc;
+	}
 .best-tours .item-price { margin: 15px 0 5px }
 .best-tours .price-origin { margin-right: 5px }
 .best-tours .price-from { font-size: 24px; }
@@ -2104,12 +2105,11 @@ h1 small { font-size: 14px; color: #333 }
 /*  Travel guide block  */
 
 .bpt-travel-guide{
-    border-color: #0089f3;
     padding: 10px !important;
 }
 
 .bpt-travel-guide .title{
-    background-color: #0089f3;
+    background-color: #006699;
     color: #ffffff;
     margin: -10px -10px 0 -10px !important;
     padding: 5px;
@@ -2149,20 +2149,12 @@ h1 small { font-size: 14px; color: #333 }
 
 .bpt-tour-destinations{
     border-radius: 0px;
-    border: 1px solid #DCDCDC;
-    background-color: #F8F8F6;
     box-shadow: none;
-    margin-bottom: 15px;
-    padding: 0 10px;
+    margin: 15px;
 }
 
 .bpt-tour-destinations .title{
-    padding: 5px 10px;
-}
-
-.bpt-tour-destinations .title{
-    background-color: #ECECEC;
-    margin: 0 -10px;
+        padding-top: 38px;
 }
 .bpt-tour-destinations a {
 	font-size: 13px;
@@ -2170,7 +2162,8 @@ h1 small { font-size: 14px; color: #333 }
 
 .bpt-tour-destinations .country{
     border-bottom: 2px solid #DCDCDC;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-bottom: -20px;
 }
 
 .bpt-tour-destinations .country:last-child{
@@ -2545,5 +2538,103 @@ div.separation{border-bottom:1px dashed #CCC; height: 1px}
 .travel-guide-fontsize {
 	font-size: 14px;
 }
-
-
+.best-seller img{
+	width:100%;
+}
+.widget-title-v2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    height: 36px;
+    line-height: 35px;
+    margin-left: -10px;
+    padding-left: 40px;
+    position: relative;
+    text-transform: capitalize;
+     background: #4fc3f7 none repeat scroll 0 0; 
+}
+.widget-title-v2::before {
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: -10px;
+    position: absolute;
+    width: 0;
+    border-right: 10px solid #016db5;
+}
+.widget-title-v2::after {
+    background: rgba(0, 0, 0, 0) url("/media/icon/widget-title-bg.png") repeat scroll 0 0;
+    content: "";
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+}
+.widget:nth-child(2) .widget-title-v2 {
+    background: #66BB6A none repeat scroll 0 0;
+}
+.widget:nth-child(2) .widget-title-v2::before {
+    border-right: 10px solid #43a047;
+}
+.widget:nth-child(3) .widget-title-v2 {
+    background: #ffa726 none repeat scroll 0 0;
+}
+.widget:nth-child(3) .widget-title-v2::before {
+    border-right: 10px solid #fb8c00;
+}
+.widget:nth-child(4) .widget-title-v2 {
+    background: #f44336 none repeat scroll 0 0;
+}
+.widget:nth-child(4) .widget-title-v2::before {
+    border-right: 10px solid #d32f2f;
+}
+.row.background-service {
+    background: #fff;
+    box-shadow: -3px 3px 6px #e2e3e5;
+}
+.indo-country a {
+    font-size: 13px;
+}
+.content-inner{
+	background: #fff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+}
+.filtertip {
+    height: 100px;
+    background: #006699;
+    padding: 0px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 10px;
+    font-family: 'Open Sans';	
+    margin: -15px !important;
+}
+.bookfilters {
+    position: relative;
+    font-size: 12px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.hpadding20 {
+    padding: 0px 20px 0px 20px;
+}
+.tip-arrow {
+    width: 33px;
+    height: 9px;
+    background:url("/media/icon/tip-arrow.png");
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -15px;
+}
+.travel-styles h2{
+	    color: #01b7f2;
+}
+div#best-seller-container {
+    width: 103%;
+}

@@ -1,4 +1,4 @@
-<?=$common_ad?>
+<?//=$common_ad?>
 
 <div class="bpt-col-right pull-right">
     <?=$list_hotels?>

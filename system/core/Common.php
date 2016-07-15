@@ -243,18 +243,28 @@ if ( ! function_exists('get_config'))
 		}
 
 		// Are any values being dynamically replaced?
-		if (count($replace) > 0)
-		{
-			foreach ($replace as $key => $val)
-			{
-				if (isset($config[$key]))
-				{
+		// if (count($replace) > 0)
+		// {
+			// foreach ($replace as $key => $val)
+			// {
+				// if (isset($config[$key]))
+				// {
+					// $config[$key] = $val;
+				// }
+			// }
+		// }
+
+        // return $_config[0] =& $config;
+		if (count($replace) > 0){
+			foreach ($replace as $key => $val){
+				if (isset($config[$key])){
 					$config[$key] = $val;
 				}
 			}
 		}
 
-        return $_config[0] =& $config;
+		$_config[0] =& $config;
+		return $_config[0];
 	}
 }
 

@@ -1,5 +1,10 @@
 <div class="bpt-tour-destinations">
-    <h2 class="text-highlight title"><span class="icon icon-top-tour"></span><?=lang('label_top_tour_destination')?></h2>
+				<div class="filtertip">
+					<div class="padding20"> 						
+						<h2 class="title"><span class="icon icon-top-tour"></span><?=lang('label_top_tour_destination')?></h2>
+					</div>
+					<div class="tip-arrow" style="bottom: -9px;"></div>
+				</div>
     <?php foreach($country_name as $country_id => $country_name):?>
         <div class="country clearfix">
             <div class="margin-bottom-10"><a href="<?=$country_id == VIETNAM ? get_page_url(VN_TOUR_PAGE) : get_page_url(TOURS_BY_DESTINATION_PAGE, $country_name)?>"> <span class="icon <?=$country_flag[$country_id]?>"></span><?=strtoupper(lang_arg('tour_travel_style', $country_name['name']))?> </a></div>

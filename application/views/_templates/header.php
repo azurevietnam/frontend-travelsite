@@ -1,10 +1,10 @@
-<div class="bpt-header bpt-header-border-top bpt-header-border-bottom">
+<div class="bpt-headers bpt-header-border-top bpt-header-border-bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-3">
-				<a id="logo" href="<?=site_url()?>"><img src="../media/logo.png" alt="<?=lang('home_title')?>"></img></a>
+			<div class="col-xs-2 navbar-header">
+				<a id="logo" class="navbar-brand" href="<?=site_url()?>"><img src="../media/logo.png" alt="<?=lang('home_title')?>"></img></a>
 			</div>
-			<div class="col-xs-9">
+			<div class="col-xs-10 navbar-header">
 				<ul id="bpt-menu" class="nav bpt-header-menu">
 				<li id="MNU_HOME" <?=get_selected_menu("MNU_HOME")?>><a class="social" title="<?=lang('home_title')?>" href="<?=site_url()?>"><?=lang('home')?></a></li>
 		        
@@ -27,12 +27,17 @@
     	<ul class="slides" style="height:auto">
             <li>
                 <a href="#">
-                    <img class="img-responsive" src="../media/ad1.jpg">
+                    <img class="img-responsive" src="../media/banner/paris.jpg">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img class="img-responsive" src="../media/ad2.jpg">
+                    <img class="img-responsive" src="../media/banner/rome.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="img-responsive" src="../media/banner/santorini.jpg">
                 </a>
             </li>
 
@@ -58,14 +63,6 @@
 	        });
 	</script>			
 
-<div class="container">
-	<?php if(!empty($page_navigation)):?>
-		<div class="padding-left-10"><?=$page_navigation?></div>
-	<?php endif;?>
-	<?php if(!empty($main_header_title)):?>
-		<div class="padding-left-10"><?=$main_header_title?></div>
-	<?php endif;?>	
-</div>
 
 <script type="text/javascript">
 	initGUI();

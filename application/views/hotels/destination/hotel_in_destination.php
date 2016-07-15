@@ -36,7 +36,7 @@
         <?php endif;?>
 
         <?php if(!empty($h_3_stars)):?>
-            <h3 class="text-highlight popular-listing-tite margin-top-20"><?=lang('hotel_3_start_in', $destination['name']) ?></h3>
+            <h3 class="text-highlight popular-listing-tite margin-top-20 widget-title-v2"><?=lang('hotel_3_start_in', $destination['name']) ?></h3>
             <ul class="list-unstyled">
                 <?php foreach ($h_3_stars as $hotel) :?>
                     <li>

@@ -40,7 +40,7 @@ $active_record = TRUE;
 // LOCAL - CONFIG
 $db['default']['hostname'] = "localhost";
 $db['default']['username'] = "root";
-$db['default']['password'] = "asdf1@#$";
+$db['default']['password'] = "";
 $db['default']['database'] = "bpt_groupbooking_live";
 
 // TEST SYSTEM - on Halongbayjunktour.com

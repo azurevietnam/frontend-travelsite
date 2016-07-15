@@ -7,7 +7,7 @@
 <?php if( !empty($indochina_tour_service_links) || !empty($popular_service_links) ):?>
 <!-- Indochina Tour -->
 <div class="background-list-service-link">
-	<div class="container">
+	<div class="container box-service-link">
 	   <?=!empty($indochina_tour_service_links) ? $indochina_tour_service_links : ''?>
 
 	   <?=!empty($popular_service_links) ? $popular_service_links : ''?>
@@ -22,7 +22,10 @@
 
 	<?=!empty($all_cruise_links) ? $all_cruise_links : ''?>
 </div>
-<div class="bpt-footer container">
+</div>
+
+<div class="bpt-footer">
+<div class="container">
 	<div class="pull-left">
 		<a id="logo" href="<?=site_url()?>"><img src="../media/logo.png" alt="<?=lang('home_title')?>"></img></a>
 	</div>

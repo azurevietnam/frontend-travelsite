@@ -1,11 +1,14 @@
-<div style="min-height:345px;position:relative;" class="margin-top-5">
-	<?php if(!empty($common_ad)):?>
+
+<div style="position:relative;" class="margin-top-5">
+	<?php //if(!empty($common_ad)):?>
+	<!--
 		<div style="position:absolute;width:100%">
-			<?=$common_ad?>
+			<?//=$common_ad?>
 		</div>
-	<?php endif;?>
+		-->
+	<?php //endif;?>
 	
-	<div style="width:100%;top:10px">
+	<div class="box-search">
 		<div class="container">
 			<div class="row">
 				<?=$search_form?>

@@ -78,7 +78,6 @@
   border-radius: 5px;
 }
 
-.search-form { padding:5px; min-height:322px}
 
 /* Autocomplete destination flight Search form 
 --------------------------------------------------*/
@@ -98,11 +97,9 @@
 
 /* Best Seller
    ========================================================================== */
-
-.best-seller {background-color: #fff;}
-.best-seller .text-headder { position:absolute; background-color: #4bb0fe; width:94.9%; height: 45px; color: white; font-size: 22px; text-align:center; padding: 7px 0; }
-.best-seller .best-seller-name { font-size: 18px; margin-bottom: 10px;}
-.best-seller .best-seller-content { float: left; padding: 5px 10px; background-color:#f9f9f9; border-bottom: 1px solid #FB0; border-right: 1px solid #FB0; border-left: 1px solid #FB0 ; width: 100%; padding-right: 10px; position: relative; z-index: 1 }
+.best-seller .text-headder { position:absolute; background-color: #000; width:96.7%; height: 35px; color: white; font-size: 20px; text-align:center; padding: 7px 0; }
+.best-seller .best-seller-name { font-size: 16px; color:#fff; }
+.best-seller .best-seller-content { float: left; padding: 5px 10px 2px; background-color:#000; border-bottom: 1px solid #000; border-right: 1px solid #000; border-left: 1px solid #000 ; width: 100%; padding-right: 10px; position: relative; z-index: 1 }
 
  
 
